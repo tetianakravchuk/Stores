@@ -111,7 +111,7 @@ public class MainPage {
         currentRewardsAndProgramUrl = driver.getCurrentUrl();
         System.out.println(currentRewardsAndProgramUrl);
         Assert.assertEquals(currentRewardsAndProgramUrl, expectedRewardsAndProgram);
-        
+
 
 
     }
