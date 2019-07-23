@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -48,15 +49,15 @@ public class Registration extends BaseUI{
         {
             driver.findElement(By.id("checkbox-sharing-label")).click();
         }
-
-        JavascriptExecutor js2 = (JavascriptExecutor)driver;
-        driver.findElement((By.xpath("//div[@class=\"chosen-container chosen-container-single has-tip top\"]//a[@class=\"chosen-single chosen-default\"]"))).click();
-        js2.executeScript("window.scrollBy(0,500)");
-        WebDriverWait wait = new WebDriverWait(driver, 5);// 1 minute
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@id=\"storeNumber-160_Summer_Street__Kingston__MA_02364\"]")));
-
-        //js2.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-        WebElement store = driver.findElement(By.xpath("//li[@id=\"storeNumber-160_Summer_Street__Kingston__MA_02364\"]"));
+//        WebDriverWait waitLst = new WebDriverWait(driver,5).until((ExpectedConditions.elementToBeClickable(By.xpath())));
+//        waitLst.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class= \"chosen-drop\"]//ul[@id=\"storeNumber-list\"]")));
+      JavascriptExecutor js2 = (JavascriptExecutor)driver;
+//        driver.findElement((By.xpath("//div[@class=\"chosen-container chosen-container-single has-tip top\"]//a[@class=\"chosen-single chosen-default\"]"))).click();
+//        js2.executeScript("window.scrollBy(0,500)");
+//        WebDriverWait wait = new WebDriverWait(driver, 5);// 1 minute
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@id=\"storeNumber-160_Summer_Street__Kingston__MA_02364\"]")));
+        js2.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+        WebElement store = new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id=\"storeNumber-160_Summer_Street__Kingston__MA_02364\"]")));
         js2.executeScript("arguments[0].scrollIntoView(true);",store);
 
 //        public void registration(){
