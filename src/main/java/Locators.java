@@ -20,10 +20,12 @@ public class Locators {
     public static final By TEXT_FIELD_CONFIRM_PASSWORD = By.cssSelector("input[id ='registration-confirm-password']");
     public static final By TEXT_FIELD_ADDRESS = By.cssSelector("input[id ='address']");
     public static final By TEXT_FIELD_CITY = By.cssSelector("input[id ='city']");
+    public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name ='phone']");
     //Sign In
     public static final By LINK_SIGN_IN_PRIMARY = By.xpath("//a[@href='/sign-in']");
     public static final By TEXT_FIELD_USERNAME_PRIMARY = By.cssSelector("\"input#username\"");
     public static final By TEXT_FIELD_PASSWORD_PRIMARY = By.cssSelector("\"input#password\"");
+    public static final By TEXT_FIELD_ZIP = By.xpath("//input[@name ='zip']");
     public static final By BUTTON_SIGN_IN_PRIMARY = By.cssSelector("//input[@id='login-submit-button']");
 
 }

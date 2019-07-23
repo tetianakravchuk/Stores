@@ -10,12 +10,13 @@ public class Data {
     public static final String expectedSignUpUrl = "https://stopandshop.com/sign-up/";
     public static final String expectedNeedsCardUrl = "https://stopandshop.com/sign-up/registration/";
     //Registration Data
-    public static final String firstName = "";
-    public static final String lastName = "";
-    public static final String  emailRegistration = "";
-    public static final String  address = "";
-    public static final String  passwordRegistration = "";
-    public static final String  confirmPassword = "";
-    public static final String city = "";
-    public static final String zipCode = "";
+    public static final String firstName = "Tetia";
+    public static final String lastName = "Tets";
+    public static final String  emailRegistration = "t123@mailinator.com";
+    public static final String  address = "100 Cove way";
+    public static final String  passwordRegistration = "Quincy2019";
+    public static final String  confirmPassword = "Quincy2019";
+    public static final String city = "Quincy";
+    public static final String zipCode = "02169";
+    public static final String phone = "415-515-8552";
 }

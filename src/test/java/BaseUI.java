@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -12,8 +13,10 @@ public class BaseUI {
 
         // hav to add drivers to any browser
         System.setProperty("webdriver.chrome.driver", "chromedriver");
-        driver = new ChromeDriver();// opens your browser
+        driver = new ChromeDriver();
+        WebDriverWait wait = new WebDriverWait(driver, 20);// opens your browser
         driver.manage().window().maximize();
+
         // first test case
         driver.get(mainUrl);// gets your URL
 
@@ -25,4 +28,7 @@ public class BaseUI {
         //stops
 
     }
+//    public static String generateNewNumber(String name, int length){
+//        return name + RandomStringUtils.random(length, "");
+//    }
 }
