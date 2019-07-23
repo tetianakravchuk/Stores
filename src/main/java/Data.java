@@ -9,6 +9,7 @@ public class Data {
     public static final String expectedRewardsAndProgram = "https://stopandshop.com/member-benefits/";
     public static final String expectedSignUpUrl = "https://stopandshop.com/sign-up/";
     public static final String expectedNeedsCardUrl = "https://stopandshop.com/sign-up/registration/";
+    public static final String expectedFuelRewardsUrl = "https://join.fuelrewards.com/frconnect/registration?partSrcId=stopandshop";
     //Registration Data
     public static final String firstName = "Tetia";
     public static final String lastName = "Tets";

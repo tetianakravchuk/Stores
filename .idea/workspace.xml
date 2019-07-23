@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Registration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -12,6 +14,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -20,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
+            <state relative-caret-position="-308">
               <caret line="69" column="83" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -32,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="59" column="178" selection-start-line="59" selection-start-column="178" selection-end-line="59" selection-end-column="178" />
+            <state relative-caret-position="1905">
+              <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="188">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,10 +59,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Utility_navigation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="46" selection-start-column="46" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+            <state relative-caret-position="264">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -80,6 +94,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>list</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -90,18 +109,18 @@
         <option value="$PROJECT_DIR$/src/test/java/Utility_navigation.java" />
         <option value="$PROJECT_DIR$/src/test/java/Primary_Nav_List.java" />
         <option value="$PROJECT_DIR$/src/test/java/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/test/java/Registration.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1292" />
-    <option name="y" value="-269" />
-    <option name="width" value="2106" />
-    <option name="height" value="809" />
+    <option name="x" value="1553" />
+    <option name="y" value="-332" />
+    <option name="width" value="1661" />
+    <option name="height" value="902" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -235,42 +254,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 10h 10m 55s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 15h 52m 03s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 17m 09s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 15h 57m 28s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 25m 13s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 09m 17s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 25m 56s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 09m 47s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 35m 19s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 13m 02s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 39m 20s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 13m 49s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 41m 08s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 14m 27s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 47m 52s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 20m 34s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 11h 51m 23s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 25m 03s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 12h 38m 02s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 31m 34s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="-185" width="2106" height="809" extended-state="0" />
+    <frame x="1553" y="-332" width="1661" height="902" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18120155" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2415071" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -279,7 +298,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.041841004" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.086419754" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,7 +306,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32357043" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32098764" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -306,30 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utility_navigation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="69" column="83" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -337,10 +332,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utility_navigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="188">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="69" column="83" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -349,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="59" column="178" selection-start-line="59" selection-start-column="178" selection-end-line="59" selection-end-column="178" />
+        <state relative-caret-position="1905">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
