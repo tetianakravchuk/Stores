@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Registration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
+            <state relative-caret-position="1560">
               <caret line="69" column="83" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,11 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+            <state relative-caret-position="-1150">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="336">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,14 +124,15 @@
         <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/test/java/Registration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Conditions.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1553" />
-    <option name="y" value="-332" />
-    <option name="width" value="1661" />
-    <option name="height" value="902" />
+    <option name="x" value="38" />
+    <option name="y" value="23" />
+    <option name="width" value="1511" />
+    <option name="height" value="691" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -128,6 +140,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,7 +188,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,12 +208,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Registration.loyaltyCardRegistration">
-    <configuration name="MainPage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Conditions.test3">
+    <configuration name="Conditions.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainPage" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Conditions" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Conditions.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Conditions" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Conditions.test3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Conditions" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -234,9 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Conditions.test3" />
+        <item itemvalue="TestNG.Conditions.test2" />
+        <item itemvalue="TestNG.Conditions.test" />
         <item itemvalue="TestNG.Registration.loyaltyCardRegistration" />
         <item itemvalue="TestNG.MainPage.testSavingsMenu" />
-        <item itemvalue="TestNG.MainPage" />
       </list>
     </recent_temporary>
   </component>
@@ -254,42 +293,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 15h 52m 03s.xml">
+    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 48m 14s.xml">
       <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 15h 57m 28s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 15h 52m 06s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 09m 17s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 15h 52m 40s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 09m 47s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 15h 53m 06s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 13m 02s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 15h 54m 18s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 13m 49s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 16h 25m 17s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 14m 27s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 16h 25m 35s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 20m 34s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 16h 26m 12s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 25m 03s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test - 2019.07.24 at 16h 30m 48s.xml">
+      <configuration name="Conditions.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Registration_loyaltyCardRegistration - 2019.07.23 at 16h 31m 34s.xml">
-      <configuration name="Registration.loyaltyCardRegistration" configurationId="TestNG" />
+    <history-entry file="Conditions_test2 - 2019.07.24 at 17h 05m 19s.xml">
+      <configuration name="Conditions.test2" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1553" y="-332" width="1661" height="902" extended-state="0" />
+    <frame x="38" y="23" width="1511" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2415071" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17358747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -298,7 +337,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.086419754" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29716194" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -306,7 +345,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32098764" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32053423" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -325,10 +364,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        <state relative-caret-position="1560">
+          <caret line="69" column="83" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -346,30 +398,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="69" column="83" selection-start-line="67" selection-start-column="8" selection-end-line="69" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="528">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+        <state relative-caret-position="-1150">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
