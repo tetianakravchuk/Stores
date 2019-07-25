@@ -10,6 +10,7 @@ public class Data {
     public static final String expectedSignUpUrl = "https://stopandshop.com/sign-up/";
     public static final String expectedNeedsCardUrl = "https://stopandshop.com/sign-up/registration/";
     public static final String expectedFuelRewardsUrl = "https://join.fuelrewards.com/frconnect/registration?partSrcId=stopandshop";
+    public static final String expectedSearchURL = "https://stopandshop.com/";
     //Registration Data
     public static final String firstName = "Tetia";
     public static final String lastName = "Tets";
@@ -23,4 +24,7 @@ public class Data {
 
     //Home page
     public static final String HomeURL = "https://stopandshop.com/";
+
+    //Search
+    public static final String searchHomePage = "//a[@href='/advanced-search']";
 }
