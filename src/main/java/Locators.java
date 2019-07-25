@@ -27,5 +27,7 @@ public class Locators {
     public static final By TEXT_FIELD_PASSWORD_PRIMARY = By.cssSelector("\"input#password\"");
     public static final By TEXT_FIELD_ZIP = By.xpath("//input[@name ='zip']");
     public static final By BUTTON_SIGN_IN_PRIMARY = By.cssSelector("//input[@id='login-submit-button']");
+    //Search
+    public static final By SEARCH_HOME_PAGE = By.xpath("//a[@id='utility-nav-search']");
 
 }

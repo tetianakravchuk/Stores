@@ -20,4 +20,7 @@ public class Data {
     public static final String city = "Quincy";
     public static final String zipCode = "02169";
     public static final String phone = "415-515-8552";
+
+    //Home page
+    public static final String HomeURL = "https://stopandshop.com/";
 }
