@@ -106,48 +106,30 @@ public class Conditions extends BaseUI {
     }
 
     @Test
-    public void homeShop() {
+    public void homeShop() throws InterruptedException {
         String expectedTitleFloral = "Floral";
         String expectedTitleCatering = "Catering";
         String expectedTitlePeapodDelivery = "Peapod Delivery";
         String expectedTitlePrivateBrands = "Private Brands";
         String expectedTitleGiftCards = "Gift Cards";
-        List<WebElement> links = driver.findElements(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/shopping-list\"]"));
+        String expectedTitleSavory = "Savory";
+        List<WebElement> links = driver.findElements(By.xpath("//ul[@class='c-primary-nav__list']//li"));
         System.out.println(links.size());
 
         for (int i = 0; i < links.size(); i++) {
             String info = links.get(i).getText();
             System.out.println(info);
-
             links.get(i).click();
-
-            if(info.contains("Floral")){
-              String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/floral\"]")).getText();
-              Assert.assertEquals(expectedTitleFloral,actualTitle);
-            }
-            if(info.contains("Catering")){
-                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/shop-online/catering\"]")).getText();
-                Assert.assertEquals(expectedTitleCatering,actualTitle);
-            }
-            if(info.contains("Peapod Delivery")){
-                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"https://peapod.com/?c3ch=OpCo+Websites&c3nid=stopandshop.com\"]")).getText();
-                Assert.assertEquals(expectedTitlePeapodDelivery,actualTitle);
-            }
-            if(info.contains("Private Brands")){
-                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/own-brands\"]")).getText();
-                Assert.assertEquals(expectedTitlePrivateBrands,actualTitle);
-            }
-            if(info.contains("Gift Cards")){
-                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/shop-online/giftcard\"]")).getText();
-                Assert.assertEquals(expectedTitleGiftCards,actualTitle);
-            }
-//            else{
-//                Assert.fail("Title is wrong!");
-//            }
             driver.get(Data.HomeURL);
-            links = driver.findElements(By.xpath("//ul/li"));
+            links = driver.findElements(By.xpath("//ul[@class='c-primary-nav__list']//li"));
+            if(info.contains("Savory")){
+                String actualTitle = driver.findElement(By.xpath("//a[@id='primary-nav-savory']")).getText();
+                Assert.assertEquals(expectedTitleSavory,actualTitle);
+                System.out.println(actualTitle);
+            }
 
         }
+
 
     }
 
