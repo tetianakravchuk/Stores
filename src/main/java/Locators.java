@@ -21,6 +21,7 @@ public class Locators {
     public static final By TEXT_FIELD_ADDRESS = By.cssSelector("input[id ='address']");
     public static final By TEXT_FIELD_CITY = By.cssSelector("input[id ='city']");
     public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name ='phone']");
+    public static final By NEXT_BUTTON_REGISTRATION = By.xpath("//a[@class=\"defer-link zeta a-link-blue\"]");
     //Sign In
     public static final By LINK_SIGN_IN_PRIMARY = By.xpath("//a[@href='/sign-in']");
     public static final By TEXT_FIELD_USERNAME_PRIMARY = By.cssSelector("\"input#username\"");

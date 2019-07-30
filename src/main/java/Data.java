@@ -11,6 +11,7 @@ public class Data {
     public static final String expectedNeedsCardUrl = "https://stopandshop.com/sign-up/registration/";
     public static final String expectedFuelRewardsUrl = "https://join.fuelrewards.com/frconnect/registration?partSrcId=stopandshop";
     public static final String expectedSearchURL = "https://stopandshop.com/";
+    public static final String expectedFlexApplicationUrl = "https://join.fuelrewards.com/frconnect/registration?partSrcId=stopandshop";
     //Registration Data
     public static final String firstName = "Tetia";
     public static final String lastName = "Tets";

@@ -8,20 +8,20 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class Conditions extends BaseUI{
-    @Test
-    public void test() {
-        String fruit1 = "Kiwi";
-        String fruit2 = "Kiwi";
-
-        if (fruit1.contains("Kiwi") || fruit2.contains("Orange")) {
-            System.out.println("We can find our fruit1!");
-
-        } else {
-            Assert.fail("We cant find fruit2");
-
-        }
-    }
+public class Conditions extends BaseUI {
+//    @Test
+//    public void test() {
+//        String fruit1 = "Kiwi";
+//        String fruit2 = "Kiwi";
+//
+//        if (fruit1.contains("Kiwi") || fruit2.contains("Orange")) {
+//            System.out.println("We can find our fruit1!");
+//
+//        } else {
+//            Assert.fail("We cant find fruit2");
+//
+//        }
+//    }
 
     @Test
     public void test2() {
@@ -44,12 +44,12 @@ public class Conditions extends BaseUI{
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         boolean requirement = true;
-        if(requirement){
+        if (requirement) {
             System.out.println("Boolean is true");
-        }else{
-          Assert.fail("Boolean is false");
+        } else {
+            Assert.fail("Boolean is false");
         }
         {
 
@@ -57,12 +57,12 @@ public class Conditions extends BaseUI{
     }
 
     @Test
-    public void test4(){
+    public void test4() {
         WebElement tabSearch = driver.findElement(Locators.SEARCH_HOME_PAGE);
 
-        if(tabSearch.getText().contains("PRETTY WOMAN")) {
+        if (tabSearch.getText().contains("PRETTY WOMAN")) {
             tabSearch.click();
-        }else{
+        } else {
             Assert.fail("We cannot find Pretty Woman tab");
 
         }
@@ -71,47 +71,79 @@ public class Conditions extends BaseUI{
 
 
     @Test
-    public void test5(){
+    public void test5() {
         WebElement tabSearch = driver.findElement(Locators.SEARCH_HOME_PAGE);
 
-        if(tabSearch.isDisplayed()) {
+        if (tabSearch.isDisplayed()) {
             tabSearch.click();
-        }else{
+        } else {
             Assert.fail("We cannot find Search");
 
         }
 
     }
+
     @Test
-    public void test6(){
-       List<String> testList = new ArrayList<String>(Arrays.asList("Orange", "Kiwi","Melon"));
-       String element = testList.get(0);
+    public void test6() {
+        List<String> testList = new ArrayList<String>(Arrays.asList("Orange", "Kiwi", "Melon"));
+        String element = testList.get(0);
         System.out.println(element);
     }
 
     @Test
-    public void test7(){
-        List<Integer> testList = new ArrayList<Integer>(Arrays.asList(5,6,8));
+    public void test7() {
+        List<Integer> testList = new ArrayList<Integer>(Arrays.asList(5, 6, 8));
         int sum = testList.get(1) + testList.get(2);
         System.out.println(sum);
     }
 
     @Test
-    public void test8(){
-        for (int i= 0; i< 80; i++){
+    public void test8() {
+        for (int i = 0; i < 80; i++) {
             System.out.println("hey, guys!");
         }
 
     }
+
     @Test
-    public void test9(){
-        List<WebElement> links = driver.findElements(By.xpath("//ul/li"));
+    public void homeShop() {
+        String expectedTitleFloral = "Floral";
+        String expectedTitleCatering = "Catering";
+        String expectedTitlePeapodDelivery = "Peapod Delivery";
+        String expectedTitlePrivateBrands = "Private Brands";
+        String expectedTitleGiftCards = "Gift Cards";
+        List<WebElement> links = driver.findElements(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/shopping-list\"]"));
         System.out.println(links.size());
 
-        for (int i= 0; i< links.size(); i++){
-          String info = links.get(i).getText();
+        for (int i = 0; i < links.size(); i++) {
+            String info = links.get(i).getText();
             System.out.println(info);
+
             links.get(i).click();
+
+            if(info.contains("Floral")){
+              String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/floral\"]")).getText();
+              Assert.assertEquals(expectedTitleFloral,actualTitle);
+            }
+            if(info.contains("Catering")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/shop-online/catering\"]")).getText();
+                Assert.assertEquals(expectedTitleCatering,actualTitle);
+            }
+            if(info.contains("Peapod Delivery")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"https://peapod.com/?c3ch=OpCo+Websites&c3nid=stopandshop.com\"]")).getText();
+                Assert.assertEquals(expectedTitlePeapodDelivery,actualTitle);
+            }
+            if(info.contains("Private Brands")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/own-brands\"]")).getText();
+                Assert.assertEquals(expectedTitlePrivateBrands,actualTitle);
+            }
+            if(info.contains("Gift Cards")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class=\"c-primary-nav__item is-active\"]//a[@href=\"/shop-online/giftcard\"]")).getText();
+                Assert.assertEquals(expectedTitleGiftCards,actualTitle);
+            }
+//            else{
+//                Assert.fail("Title is wrong!");
+//            }
             driver.get(Data.HomeURL);
             links = driver.findElements(By.xpath("//ul/li"));
 
@@ -119,7 +151,47 @@ public class Conditions extends BaseUI{
 
     }
 
+    @Test
+    public void test10() {
+        List<Integer> crunchifyList1 = new ArrayList<>(Arrays.asList(5, 10, 19));
+        System.out.println(crunchifyList1.size());
+        crunchifyList1.add(10);
+        crunchifyList1.size();
+        System.out.println(crunchifyList1.size());
+        for (int i = 0; i < crunchifyList1.size(); i++) {
+            int element = crunchifyList1.get(i);
+            System.out.println(element);
+        }
 
 
+    }
+
+    @Test
+    public void test11() {
+        String phrase = "Melon is inside list";
+        List<String> crunchiList = new ArrayList<>(Arrays.asList("Apple", "Kiwi", "Orange", phrase));
+        System.out.println(crunchiList.size());
+        crunchiList.add("Melon");
+
+        System.out.println(crunchiList.size());
+        for (int i = 0; i < crunchiList.size(); i++) {
+            String element = crunchiList.get(i);
+            System.out.println(i + "iteration");
+
+            if (element.contains("Me")) {
+                System.out.println(phrase);
+            }
+            if(element.contains("Orange")){
+                System.out.println("Orange");
+            }
+            if(element.contains("Watermelon")){
+                System.out.println("Watermelon");
+            }else{
+                System.out.println("Bad loop");
+            }
+        }
+
+
+    }
 }
 

@@ -1,3 +1,4 @@
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,6 +18,10 @@ public class MainPage extends BaseUI {
 
 
     int indexLinkSignIn = 0;
+
+    public MainPage(WebDriver driver, WebDriverWait wait) {
+
+    }
 
 //    String name = "Al";
 //    By BUTTON_SUBMIT = By.xpath("//a");
