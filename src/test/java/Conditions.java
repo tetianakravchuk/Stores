@@ -127,11 +127,35 @@ public class Conditions extends BaseUI {
                 Assert.assertEquals(expectedTitleSavory,actualTitle);
                 System.out.println(actualTitle);
             }
-
+        }
         }
 
+    @Test
+    public void largeNavUtility() throws InterruptedException {
+        String expectedTitlePharmacy = "Pharmacy";
+        String expectedTitleWellness = "Wellness";
+        String expectedTitleRegister = "Register";
+        String expectedTitleFindAStore = "Find a Store";
+        String expectedTitleSearch = "Search";
+        String expectedTitleSignIn = "Sign In";
+        List<WebElement> links = driver.findElements(By.xpath("//ul[@id=\"xlarge-utility-nav\"]//li"));
+        System.out.println(links.size());
 
+        for (int i = 0; i < links.size(); i++) {
+            String info = links.get(i).getText();
+            System.out.println(info);
+            links.get(i).click();
+            driver.get(Data.HomeURL);
+            links = driver.findElements(By.xpath("//ul[@id=\"xlarge-utility-nav\"]//li"));
+            if(info.contains("Pharmacy")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item']//a[@href=\"/sns-rx\"]")).getText();
+                Assert.assertEquals(expectedTitlePharmacy,actualTitle);
+                System.out.println(actualTitle);
+            }
+        }
     }
+
+
 
     @Test
     public void test10() {
