@@ -144,6 +144,7 @@ public class Conditions extends BaseUI {
         for (int i = 0; i < links.size(); i++) {
             String info = links.get(i).getText();
             System.out.println(info);
+            Thread.sleep(3000);
             links.get(i).click();
             driver.get(Data.HomeURL);
             links = driver.findElements(By.xpath("//ul[@id=\"xlarge-utility-nav\"]//li"));
@@ -151,13 +152,69 @@ public class Conditions extends BaseUI {
                 String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item']//a[@href=\"/sns-rx\"]")).getText();
                 Assert.assertEquals(expectedTitlePharmacy,actualTitle);
                 System.out.println(actualTitle);
+
             }
+            if(info.contains("Wellness")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item']//a[@href=\"/health-and-wellness\"]")).getText();
+                Assert.assertEquals(expectedTitleWellness,actualTitle);
+                System.out.println(actualTitle);
+
+            }
+            if(info.contains("Register")){
+                String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item is-anonymous-xlarge -blue']//a[@href=\"/sign-up\"]")).getText();
+                Assert.assertEquals(expectedTitleRegister,actualTitle);
+                System.out.println(actualTitle);
+
+            }
+
+
+
+
+
         }
     }
 
 
-
     @Test
+    public void footerLinks() throws InterruptedException {
+        String expectedTitleOurStory = "Our Story";
+        String expectedTitlePrivateBrands = "Private Brands";
+        String expectedTitleFreshStories = "Fresh Stories";
+        String expectedTitleStoreDepartments = "Store Departments";
+        String expectedTitleNewsAndMedia = "News & Media";
+        String expectedTitleCommunity = "Community";
+        List<WebElement> links = driver.findElements(By.xpath("//*[@id=\"webcenter-site-body-container\"]/footer/div[2]/div[1]/div[2]/ul"));
+        System.out.println(links.size());
+
+        for (int i = 0; i < links.size(); i++) {
+            String info = links.get(i).getText();
+            System.out.println(info);
+            //Thread.sleep(3000);
+            links.get(i).click();
+            driver.get(Data.HomeURL);
+            links = driver.findElements(By.xpath("//*[@id=\"webcenter-site-body-container\"]/footer/div[2]/div[1]/div[2]/ul"));
+            if (info.contains("Our Story")) {
+                String actualTitle = driver.findElement(By.xpath("//*[@id=\"about-us-link-qa\"]")).getText();
+                Assert.assertEquals(expectedTitleOurStory, actualTitle);
+                System.out.println(actualTitle);
+
+            }
+            if (info.contains("Private Brands")) {
+                String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item']//a[@href=\"/health-and-wellness\"]")).getText();
+                Assert.assertEquals(expectedTitlePrivateBrands, actualTitle);
+                System.out.println(actualTitle);
+
+            }
+            if (info.contains("Fresh Stories")) {
+                String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item is-anonymous-xlarge -blue']//a[@href=\"/sign-up\"]")).getText();
+                Assert.assertEquals(expectedTitleFreshStories, actualTitle);
+                System.out.println(actualTitle);
+
+            }
+        }}
+
+
+            @Test
     public void test10() {
         List<Integer> crunchifyList1 = new ArrayList<>(Arrays.asList(5, 10, 19));
         System.out.println(crunchifyList1.size());

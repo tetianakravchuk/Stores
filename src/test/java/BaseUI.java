@@ -53,7 +53,7 @@ public class BaseUI {
     wait = new WebDriverWait(driver, 20);
     mainPage = new MainPage(driver, wait);
     searchPage = new SearchPage(driver, wait);
-    driver.manage().window().maximize();
+    //driver.manage().window().maximize();
     driver.get(mainUrl);}
 
 
