@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="227" column="93" selection-start-line="227" selection-start-column="93" selection-end-line="227" selection-end-column="93" />
+            <state relative-caret-position="1022">
+              <caret line="219" column="86" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="-97">
+              <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -117,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="106" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="106" />
+            <state relative-caret-position="195">
+              <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
             </state>
           </provider>
         </entry>
@@ -149,23 +150,23 @@
         <option value="$PROJECT_DIR$/src/test/java/Utility_navigation.java" />
         <option value="$PROJECT_DIR$/src/test/java/Primary_Nav_List.java" />
         <option value="$PROJECT_DIR$/src/test/java/SearchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Data.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/Registration.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/TestNG.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/test/java/Conditions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1343" />
-    <option name="y" value="-172" />
-    <option name="width" value="1912" />
-    <option name="height" value="750" />
+    <option name="x" value="1588" />
+    <option name="y" value="-163" />
+    <option name="width" value="1769" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -334,41 +335,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Conditions_largeNavUtility - 2019.07.31 at 15h 33m 10s.xml">
-      <configuration name="Conditions.largeNavUtility" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Conditions_largeNavUtility - 2019.07.31 at 15h 35m 27s.xml">
-      <configuration name="Conditions.largeNavUtility" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.07.31 at 16h 40m 59s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 13h 37m 12s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.07.31 at 16h 41m 55s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 14h 32m 45s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.07.31 at 16h 49m 12s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 14h 44m 35s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.08.01 at 09h 47m 18s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 14h 53m 52s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.08.01 at 09h 50m 54s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 14h 56m 05s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.08.01 at 09h 54m 21s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 15h 56m 32s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.08.01 at 10h 39m 17s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 15h 57m 18s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Conditions_footerLinks - 2019.08.01 at 10h 47m 06s.xml">
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 16h 45m 37s.xml">
+      <configuration name="Conditions.footerLinks" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 16h 49m 01s.xml">
+      <configuration name="Conditions.footerLinks" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_footerLinks - 2019.08.01 at 16h 50m 08s.xml">
       <configuration name="Conditions.footerLinks" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1343" y="-172" width="1912" height="750" extended-state="0" />
+    <frame x="1588" y="-163" width="1769" height="772" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13636364" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765489" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -377,7 +379,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4650456" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13970588" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.094233476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -481,22 +483,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="-97">
+          <caret line="16" column="96" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="106" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="106" />
+        <state relative-caret-position="195">
+          <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="227" column="93" selection-start-line="227" selection-start-column="93" selection-end-line="227" selection-end-column="93" />
+        <state relative-caret-position="1022">
+          <caret line="219" column="86" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

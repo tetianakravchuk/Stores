@@ -148,6 +148,7 @@ public class Conditions extends BaseUI {
             links.get(i).click();
             driver.get(Data.HomeURL);
             links = driver.findElements(By.xpath("//ul[@id=\"xlarge-utility-nav\"]//li"));
+
             if(info.contains("Pharmacy")){
                 String actualTitle = driver.findElement(By.xpath("//li[@class='c-utility-list-xlarge__item']//a[@href=\"/sns-rx\"]")).getText();
                 Assert.assertEquals(expectedTitlePharmacy,actualTitle);
@@ -183,49 +184,62 @@ public class Conditions extends BaseUI {
         String expectedTitleStoreDepartments = "Store Departments";
         String expectedTitleNewsAndMedia = "News & Media";
         String expectedTitleCommunity = "Community";
-        List<WebElement> links = driver.findElements(By.xpath("(//ul[@class='c-list--no-bullets'])[5]//li"));
+        String actualTitle;
+        String info;
+        String actualPrivateBrandsURL;
+        String exploreOwnBrandsButton;
+        String actualFreshStoriesURL;
+
+
+        List<WebElement> links = driver.findElements(Locators.LINK_HOME);
         System.out.println(links.size());
 
         for (int i = 0; i < links.size(); i++) {
-            String info = links.get(i).getText();
+            info = links.get(i).getText();
             System.out.println(info);
             //Thread.sleep(3000);
             links.get(i).click();
             driver.get(Data.HomeURL);
-            links = driver.findElements(By.xpath("(//ul[@class='c-list--no-bullets'])[5]//li"));
+
+            links = driver.findElements(Locators.ABOUT_STOP_AND_SHOP_LINK_LIST);
+
             if (info.contains("Our Story")) {
-                String actualTitle = driver.findElement(By.xpath("//a[@id='about-us-link-qa']")).getText();
+                actualTitle = driver.findElement((Locators.TITLE_OF_PAGE)).getText();
                 //(//a[@href="/about"])[2]
                 Assert.assertEquals(expectedTitleOurStory, actualTitle);
                 System.out.println(actualTitle);
 
             }
             if (info.contains("Private Brands")) {
-                String actualTitle = driver.findElement(By.xpath("//a[@id='own-brands-link-qa']")).getText();
+               actualTitle = driver.findElement(By.xpath("//a[@id='own-brands-link-qa']")).getText();
                 Assert.assertEquals(expectedTitlePrivateBrands, actualTitle);
                 System.out.println(actualTitle);
 
             }
-            if (info.contains("Fresh Stories")) {
-                String actualTitle = driver.findElement(By.xpath("//a[@id='fresh-stories-link-qa']")).getText();
-                Assert.assertEquals(expectedTitleFreshStories, actualTitle);
+            if (info.contains("Fresh from the local farm to our store")) {
+                actualTitle = driver.findElement((Locators.TITLE_OF_FRESH_STORIES_PAGE)).getText();
+                actualFreshStoriesURL = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedTitleFreshStories, actualTitle);
                 System.out.println(actualTitle);
+                Assert.assertEquals(actualFreshStoriesURL, Data.expectedFreshStoriesURL);
+                driver.findElement(Locators.FRESH_STORIES_IMAGE).isDisplayed();
+
 
             }
             if (info.contains("Store Departments")) {
-                String actualTitle = driver.findElement(By.xpath("//a[@id='store-departments-link-qa']")).getText();
+                actualTitle = driver.findElement(By.xpath("//a[@id='store-departments-link-qa']")).getText();
                 Assert.assertEquals(expectedTitleStoreDepartments, actualTitle);
                 System.out.println(actualTitle);
 
             }
             if (info.contains("News & Media")) {
-                String actualTitle = driver.findElement(By.xpath("//a[@id='news-link-qa']")).getText();
+                actualTitle = driver.findElement(By.xpath("//a[@id='news-link-qa']")).getText();
                 Assert.assertEquals(expectedTitleNewsAndMedia, actualTitle);
                 System.out.println(actualTitle);
 
             }
             if (info.contains("Community")) {
-                String actualTitle = driver.findElement(By.xpath("//a[@id='community-link-qa']")).getText();
+                actualTitle = driver.findElement(By.xpath("//a[@id='community-link-qa']")).getText();
                 Assert.assertEquals(expectedTitleCommunity, actualTitle);
                 System.out.println(actualTitle);
 

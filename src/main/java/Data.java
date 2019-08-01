@@ -12,6 +12,9 @@ public class Data {
     public static final String expectedFuelRewardsUrl = "https://join.fuelrewards.com/frconnect/registration?partSrcId=stopandshop";
     public static final String expectedSearchURL = "https://stopandshop.com/";
     public static final String expectedFlexApplicationUrl = "https://join.fuelrewards.com/frconnect/registration?partSrcId=stopandshop";
+    public static final String expectedPrivateBrandsURL = "https://stopandshop.com/own-brands/#/own-brands";
+    public static final String expectedOurStoryURL = "https://stopandshop.com/about/";
+    public static final String expectedFreshStoriesURL = "https://stopandshop.com/fresh-stories/";
     //Registration Data
     public static final String firstName = "Tetia";
     public static final String lastName = "Tets";
@@ -28,4 +31,8 @@ public class Data {
 
     //Search
     public static final String searchHomePage = "//a[@href='/advanced-search']";
+
+    //Footer Links
+    public static final String expectedTitlePrivateBrands ="Private Brands";
+    public static final String expectedTitleFreshStories ="Fresh from the local farm to our store";
 }
