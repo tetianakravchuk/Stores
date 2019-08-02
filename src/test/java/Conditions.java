@@ -1,6 +1,5 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -129,7 +128,7 @@ public class Conditions extends BaseUI {
                 System.out.println(actualTitle);
             }
         }
-        }
+    }
 
     @Test
     public void largeNavUtility() throws InterruptedException {
@@ -215,7 +214,7 @@ public class Conditions extends BaseUI {
 
             }
             if (info.contains("Private Brands")) {
-               actualTitle = driver.findElement(By.xpath("//a[@id='own-brands-link-qa']")).getText();
+                actualTitle = driver.findElement(By.xpath("//a[@id='own-brands-link-qa']")).getText();
                 Assert.assertEquals(expectedTitlePrivateBrands, actualTitle);
                 System.out.println(actualTitle);
 
@@ -230,12 +229,14 @@ public class Conditions extends BaseUI {
 
 
             }
+
             if (info.contains("Store Departments")) {
-                WebDriverWait wait = new WebDriverWait(driver, 10);
-                actualTitle = driver.findElement(By.xpath("//*[@id=\"main-content\"]/section/div/div/div/h1")).getText();
+                Thread.sleep(3000);
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
                 actualStoreDepartmentsURL = driver.getCurrentUrl();
                 Assert.assertEquals(Data.expectedTitleStoreDepartments, actualTitle);
                 System.out.println(actualTitle);
+                Thread.sleep(3000);
                 Assert.assertEquals( actualStoreDepartmentsURL, Data.expectedStoreDepartmentsURL);
                 driver.findElement(Locators.STORE_DEPARTMENTS_IMAGE).isDisplayed();
             }
@@ -261,7 +262,7 @@ public class Conditions extends BaseUI {
         }}
 
 
-            @Test
+    @Test
     public void test10() {
         List<Integer> crunchifyList1 = new ArrayList<>(Arrays.asList(5, 10, 19));
         System.out.println(crunchifyList1.size());
