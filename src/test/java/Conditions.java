@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -189,6 +190,9 @@ public class Conditions extends BaseUI {
         String actualPrivateBrandsURL;
         String exploreOwnBrandsButton;
         String actualFreshStoriesURL;
+        String actualStoreDepartmentsURL;
+        String actualNewsMediaURL;
+        String actualCommunityURL;
 
 
         List<WebElement> links = driver.findElements(Locators.LINK_HOME);
@@ -217,7 +221,7 @@ public class Conditions extends BaseUI {
 
             }
             if (info.contains("Fresh from the local farm to our store")) {
-                actualTitle = driver.findElement((Locators.TITLE_OF_FRESH_STORIES_PAGE)).getText();
+                actualTitle = driver.findElement((Locators.TITLE_OF_PAGE)).getText();
                 actualFreshStoriesURL = driver.getCurrentUrl();
                 Assert.assertEquals(Data.expectedTitleFreshStories, actualTitle);
                 System.out.println(actualTitle);
@@ -227,21 +231,31 @@ public class Conditions extends BaseUI {
 
             }
             if (info.contains("Store Departments")) {
-                actualTitle = driver.findElement(By.xpath("//a[@id='store-departments-link-qa']")).getText();
-                Assert.assertEquals(expectedTitleStoreDepartments, actualTitle);
+                WebDriverWait wait = new WebDriverWait(driver, 10);
+                actualTitle = driver.findElement(By.xpath("//*[@id=\"main-content\"]/section/div/div/div/h1")).getText();
+                actualStoreDepartmentsURL = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedTitleStoreDepartments, actualTitle);
                 System.out.println(actualTitle);
-
+                Assert.assertEquals( actualStoreDepartmentsURL, Data.expectedStoreDepartmentsURL);
+                driver.findElement(Locators.STORE_DEPARTMENTS_IMAGE).isDisplayed();
             }
+
             if (info.contains("News & Media")) {
-                actualTitle = driver.findElement(By.xpath("//a[@id='news-link-qa']")).getText();
-                Assert.assertEquals(expectedTitleNewsAndMedia, actualTitle);
+                actualTitle = driver.findElement((Locators.TITLE_OF_PAGE)).getText();
+                actualNewsMediaURL = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedTitleNewsMedia, actualTitle);
                 System.out.println(actualTitle);
+                Assert.assertEquals( actualNewsMediaURL, Data.expectedNewsMediaURL);
+
 
             }
             if (info.contains("Community")) {
-                actualTitle = driver.findElement(By.xpath("//a[@id='community-link-qa']")).getText();
-                Assert.assertEquals(expectedTitleCommunity, actualTitle);
+                actualTitle = driver.findElement((Locators.TITLE_OF_PAGE)).getText();
+                actualCommunityURL = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedTitleCommunity, actualTitle);
                 System.out.println(actualTitle);
+                Assert.assertEquals( actualCommunityURL, Data.expectedCommunityURL);
+                driver.findElement(Locators.COMMUNITY_IMAGE).isDisplayed();
 
             }
         }}

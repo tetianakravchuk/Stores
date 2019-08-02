@@ -15,6 +15,9 @@ public class Data {
     public static final String expectedPrivateBrandsURL = "https://stopandshop.com/own-brands/#/own-brands";
     public static final String expectedOurStoryURL = "https://stopandshop.com/about/";
     public static final String expectedFreshStoriesURL = "https://stopandshop.com/fresh-stories/";
+    public static final String expectedStoreDepartmentsURL = "https://stopandshop.com/store-departments/";
+    public static final String expectedNewsMediaURL = "https://stopandshop.com/news-media/";
+    public static final String expectedCommunityURL = "https://stopandshop.com/community/";
     //Registration Data
     public static final String firstName = "Tetia";
     public static final String lastName = "Tets";
@@ -35,4 +38,7 @@ public class Data {
     //Footer Links
     public static final String expectedTitlePrivateBrands ="Private Brands";
     public static final String expectedTitleFreshStories ="Fresh from the local farm to our store";
+    public static final String expectedTitleStoreDepartments ="Store Departments";
+    public static final String expectedTitleNewsMedia ="News & Media";
+    public static final String expectedTitleCommunity ="Community";
 }

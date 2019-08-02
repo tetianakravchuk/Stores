@@ -32,6 +32,7 @@ public class Locators {
     public static final By SEARCH_HOME_PAGE = By.xpath("//a[@id='utility-nav-search']");
     //Titles
     public static final By TITLE_OF_PAGE = By.xpath("//h1");
+    public static final By TITLE_OF_STORE_DEPARTMENTS = By.xpath("//div[@class ='l-content-strip__row']");
     public static final By TITLE_OF_FRESH_STORIES_PAGE = By.xpath("//h1[@class='c-page-intro-tile__title h-bold h-black']");
     //Footer Links
     public static final By ABOUT_STOP_AND_SHOP_LINK_LIST = (By.xpath("(//ul[@class='c-list--no-bullets'])[5]//li"));
@@ -39,6 +40,9 @@ public class Locators {
 
 
     public static final By OWN_BRANDS_EXPLORE_BUTTON =(By.xpath("//a[@href=\"#/own-brands\"]"));
-    public static final By FRESH_STORIES_IMAGE =(By.xpath("//img[@src=\"https://stopandshop.com/site/14/0/0/2/f6d08190-50de-49f8-9478-1a1f83ffc33d.jpg\"]"));
+    public static final By FRESH_STORIES_IMAGE =(By.xpath("//img[@src=https://stopandshop.com/site/14/0/0/2/f6d08190-50de-49f8-9478-1a1f83ffc33d.jpg]"));
+    public static final By STORE_DEPARTMENTS_IMAGE =(By.xpath("//img[@src= https://stopandshop.com/site/61/0/0/4/16e7c144-4a22-47bc-93cb-fc0a5ae334de.jpg]"));
+    public static final By NEWS_MEDIA_IMAGE =(By.xpath("//img[@src=https://stopandshop.com/site/61/0/0/4/16e7c144-4a22-47bc-93cb-fc0a5ae334de.jpg]"));
+    public static final By COMMUNITY_IMAGE =(By.xpath("//img[@src=https://stopandshop.com/site/80/0/0/0/cf11fd8c-318c-4563-9780-86fe73bb6431.jpg]"));
 
 }
