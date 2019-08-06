@@ -178,23 +178,17 @@ public class Conditions extends BaseUI {
 
     @Test
     public void footerLinks() throws InterruptedException {
-        String expectedTitleOurStory = "Our Story";
+        String expectedTitleOurStory = "About Us";
         String expectedTitlePrivateBrands = "Private Brands";
-        String expectedTitleFreshStories = "Fresh Stories";
-        String expectedTitleStoreDepartments = "Store Departments";
-        String expectedTitleNewsAndMedia = "News & Media";
-        String expectedTitleCommunity = "Community";
         String actualTitle;
         String info;
-        String actualPrivateBrandsURL;
-        String exploreOwnBrandsButton;
         String actualFreshStoriesURL;
         String actualStoreDepartmentsURL;
         String actualNewsMediaURL;
         String actualCommunityURL;
 
 
-        List<WebElement> links = driver.findElements(Locators.LINK_HOME);
+        List<WebElement> links = driver.findElements(By.xpath("//div[@class ='c-footer__top is-visible-xlarge']//ul//li//a[@class = 'c-footer__section-link a-link']"));
         System.out.println(links.size());
 
         for (int i = 0; i < links.size(); i++) {
@@ -202,9 +196,6 @@ public class Conditions extends BaseUI {
             System.out.println(info);
             //Thread.sleep(3000);
             links.get(i).click();
-            driver.get(Data.HomeURL);
-
-            links = driver.findElements(Locators.ABOUT_STOP_AND_SHOP_LINK_LIST);
 
             if (info.contains("Our Story")) {
                 actualTitle = driver.findElement((Locators.TITLE_OF_PAGE)).getText();
@@ -238,7 +229,7 @@ public class Conditions extends BaseUI {
                 System.out.println(actualTitle);
                 Thread.sleep(3000);
                 Assert.assertEquals( actualStoreDepartmentsURL, Data.expectedStoreDepartmentsURL);
-                driver.findElement(Locators.STORE_DEPARTMENTS_IMAGE).isDisplayed();
+                driver.findElement(By.xpath("//img[@src= 'https://stopandshop.com/site/61/0/0/4/16e7c144-4a22-47bc-93cb-fc0a5ae334de.jpg']")).isDisplayed();
             }
 
             if (info.contains("News & Media")) {
@@ -256,9 +247,14 @@ public class Conditions extends BaseUI {
                 Assert.assertEquals(Data.expectedTitleCommunity, actualTitle);
                 System.out.println(actualTitle);
                 Assert.assertEquals( actualCommunityURL, Data.expectedCommunityURL);
-                driver.findElement(Locators.COMMUNITY_IMAGE).isDisplayed();
+                driver.findElement(By.xpath("//img[@src='https://stopandshop.com/site/80/0/0/0/cf11fd8c-318c-4563-9780-86fe73bb6431.jpg']")).isDisplayed();
 
             }
+            driver.get(Data.HomeURL);
+
+            links = driver.findElements(By.xpath("//div[@class ='c-footer__top is-visible-xlarge']//ul//li//a[@class = 'c-footer__section-link a-link']"));
+
+
         }}
 
 
