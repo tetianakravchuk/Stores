@@ -1,8 +1,11 @@
 import org.openqa.selenium.By;
 
 public class Locators {
+
+    //Home Page
+
     //Primary Navigation List
-    public static final By LINK_PHARMACY = By.xpath("//a[@id='utility-nav-pharmacy']");
+    public By LINK_PHARMACY = By.xpath("//a[@id='utility-nav-pharmacy']");
     public static final By LINK_HOME = By.xpath("//img[@id='logo']");
     public static final By LINK_SAVINGS = By.xpath("//a[@id ='primary-nav-savings']");
     public static final By LINK_DIGITAL_COUPONS = By.xpath("//li[@class =\"c-buckets__item\"]//a[@href=\"/coupons-weekly-circular/digital-coupons\"]");
@@ -45,4 +48,6 @@ public class Locators {
     public static final By NEWS_MEDIA_IMAGE =(By.xpath("//img[@src=https://stopandshop.com/site/61/0/0/4/16e7c144-4a22-47bc-93cb-fc0a5ae334de.jpg]"));
     public static final By COMMUNITY_IMAGE =(By.xpath("//img[@src=https://stopandshop.com/site/80/0/0/0/cf11fd8c-318c-4563-9780-86fe73bb6431.jpg]"));
 
+    //Career
+    public static final By CAREER_LINK = (By.xpath("//div[@class='c-footer__top is-visible-xlarge']//a[@href='/our-careers']"));
 }

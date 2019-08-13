@@ -32,8 +32,8 @@ public class MainPage extends BaseUI {
 //    @Test
 //
 //    public void testHomePage() {
-//        driver.findElement(LINK_HOME).click();
-//        //driver.getCurrentUrl();
+//
+//        //drivedriver.findElement(LINK_HOME).click();r.getCurrentUrl();
 //        currentHomeUrl = driver.getCurrentUrl();
 //        System.out.println(currentHomeUrl);
 //        Assert.assertEquals(currentHomeUrl, expectedHomeUrl);

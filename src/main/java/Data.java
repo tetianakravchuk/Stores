@@ -18,6 +18,12 @@ public class Data {
     public static final String expectedStoreDepartmentsURL = "https://stopandshop.com/store-departments/";
     public static final String expectedNewsMediaURL = "https://stopandshop.com/news-media/";
     public static final String expectedCommunityURL = "https://stopandshop.com/community/";
+
+    //Career page
+    public static final String expectedCareerURL ="https://stopandshop.com/our-careers/";
+
+
+
     //Registration Data
     public static final String firstName = "Tetia";
     public static final String lastName = "Tets";
@@ -31,6 +37,8 @@ public class Data {
 
     //Home page
     public static final String HomeURL = "https://stopandshop.com/";
+    public static final String DigitalCouponsURL ="https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available ";
+    public static final String WeeklyCircularURL ="https://stopandshop.com/coupons-weekly-circular/weekly-circular/";
 
     //Search
     public static final String searchHomePage = "//a[@href='/advanced-search']";

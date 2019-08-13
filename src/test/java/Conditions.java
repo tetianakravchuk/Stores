@@ -9,6 +9,7 @@ import java.util.List;
 
 
 public class Conditions extends BaseUI {
+
 //    @Test
 //    public void test() {
 //        String fruit1 = "Kiwi";
@@ -195,7 +196,8 @@ public class Conditions extends BaseUI {
             info = links.get(i).getText();
             System.out.println(info);
             //Thread.sleep(3000);
-            links.get(i).click();
+            //links.get(i).click();
+            //main.ajaxClick(driver.findElement(By.xpath("//hq")));
 
             if (info.contains("Our Story")) {
                 actualTitle = driver.findElement((Locators.TITLE_OF_PAGE)).getText();
@@ -288,17 +290,33 @@ public class Conditions extends BaseUI {
             if (element.contains("Me")) {
                 System.out.println(phrase);
             }
-            if(element.contains("Orange")){
+            if (element.contains("Orange")) {
                 System.out.println("Orange");
             }
-            if(element.contains("Watermelon")){
+            if (element.contains("Watermelon")) {
                 System.out.println("Watermelon");
-            }else{
+            } else {
                 System.out.println("Bad loop");
             }
-        }
+        }}
 
+
+    @Test
+    public void test22(){
+      //  baseActions.performClick(Locators.SEARCH_HOME_PAGE);
 
     }
+
+
 }
+
+
+
+
+  // @Test
+   // public void test12(){
+    // BaseActions.performClick(Locators.LINK_PHARMACY, index);
+
+   // }
+
 
