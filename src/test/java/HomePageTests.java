@@ -25,6 +25,7 @@ public class HomePageTests extends BaseUI {
         homePage.clickShopGiftCards();
         homePage.clickShopFloral();
         homePage.clickShopPrivateBrands();
+        //driver.navigate().to(mainUrl);
 
     }
 }

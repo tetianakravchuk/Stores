@@ -22,6 +22,9 @@ public class HomePage extends BaseActions {
             currentHomeURL = driver.getCurrentUrl();
 
     }
+      public void goBackClick(){
+          driver.navigate().back();
+      }
     public String  clickSavingsDigitalCoupons(){
             driver.findElement(Locators.LINK_SAVINGS).click();
             driver.findElement(Locators.LINK_DIGITAL_COUPONS).click();
@@ -52,7 +55,9 @@ public class HomePage extends BaseActions {
         driver.findElement(Locators.LINK_SHOP_PEAPOD_DELIVERY).click();
         currentShopPeapodDeliveryURL = driver.getCurrentUrl();
         System.out.println(currentDigitalCouponsURL);
+        driver.navigate().back();
         return currentDigitalCouponsURL;
+
     }
 
     public String clickShopCatering(){
