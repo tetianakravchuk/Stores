@@ -11,6 +11,18 @@ public class Locators {
     public static final By LINK_DIGITAL_COUPONS = By.xpath("//li[@class =\"c-buckets__item\"]//a[@href=\"/coupons-weekly-circular/digital-coupons\"]");
     public static final By LINK_WEEKLY_CIRCULAR = By.xpath("//li[@class = 'c-buckets__item']//a[@href='/coupons-weekly-circular/weekly-circular']");
     public static final By LINK_REWARDS_AND_PROGRAM = By.xpath("//li[@class =\"c-buckets__item\"]//a[@href=\"/member-benefits\"]");
+
+    //Shop Menu
+    public static final By LINK_SHOP_PEAPOD_DELIVERY = By.xpath("//a[@href='https://peapod.com/?c3ch=OpCo+Websites&c3nid=stopandshop.com']");
+    public static final By LINK_SHOP_CATERING = By.xpath("//li[@class='c-buckets__item']//a[@href=/shop-online/catering']");
+    public static final By LINK_SHOP_GIFT_CARDS = By.xpath("//ul[@class ='c-buckets__list']//a[@href='/shop-online/giftcard']");
+    public static final By LINK_SHOP_FLORAL = By.xpath("//ul[@class ='c-buckets__list']//a[@href='/floral']");
+    public static final By LINK_SHOP_PRIVATE_BRANDS = By.xpath("//ul[@class ='c-buckets__list']//a[@href='/own-brands']");
+    public static final By LINK_SHOP = By.xpath("//ul[@class='c-primary-nav__list']//a[@id ='primary-nav-shop']");
+
+
+
+
     //Registration
     public static final By BUTTON_REGISTER = By.xpath("//p[@class=\"c-login__content\"]//a[@href=\"/sign-up\"]");
     public static final By BUTTON_REGISTRATION_NEEDS_CARD = By.xpath("//a[@href=\"/sign-up/registration\"]");

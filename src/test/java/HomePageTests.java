@@ -10,13 +10,21 @@ public class HomePageTests extends BaseUI {
     }
 
     @Test
-    public void clickOnSavingsMenu(){
+    public void checkSavingsMenu(){
         homePage.navigateToHomePage();
-        String clickSavingsDigitalCoupons = homePage.clickSavingsDigitalCoupons();
-        //Assert.assertEquals(clickSavingsDigitalCoupons, Data.DigitalCouponsURL);
-        driver.navigate().to(mainUrl);
-        String clickSavingsWeeklyCircular = homePage.clickSavingsWeeklyCircular();
-        //Assert.assertEquals(clickSavingsWeeklyCircular, Data.WeeklyCircularURL);
-        homePage.clickRewardsAndProgram();
+        homePage.clickSavingsDigitalCoupons();
+        //driver.navigate().to(mainUrl);
+        homePage.clickSavingsWeeklyCircular();
+        homePage.clickSavingsRewardsAndProgram();
+    }
+
+    @Test
+    public void CheckShopMenu(){
+        homePage.clickShopPeapodDelivery();
+        homePage.clickShopCatering();
+        homePage.clickShopGiftCards();
+        homePage.clickShopFloral();
+        homePage.clickShopPrivateBrands();
+
     }
 }
