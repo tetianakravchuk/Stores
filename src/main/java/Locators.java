@@ -20,6 +20,14 @@ public class Locators {
     public static final By LINK_SHOP_PRIVATE_BRANDS = By.xpath("//ul[@class ='c-buckets__list']//a[@href='/own-brands']");
     public static final By LINK_SHOP = By.xpath("//ul[@class='c-primary-nav__list']//a[@id ='primary-nav-shop']");
 
+    //Savory Menu
+    public static final By LINK_SAVORY = By.xpath("//a[@class='c-primary-nav__link h-light js-bucket-nav js-track-click']");
+    public static final By LINK_SAVORY_SAVORY = By.xpath("//a[@class='c-buckets__logo']");
+    public static final By LINK_SAVORY_BROWSE = By.xpath("//div[@class ='c-buckets__container']//a[@id='savory-browse']");
+    public static final By LINK_SAVORY_MAGAZINE = By.xpath("//li[@class ='c-buckets__item']//a[@href='https://recipecenter.stopandshop.com/savory/magazine']");
+    public static final By LINK_SAVORY_SEASONAL = By.xpath("//li[@class ='c-buckets__item']//a[@href='https://recipecenter.stopandshop.com/savory/seasonal-inspiration']");
+    public static final By LINK_SAVORY_FAVORITES = By.xpath("//li[@class ='c-buckets__item']//a[@href='https://recipecenter.stopandshop.com/savory/favorites']");
+
 
 
 
@@ -62,4 +70,16 @@ public class Locators {
 
     //Career
     public static final By CAREER_LINK = (By.xpath("//div[@class='c-footer__top is-visible-xlarge']//a[@href='/our-careers']"));
+
+
+    //Coupons
+
+    public static final By COUPONS_PLUS_CLICK = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[1]"));
+
+    //Sign in pop up window
+    public static final By USERNAME_SIGN_IN_POPUP_WINDOW =(By.xpath("//div[@id='menu-login-pane']//input[@class ='c-textfield__input']"));
+    public static final By PASSWORD_SIGN_IN_POPUP_WINDOW =(By.xpath("//div[@id='menu-login-pane']//input[@class ='c-password__input']"));
+    public static final By SIGN_IN_POPUP_WINDOW =(By.xpath("//input[@id='login-submit-button-modal']"));
+    public static final By CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON =(By.xpath("//div[@class='a-close-button']//button[@class='a-close-button']"));
+
 }

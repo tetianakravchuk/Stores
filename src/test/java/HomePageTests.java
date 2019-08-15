@@ -2,6 +2,8 @@ import org.testng.annotations.Test;
 
 public class HomePageTests extends BaseUI {
 
+    String currentShopPeapodDeliveryURL;
+
 
     @Test
     public void clickOnHomePageLogo(){
@@ -13,19 +15,31 @@ public class HomePageTests extends BaseUI {
     public void checkSavingsMenu(){
         homePage.navigateToHomePage();
         homePage.clickSavingsDigitalCoupons();
-        //driver.navigate().to(mainUrl);
         homePage.clickSavingsWeeklyCircular();
         homePage.clickSavingsRewardsAndProgram();
     }
 
     @Test
-    public void CheckShopMenu(){
+    public void checkShopMenu(){
         homePage.clickShopPeapodDelivery();
         homePage.clickShopCatering();
         homePage.clickShopGiftCards();
         homePage.clickShopFloral();
         homePage.clickShopPrivateBrands();
-        //driver.navigate().to(mainUrl);
 
+
+    }
+
+    @Test
+    public void checkSavoryMenu(){
+        //homePage.clickSavorySavory();
+       // homePage.clickSavoryBrowse();
+        //homePage.clickSavoryMagazine();
+        //homePage.clickSavoryFavorites();
+    }
+
+    @Test
+    public void signInCouponPopUpWindow(){
+        homePage.signInPopUpWindow();
     }
 }
