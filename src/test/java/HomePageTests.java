@@ -42,4 +42,20 @@ public class HomePageTests extends BaseUI {
     public void signInCouponPopUpWindow(){
         homePage.signInPopUpWindow();
     }
+
+    @Test
+    public void viewAllCouponsHomePage(){
+        homePage.signInPopUpWindow();
+        homePage.viewAllCouponsHomePage();
+    }
+
+    @Test
+    public void shopOnlinePeapod(){
+        homePage.peapodShopOnlineLink();
+    }
+
+    @Test
+    public void learnMorePeapod(){
+        homePage.learnMorePeapodLink();
+    }
 }

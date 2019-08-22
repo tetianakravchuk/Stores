@@ -47,8 +47,8 @@ public class Locators {
     public static final By NEXT_BUTTON_REGISTRATION = By.xpath("//a[@class=\"defer-link zeta a-link-blue\"]");
     //Sign In
     public static final By LINK_SIGN_IN_PRIMARY = By.xpath("//a[@href='/sign-in']");
-    public static final By TEXT_FIELD_USERNAME_PRIMARY = By.cssSelector("\"input#username\"");
-    public static final By TEXT_FIELD_PASSWORD_PRIMARY = By.cssSelector("\"input#password\"");
+    public static final By TEXT_FIELD_USERNAME_PRIMARY = By.cssSelector("input#username");
+    public static final By TEXT_FIELD_PASSWORD_PRIMARY = By.cssSelector("input#password");
     public static final By TEXT_FIELD_ZIP = By.xpath("//input[@name ='zip']");
     public static final By BUTTON_SIGN_IN_PRIMARY = By.cssSelector("//input[@id='login-submit-button']");
     //Search
@@ -74,12 +74,22 @@ public class Locators {
 
     //Coupons
 
-    public static final By COUPONS_PLUS_CLICK = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[1]"));
+    public static final By COUPONS_PLUS_CLICK_ONE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[1]"));
+    public static final By COUPONS_PLUS_CLICK_TWO= (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[2]"));
+    public static final By COUPONS_PLUS_CLICK_THREE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[3]"));
+    public static final By COUPONS_PLUS_CLICK_FOUR = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[4]"));
+    public static final By COUPONS_PLUS_CLICK_FIVE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[5]"));
+    public static final By VIEW_ALL_COUPONS_HOME_PAGE = (By.xpath("//div[@class='h-margin-bottom-medium']//a[@href='/coupons-weekly-circular/digital-coupons']"));
 
     //Sign in pop up window
-    public static final By USERNAME_SIGN_IN_POPUP_WINDOW =(By.xpath("//div[@id='menu-login-pane']//input[@class ='c-textfield__input']"));
-    public static final By PASSWORD_SIGN_IN_POPUP_WINDOW =(By.xpath("//div[@id='menu-login-pane']//input[@class ='c-password__input']"));
+    public static final By USERNAME_SIGN_IN_POPUP_WINDOW =(By.cssSelector("input#username-modal"));
+    public static final By PASSWORD_SIGN_IN_POPUP_WINDOW =(By.cssSelector("input#password-modal"));
     public static final By SIGN_IN_POPUP_WINDOW =(By.xpath("//input[@id='login-submit-button-modal']"));
     public static final By CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON =(By.xpath("//div[@class='a-close-button']//button[@class='a-close-button']"));
+
+    //Peapod
+    public static final By ORDER_TODAY = (By.xpath("(//a[@href='https://www.peapod.com/?001=10005&006=10977'])[1]"));
+    public static final By SHOP_ONLINE_WITH_PEAPOD = (By.xpath("(//a[@href='/shop-online/peapod/'])[3]"));
+    public static final By LEARN_MORE_PEAPOD = (By.xpath("(//a[@href='/shop-online/peapod/'])[2]"));
 
 }

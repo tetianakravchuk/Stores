@@ -4,6 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,6 +31,14 @@ public class BaseActions{ //created class for simple actions what is not connect
         wait.until(ExpectedConditions.elementToBeClickable(by));
         ajaxClick(driver.findElements(by).get(index));
     }
+
+
+     public void ajaxFocus(){
+         JavascriptExecutor jse = (JavascriptExecutor) driver;
+         jse.executeScript("document.getElementById('elementid').focus();");
+     }
+
+
     public void ajaxClick(WebElement element){
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true)", element);
         wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -82,5 +91,21 @@ public class BaseActions{ //created class for simple actions what is not connect
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
         actions.click().build().perform();
+    }
+
+    public void waitForLoad() {
+        ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+                    public Boolean apply(WebDriver driver) {
+                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+                    }
+                };
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(pageLoadCondition);
+    }
+
+    public void waitPageToLoad(){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("return document.readyState").toString().equals("complete");
+
     }
 }

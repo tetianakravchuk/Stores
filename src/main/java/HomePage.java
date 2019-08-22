@@ -30,6 +30,13 @@ public class HomePage extends BaseActions {
     String currentSavoryMagazineURL;
     String currentSavorySeasonalURL;
     String currentSavoryFavoritesURL;
+    //Coupons
+    String currentBrowseCouponsURL;
+    //Peapod
+    String currentOrderOnlineURL;
+    String currentShopOnlinePeapodURL;
+    String currentLearnMorePeapodURL;
+
 
     public void navigateToHomePage() {
         driver.findElement(Locators.LINK_HOME).click();
@@ -174,18 +181,67 @@ public class HomePage extends BaseActions {
 
     }
     public void clickCouponSignIn(){
-        driver.findElement(Locators.COUPONS_PLUS_CLICK);
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
 
     public void signInPopUpWindow(){
         clickCouponSignIn();
+
         driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
         driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
         driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
-        driver.findElement(Locators.CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON).click();
+        //driver.findElement(Locators.CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON).click();
         driver.navigate().refresh();
+    }
+
+    public void addCouponsPlusButton(){
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_TWO).click();
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_THREE).click();
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_FOUR).click();
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_FIVE).click();
+
+    }
+
+    public void viewAllCouponsHomePage(){
+       // driver.findElement(Locators.LINK_HOME).click();
+        driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        waitPageToLoad();
+        currentBrowseCouponsURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
+        System.out.println(currentBrowseCouponsURL);
+
+
+    }
+
+    public void orderTodayLink(){
+        driver.findElement(Locators.ORDER_TODAY).click();
+        currentOrderOnlineURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentOrderOnlineURL, Data.expectedOrderOnlineURL);
+        System.out.println(currentOrderOnlineURL);
+
+
+
+    }
+
+    public void peapodShopOnlineLink(){
+        driver.findElement(Locators.SHOP_ONLINE_WITH_PEAPOD).click();
+        currentShopOnlinePeapodURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentShopOnlinePeapodURL, Data.expectedShopOnlinePeapodURL);
+        System.out.println(currentShopOnlinePeapodURL);
+
+
+    }
+    public void learnMorePeapodLink(){
+        driver.findElement(Locators.SHOP_ONLINE_WITH_PEAPOD).click();
+        currentLearnMorePeapodURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentLearnMorePeapodURL, Data.expectedLearnMorePeapodURL);
+        System.out.println(currentLearnMorePeapodURL);
+
+
     }
 
 

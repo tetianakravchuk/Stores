@@ -67,6 +67,14 @@ public class Data {
     public static final String expectedTitleNewsMedia = "News & Media";
     public static final String expectedTitleCommunity = "Community";
 
+    //Coupons
+    public static final String expectedBrowseCouponsURL = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
+
+    //Peapod
+    public static final String expectedOrderOnlineURL = "https://www.peapod.com/?001=10005&006=10977&_ga=2.136449459.2003575308.1566511887-351899356.1566481475";
+    public static final String expectedShopOnlinePeapodURL = "https://stopandshop.com/shop-online/peapod/";
+    public static final String expectedLearnMorePeapodURL = "https://stopandshop.com/shop-online/peapod/";
+
 
 }
 
