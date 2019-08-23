@@ -71,6 +71,8 @@ public class Locators {
     //Career
     public static final By CAREER_LINK = (By.xpath("//div[@class='c-footer__top is-visible-xlarge']//a[@href='/our-careers']"));
 
+    //Private brands
+    public static final By EXPLORE_OUR_PRIVATE_BRANDS = (By.xpath("//div[@class='c-lower-banner__card']//a[@href='/own-brands']"));
 
     //Coupons
 
@@ -86,10 +88,44 @@ public class Locators {
     public static final By PASSWORD_SIGN_IN_POPUP_WINDOW =(By.cssSelector("input#password-modal"));
     public static final By SIGN_IN_POPUP_WINDOW =(By.xpath("//input[@id='login-submit-button-modal']"));
     public static final By CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON =(By.xpath("//div[@class='a-close-button']//button[@class='a-close-button']"));
+    public static final By SIGN_IN_UNLOCK_SAVINGS =(By.xpath("//a[@id ='sign-in-link']"));
 
     //Peapod
     public static final By ORDER_TODAY = (By.xpath("(//a[@href='https://www.peapod.com/?001=10005&006=10977'])[1]"));
     public static final By SHOP_ONLINE_WITH_PEAPOD = (By.xpath("(//a[@href='/shop-online/peapod/'])[3]"));
     public static final By LEARN_MORE_PEAPOD = (By.xpath("(//a[@href='/shop-online/peapod/'])[2]"));
 
+    //Footer Links
+    //About Stop & Shop
+    public static final By OUR_STORY =(By.xpath("(//a[@href='/about'])[2]"));
+    public static final By PRIVATE_BRANDS =(By.xpath("(//a[@href='/own-brands'])[5]"));
+    public static final By FRESH_STORIES =(By.xpath("(//a[@href='/fresh-stories'])[2]"));
+    public static final By STORE_DEPARTMENTS =(By.xpath("(//a[@href='/store-departments'])[2]"));
+    public static final By NEWS_AND_MEDIA =(By.xpath("(//a[@href='/news-media'])[2]"));
+    public static final By COMMUNITY =(By.xpath("(//a[@href='/community'])[2]"));
+    //Customer Support
+    public static final By CONTACT_US =(By.xpath("(//a[@href='/contact-us'])[2]"));
+    public static final By FAQ =(By.xpath("(//a[@href='/frequently-asked-questions'])[2]"));
+    public static final By COUPON_POLICY =(By.xpath("(//a[@href='/coupon-policy'])[2]"));
+    public static final By FOOD_SAFETY =(By.xpath("(//a[@href='/foodsafety'])[2]"));
+    public static final By PRODUCT_RECALLS =(By.xpath("(//a[@href='/recalls'])[2]"));
+    //Company
+    public static final By CAREERS =(By.xpath("(//a[@href='/our-careers'])[2]"));
+    public static final By ASSOCIATE_CONNECT =(By.xpath("(//a[@href='https://www.ssneac.com/'])[2]"));
+    public static final By NEW_SUPPLIERS =(By.xpath("(//a[@href='https://www.rangeme.com/aholddelhaizeusbrands'])[2]"));
+
+    // Social Network Links
+    public static final By FACEBOOK_HOMEPAGE_LINK = (By.xpath("//a[@href='https://www.facebook.com/StopandShop']"));
+    public static final By PINTEREST_HOMEPAGE_LINK = (By.xpath("//a[@href='https://www.pinterest.com/stopandshop/']"));
+    public static final By TWITTER_HOMEPAGE_LINK = (By.xpath("//a[@href='https://twitter.com/StopandShop']"));
+    public static final By YOUTUBE_HOMEPAGE_LINK = (By.xpath("//a[@href='https://www.youtube.com/channel/UCH7XvOfJPnwHkFK6jqpxt9g']"));
+    public static final By INSTAGRAM_HOMEPAGE_LINK = (By.xpath("//a[@href='https://www.instagram.com/stopandshop/']"));
+
+    //Terms and Conditions
+    public static final By TERMS_OF_USE =(By.xpath("//a[@href='/terms-of-use']"));
+    public static final By PRIVACY_POLICY =(By.xpath("//a[@href='/privacy-policy']"));
+
+    //Google Stores and App Store Links
+    public static final By APP_STORE =(By.xpath("(//a[@href='https://itunes.apple.com/us/app/stop-shop/id423801622?mt=8'])[2]"));
+    public static final By GOOGLE_PLAY =(By.xpath("//a[@href='https://market.android.com/details?id=com.stopandshop.mobile.droid'])[2]"));
 }

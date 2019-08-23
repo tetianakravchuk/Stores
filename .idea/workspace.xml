@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
@@ -64,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePageTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+            <state relative-caret-position="448">
+              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
               <folding>
                 <element signature="e#977#978#0" expanded="true" />
                 <element signature="e#1021#1022#0" expanded="true" />
@@ -73,6 +71,10 @@
                 <element signature="e#1235#1236#0" expanded="true" />
                 <element signature="e#1309#1310#0" expanded="true" />
                 <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2328#2329#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,12 +83,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="236" column="5" lean-forward="true" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
+            <state relative-caret-position="368">
+              <caret line="439" column="34" selection-start-line="439" selection-start-column="34" selection-end-line="439" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#2381#2382#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
+            <state relative-caret-position="1073">
+              <caret line="129" column="129" selection-start-line="129" selection-start-column="129" selection-end-line="129" selection-end-column="129" />
             </state>
           </provider>
         </entry>
@@ -125,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+            <state relative-caret-position="482">
+              <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -161,6 +162,8 @@
       <find>week</find>
       <find>rew</find>
       <find>clickSavingsWeeklyCircular</find>
+      <find>our</find>
+      <find>our</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/main/java/BaseActions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomePageTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HomePage.java" />
       </list>
     </option>
   </component>
@@ -290,12 +293,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTests.learnMorePeapod">
-    <configuration name="HomePageTests.checkSavoryMenu" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomePageTests.termsAndConditionTest">
+    <configuration name="HomePageTests.aboutStopAndShopLinks" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="checkSavoryMenu" />
+      <option name="METHOD_NAME" value="aboutStopAndShopLinks" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -303,11 +306,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.learnMorePeapod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTests.companyLinks" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="learnMorePeapod" />
+      <option name="METHOD_NAME" value="companyLinks" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -315,11 +318,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.shopOnlinePeapod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTests.customerSupportLinksTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="shopOnlinePeapod" />
+      <option name="METHOD_NAME" value="customerSupportLinksTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -327,11 +330,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.signInCouponPopUpWindow" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTests.socialNetworkLinksTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="signInCouponPopUpWindow" />
+      <option name="METHOD_NAME" value="socialNetworkLinksTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -339,11 +342,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.viewAllCouponsHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTests.termsAndConditionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="viewAllCouponsHomePage" />
+      <option name="METHOD_NAME" value="termsAndConditionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -353,11 +356,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTests.learnMorePeapod" />
-        <item itemvalue="TestNG.HomePageTests.shopOnlinePeapod" />
-        <item itemvalue="TestNG.HomePageTests.viewAllCouponsHomePage" />
-        <item itemvalue="TestNG.HomePageTests.signInCouponPopUpWindow" />
-        <item itemvalue="TestNG.HomePageTests.checkSavoryMenu" />
+        <item itemvalue="TestNG.HomePageTests.termsAndConditionTest" />
+        <item itemvalue="TestNG.HomePageTests.socialNetworkLinksTest" />
+        <item itemvalue="TestNG.HomePageTests.companyLinks" />
+        <item itemvalue="TestNG.HomePageTests.customerSupportLinksTest" />
+        <item itemvalue="TestNG.HomePageTests.aboutStopAndShopLinks" />
       </list>
     </recent_temporary>
   </component>
@@ -375,35 +378,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 17h 39m 11s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_explorePrivateBrandsLink - 2019.08.23 at 09h 43m 19s.xml">
+      <configuration name="HomePageTests.explorePrivateBrandsLink" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 17h 39m 23s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_explorePrivateBrandsLink - 2019.08.23 at 10h 47m 13s.xml">
+      <configuration name="HomePageTests.explorePrivateBrandsLink" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 17h 40m 45s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_aboutStopAndShopLinks - 2019.08.23 at 15h 48m 49s.xml">
+      <configuration name="HomePageTests.aboutStopAndShopLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 17h 41m 09s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_aboutStopAndShopLinks - 2019.08.23 at 15h 51m 30s.xml">
+      <configuration name="HomePageTests.aboutStopAndShopLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 17h 58m 04s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_customerSupportLinksTest - 2019.08.23 at 16h 02m 53s.xml">
+      <configuration name="HomePageTests.customerSupportLinksTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 18h 08m 41s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_customerSupportLinksTest - 2019.08.23 at 16h 03m 40s.xml">
+      <configuration name="HomePageTests.customerSupportLinksTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 18h 10m 09s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_customerSupportLinksTest - 2019.08.23 at 16h 04m 30s.xml">
+      <configuration name="HomePageTests.customerSupportLinksTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_signInCouponPopUpWindow - 2019.08.22 at 18h 10m 23s.xml">
-      <configuration name="HomePageTests.signInCouponPopUpWindow" configurationId="TestNG" />
+    <history-entry file="HomePageTests_customerSupportLinksTest - 2019.08.23 at 16h 05m 24s.xml">
+      <configuration name="HomePageTests.customerSupportLinksTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_signInCouponPopUpWindow - 2019.08.22 at 18h 11m 46s.xml">
-      <configuration name="HomePageTests.signInCouponPopUpWindow" configurationId="TestNG" />
+    <history-entry file="HomePageTests_companyLinks - 2019.08.23 at 16h 14m 05s.xml">
+      <configuration name="HomePageTests.companyLinks" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePageTests_viewAllCouponsHomePage - 2019.08.22 at 18h 12m 04s.xml">
-      <configuration name="HomePageTests.viewAllCouponsHomePage" configurationId="TestNG" />
+    <history-entry file="HomePageTests_companyLinks - 2019.08.23 at 16h 14m 48s.xml">
+      <configuration name="HomePageTests.companyLinks" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -419,7 +422,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50145775" side_tool="true" weight="0.24865282" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09339975" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26027396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23287672" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,34 +581,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
+        <state relative-caret-position="1073">
+          <caret line="129" column="129" selection-start-line="129" selection-start-column="129" selection-end-line="129" selection-end-column="129" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        <state relative-caret-position="482">
+          <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="236" column="5" lean-forward="true" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
+        <state relative-caret-position="368">
+          <caret line="439" column="34" selection-start-line="439" selection-start-column="34" selection-end-line="439" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        <state relative-caret-position="448">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
           <folding>
             <element signature="e#977#978#0" expanded="true" />
             <element signature="e#1021#1022#0" expanded="true" />
@@ -613,6 +615,10 @@
             <element signature="e#1235#1236#0" expanded="true" />
             <element signature="e#1309#1310#0" expanded="true" />
             <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
           </folding>
         </state>
       </provider>

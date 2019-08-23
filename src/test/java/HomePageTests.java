@@ -58,4 +58,53 @@ public class HomePageTests extends BaseUI {
     public void learnMorePeapod(){
         homePage.learnMorePeapodLink();
     }
+
+    @Test
+    public void signInUnlockSavingsTest(){
+        homePage.signInUnlockExclusiveSavingWindow();
+    }
+
+    @Test
+    public void explorePrivateBrandsLinkTest(){
+        homePage.explorePrivateBrandLink();
+
+    }
+    @Test
+    public void aboutStopAndShopLinksTest(){
+        homePage.ourStoryLink();
+        homePage.privateBrandsLink();
+        homePage.freshStoriesLink();
+        homePage.storeDepartmentsLink();
+        homePage.newsAndMediaLink();
+        homePage.communityLink();
+
+    }
+
+    @Test
+    public void customerSupportLinksTest(){
+        homePage.contactUsLink();
+        homePage.fAQLink();
+        homePage.couponPolicyLink();
+        homePage.foodSafetyLink();
+        homePage.productRecallsLink();
+
+    }
+
+    @Test
+    public void companyLinks(){
+        homePage.careersLink();
+        homePage.associateConnectLink();
+        homePage.newsAndMediaLink();
+
+    }
+
+    @Test
+    public void socialNetworkLinksTest(){
+        homePage.socialNetworkLinks();
+    }
+
+    @Test
+    public void termsAndConditionTest(){
+        homePage.termsLink();
+    }
 }
