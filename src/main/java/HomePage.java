@@ -245,6 +245,7 @@ public class HomePage extends BaseActions {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         waitPageToLoad();
         currentBrowseCouponsURL = driver.getCurrentUrl();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
         System.out.println(currentBrowseCouponsURL);
 

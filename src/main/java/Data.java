@@ -64,6 +64,7 @@ public class Data {
 
     //Coupons
     public static final String expectedBrowseCouponsURL = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
+    public static final String expectedViewAllCouponsHomePageURL = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
 
     //Peapod
     public static final String expectedOrderOnlineURL = "https://www.peapod.com/?001=10005&006=10977&_ga=2.136449459.2003575308.1566511887-351899356.1566481475";
@@ -108,6 +109,11 @@ public class Data {
     //App store and Google Play Links
     public static final String expectedAppStoreURL="https://apps.apple.com/us/app/stop-shop/id423801622";
     public static final String expectedGooglePlayURL="https://play.google.com/store/apps/details?id=com.stopandshop.mobile.droid";
+
+    //Available coupons page
+    public static final String expectedBrowseCoupons = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
+    public static final String expectedLoadedCoupons = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/loaded";
+    public static final String expectedAvailableCouponsOrderOnline = "https://www.peapod.com/?999=shopcoupon&token=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2In0.dttSVAFUMpLu6toJ4jdxXH-_PAlr4WuI3JpjvmH32pWv93wUJW4f2C86BvQV7mIBU3Hw7NAMCclbDWISLJltdTRgVFFVBZDuY5ZSKTL0wCWmYHIG02VgFQp1lGJ5QxIRDoECXxLygjGNVh2ZqY3-amNCgANIVg8z-TvZs42Izdi2OMAUTzlt2dI93x7TtLovkUwrOQiqwge3aeWTGink17-GfiaLNR8QxEoZUGRCpuzPX2xjF7nLnc4CCFzJc9IpgBqyhzWizmgHopfVtKSkTXpNBO1k6Fmg8ZFwm8WtUqc6WnAh8WSPc3FoG9k84goh8Q5LKvbWDlj_OyaNkDt8oA.Cj2oAO6Ec1wxHrUX.xR8vW1YxROtkR6XAEODiWYuPRf0b_HzP1y3BhLVwc7k4ISxt7omLDWcMLUWFbfOR_l5cPLh_fImFDtup6aSv2X-lWsUCatHh_FvrCu0WFwqP1VEFdzIjX992LsbTvq2TJ_eMLtYNUW2TmIf4PY4hoidda8kc5izDisziFt0DJuBK2ecSzjvJv2lqD_TLEMVbA16pQXPTZGNJzBV6a-BnbA4yxwdAI4eVo7wR6UhxGeq4wjqRLYQ4TLb3fLlROn7-Lx9BiTMAkPIpzzKV4D2hliDN5F_evCkYpCsiSpL4IamD__cgn2xppewr00Iigzmww6lbZUfWFZ-PllS3ddf2-3IY3PkqvxM5q6FgLauFRLtezFAGSXdGe5jSTWmxO1411BdisWm9iPr6sVEKX8saNrxSJnEsVQWH5RSgEEagZsIEqwpoo1rQUVCKFV9uGNintOzFPTXE4AizekobdPMxeH3I9-M-PL1sLKx49cvE8Mm7r-9PfBGMDL367Vz3Tz2fkkwUWPLTtF4xfBsl2x3k5QVcIu6oltoZqkTYygO90ccLqcE3Ro_K9OB9TAPKFYCe6Z7v3SwAkWm3XX5yH-NhbEzYJh1v7J3_N06ahpXl7aA74CVGB3_8TwSh71XPlyPek9NYiZlrR7PYkA-D2xtSatwNbDfhXPXxQFRgPFla7kiemgQkV1Gz0AkpXPkjAvhtWh3UG6MZ_I9HAD_8gnC_rtxZkmTszhUXwwhEi9xP5zaaORZOAqXQ2UAHEa-Fr0XiuVvJxPzlMS387jjf739XX33F5kp64rAYYX4x8x1Whv4VKWaIs8C9nVgWjSlJZrz2Cju1u-jvl6gsbn5_J_YAUMe9cwcLT_idi9UHSfZyjZK6Jt0Ke1NHlFSYph_CpUJrB3Up8X1F9X_r3NPCCwgJu0_TdfAbBd2QUmQfVsia6qJ5a6_cnzmVzj9aarVB1Sgo2aQHeaUAnzBuY2izK6P1nEmX5sI06AwvM6hErwq3e0UVgQqh7ho_a-ZMoZeh0cKodvDNQYhT-FseocBZz6cfMdY_bEYHw-vry_ckvRscDbtKnSE3CyMszvIv5iKfagyJ92NIN0WOWA.tXnT7gnVgoNl-RameTEtGg";
 
 
 

@@ -75,7 +75,7 @@ public class Locators {
     public static final By EXPLORE_OUR_PRIVATE_BRANDS = (By.xpath("//div[@class='c-lower-banner__card']//a[@href='/own-brands']"));
 
     //Coupons
-
+    public static final By COUPONS_LOAD_TO_CARD = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[1]"));
     public static final By COUPONS_PLUS_CLICK_ONE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[1]"));
     public static final By COUPONS_PLUS_CLICK_TWO= (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[2]"));
     public static final By COUPONS_PLUS_CLICK_THREE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[3]"));
@@ -128,4 +128,38 @@ public class Locators {
     //Google Stores and App Store Links
     public static final By APP_STORE =(By.xpath("(//a[@href='https://itunes.apple.com/us/app/stop-shop/id423801622?mt=8'])[2]"));
     public static final By GOOGLE_PLAY =(By.xpath("(//a[@href='https://market.android.com/details?id=com.stopandshop.mobile.droid'])[2]"));
+
+    //Coupons page
+    public static final By LOADED_COUPONS_TAB = ((By.xpath("//div[@class ='c-tabs__item']//div[@class ='c-tabs__text h-bold h-center']")));
+    public static final By PRINT_LOADED_COUPONS = ((By.xpath("")));
+    public static final By ORDER_ONLINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class='l-coupon-utils__print']//a[@href='https://www.peapod.com']")));
+    public static final By BROWSE_COUPONS_LOADED_COUPONS = ((By.xpath("//a[@href='#/available']")));
+    public static final By ADD_COUPONS_BROWSE_COUPONS_TAB = ((By.xpath("//a[@href='#/available']")));
+    public static final By REFINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='c-sort-filter c-sort-filter--min-300 is-open']")));
+    public static final By SEARCH_COUPONS_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='c-search c-search--coupons']")));
+    public static final By SEARCH_ARROW_AVAILABLE_COUPONS = ((By.xpath("//button[@id='coupon-search-input-button']")));
+    public static final By REMOVE_ALL_FILTERS_AVAILABLE_COUPONS = ((By.xpath("//button[@id='coupon-search-input-button']")));
+    public static final By SORT_REDEEM_BY_DATE = ((By.xpath("(//div[@class='c-radio'])[1]")));
+    public static final By SORT_VALUE_LOW_TO_HIGH = ((By.xpath("(//div[@class='c-radio'])[2]")));
+    public static final By SORT_VALUE_HIGH_TO_LOW = ((By.xpath("(//div[@class='c-radio'])[3]")));
+    public static final By SORT_BRAND = ((By.xpath("(//div[@class='c-radio'])[4]")));
+    public static final By SORT_RECOMMENDED = ((By.xpath("(//div[@class='c-radio'])[4]")));
+    public static final By FILTER_BABY_AND_CHILDCARE = ((By.xpath("(//div[@class='c-checkbox'])[1]")));
+    public static final By FILTER_BAKERY = ((By.xpath("(//div[@class='c-checkbox'])[2]")));
+    public static final By FILTER_BEVERAGES = ((By.xpath("(//div[@class='c-checkbox'])[3]")));
+    public static final By FILTER_BREAKFAST = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_CONDIMENTS_AND_SAUCES = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_DAIRY = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_DELI = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_ETHNIC_PRODUCTS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_FROZEN_FOOD = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_GENERAL_MERCHANDISE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_GRAINS_PASTA_BEANS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_HEALTH_WELLNESS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_HOUSEHOLD = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_MEAT_SEAFOOD = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_PERSONAL_CARE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_PET_CARE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_PRODUCE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_SNACKS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
 }

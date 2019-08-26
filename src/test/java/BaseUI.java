@@ -21,6 +21,7 @@ public class BaseUI {
     //BaseActions baseActions;
     CareersPage careersPage;
     HomePage homePage;
+    CouponsPage couponsPage;
     SoftAssert softAssert = new SoftAssert();
 
     @BeforeMethod
