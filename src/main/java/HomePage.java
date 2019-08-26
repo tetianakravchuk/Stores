@@ -471,5 +471,18 @@ public class HomePage extends BaseActions {
     }
 
 
+    public void appStoresLinks(){
+        driver.findElement(Locators.APP_STORE).click();
+        currentAppStoreURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentAppStoreURL, Data.expectedAppStoreURL);
+        System.out.println(currentAppStoreURL);
+        goBackClick();
+
+        driver.findElement(Locators.GOOGLE_PLAY).click();
+        currentGooglePlayURL = driver.getCurrentUrl();
+        Assert.assertEquals(currentGooglePlayURL, Data.expectedGooglePlayURL);
+        System.out.println(currentGooglePlayURL);
+        goBackClick();
+}
 
 }

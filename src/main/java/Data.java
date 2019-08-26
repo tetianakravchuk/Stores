@@ -106,8 +106,8 @@ public class Data {
     public static final String expectedPrivacyPolicyURL ="https://stopandshop.com/privacy-policy/";
 
     //App store and Google Play Links
-    public static final String expectedAppStoreURL="";
-    public static final String expectedGooglePlayURL="";
+    public static final String expectedAppStoreURL="https://apps.apple.com/us/app/stop-shop/id423801622";
+    public static final String expectedGooglePlayURL="https://play.google.com/store/apps/details?id=com.stopandshop.mobile.droid";
 
 
 

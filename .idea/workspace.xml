@@ -4,7 +4,6 @@
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -62,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HomePageTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+            <state relative-caret-position="413">
+              <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
               <folding>
                 <element signature="e#977#978#0" expanded="true" />
                 <element signature="e#1021#1022#0" expanded="true" />
@@ -75,6 +74,8 @@
                 <element signature="e#1424#1425#0" expanded="true" />
                 <element signature="e#2305#2306#0" expanded="true" />
                 <element signature="e#2328#2329#0" expanded="true" />
+                <element signature="e#2402#2403#0" expanded="true" />
+                <element signature="e#2425#2426#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,11 +84,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="439" column="34" selection-start-line="439" selection-start-column="34" selection-end-line="439" selection-end-column="34" />
+            <state relative-caret-position="303">
+              <caret line="473" column="30" selection-start-line="473" selection-start-column="16" selection-end-line="473" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2381#2382#0" expanded="true" />
+                <element signature="e#2385#2386#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="129" column="129" selection-start-line="129" selection-start-column="129" selection-end-line="129" selection-end-column="129" />
+            <state relative-caret-position="538">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
             </state>
           </provider>
         </entry>
@@ -126,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
+            <state relative-caret-position="458">
+              <caret line="108" column="50" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -189,8 +190,8 @@
         <option value="$PROJECT_DIR$/src/main/java/BaseActions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HomePageTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HomePageTests.java" />
       </list>
     </option>
   </component>
@@ -201,11 +202,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1461" />
-    <option name="y" value="-293" />
-    <option name="width" value="1709" />
-    <option name="height" value="895" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -293,12 +293,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTests.termsAndConditionTest">
-    <configuration name="HomePageTests.aboutStopAndShopLinks" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomePageTests.apStoresTest">
+    <configuration name="HomePageTests.apStoresTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="aboutStopAndShopLinks" />
+      <option name="METHOD_NAME" value="apStoresTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -356,11 +356,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTests.apStoresTest" />
         <item itemvalue="TestNG.HomePageTests.termsAndConditionTest" />
         <item itemvalue="TestNG.HomePageTests.socialNetworkLinksTest" />
         <item itemvalue="TestNG.HomePageTests.companyLinks" />
         <item itemvalue="TestNG.HomePageTests.customerSupportLinksTest" />
-        <item itemvalue="TestNG.HomePageTests.aboutStopAndShopLinks" />
       </list>
     </recent_temporary>
   </component>
@@ -378,12 +378,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomePageTests_explorePrivateBrandsLink - 2019.08.23 at 09h 43m 19s.xml">
-      <configuration name="HomePageTests.explorePrivateBrandsLink" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HomePageTests_explorePrivateBrandsLink - 2019.08.23 at 10h 47m 13s.xml">
-      <configuration name="HomePageTests.explorePrivateBrandsLink" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HomePageTests_aboutStopAndShopLinks - 2019.08.23 at 15h 48m 49s.xml">
       <configuration name="HomePageTests.aboutStopAndShopLinks" configurationId="TestNG" />
     </history-entry>
@@ -408,12 +402,18 @@
     <history-entry file="HomePageTests_companyLinks - 2019.08.23 at 16h 14m 48s.xml">
       <configuration name="HomePageTests.companyLinks" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="HomePageTests_socialNetworkLinksTest - 2019.08.23 at 16h 49m 29s.xml">
+      <configuration name="HomePageTests.socialNetworkLinksTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HomePageTests_termsAndConditionTest - 2019.08.23 at 16h 50m 39s.xml">
+      <configuration name="HomePageTests.termsAndConditionTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1461" y="-293" width="1709" height="895" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="801" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49854228" visible="true" weight="0.19676065" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49854228" visible="true" weight="0.23462088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,7 +422,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50145775" side_tool="true" weight="0.24865282" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26027396" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.042313118" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23287672" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,33 +581,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="129" column="129" selection-start-line="129" selection-start-column="129" selection-end-line="129" selection-end-column="129" />
+        <state relative-caret-position="538">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
+        <state relative-caret-position="458">
+          <caret line="108" column="50" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="439" column="34" selection-start-line="439" selection-start-column="34" selection-end-line="439" selection-end-column="34" />
+        <state relative-caret-position="303">
+          <caret line="473" column="30" selection-start-line="473" selection-start-column="16" selection-end-line="473" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2385#2386#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HomePageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        <state relative-caret-position="413">
+          <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
           <folding>
             <element signature="e#977#978#0" expanded="true" />
             <element signature="e#1021#1022#0" expanded="true" />
@@ -619,6 +619,8 @@
             <element signature="e#1424#1425#0" expanded="true" />
             <element signature="e#2305#2306#0" expanded="true" />
             <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2402#2403#0" expanded="true" />
+            <element signature="e#2425#2426#0" expanded="true" />
           </folding>
         </state>
       </provider>

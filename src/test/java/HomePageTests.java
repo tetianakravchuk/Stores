@@ -107,4 +107,10 @@ public class HomePageTests extends BaseUI {
     public void termsAndConditionTest(){
         homePage.termsLink();
     }
+
+    @Test
+    public void apStoresTest(){
+        homePage.appStoresLinks();
+
+    }
 }

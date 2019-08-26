@@ -127,5 +127,5 @@ public class Locators {
 
     //Google Stores and App Store Links
     public static final By APP_STORE =(By.xpath("(//a[@href='https://itunes.apple.com/us/app/stop-shop/id423801622?mt=8'])[2]"));
-    public static final By GOOGLE_PLAY =(By.xpath("//a[@href='https://market.android.com/details?id=com.stopandshop.mobile.droid'])[2]"));
+    public static final By GOOGLE_PLAY =(By.xpath("(//a[@href='https://market.android.com/details?id=com.stopandshop.mobile.droid'])[2]"));
 }
