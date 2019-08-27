@@ -75,13 +75,20 @@ public class Locators {
     public static final By EXPLORE_OUR_PRIVATE_BRANDS = (By.xpath("//div[@class='c-lower-banner__card']//a[@href='/own-brands']"));
 
     //Coupons
-    public static final By COUPONS_LOAD_TO_CARD = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[1]"));
+    public static final By COUPONS_LOAD_TO_CARD_ONE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[1]"));
+    public static final By COUPONS_LOAD_TO_CARD_TWO = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[2]"));
+    public static final By COUPONS_LOAD_TO_CARD_THREE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[3]"));
     public static final By COUPONS_PLUS_CLICK_ONE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[1]"));
     public static final By COUPONS_PLUS_CLICK_TWO= (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[2]"));
     public static final By COUPONS_PLUS_CLICK_THREE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[3]"));
     public static final By COUPONS_PLUS_CLICK_FOUR = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[4]"));
     public static final By COUPONS_PLUS_CLICK_FIVE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[5]"));
     public static final By VIEW_ALL_COUPONS_HOME_PAGE = (By.xpath("//div[@class='h-margin-bottom-medium']//a[@href='/coupons-weekly-circular/digital-coupons']"));
+    //Please Confirm
+    public static final By CONFIRM_WINDOW_CLOSE = ((By.xpath("(//div[@class='reveal-overlay h-z-index-modals']//button[@class='a-close-button'])[2]")));
+    public static final By CONFIRM_WINDOW = ((By.xpath("(//div[@class='l-modal__container'])[7]")));
+    public static final By YES_AUTOMATICALLY_ADD = (By.xpath("(//button[@class ='a-button -red js-list-preference'])[2]"));
+    public static final By NO_THANKS = (By.xpath("(//button[@class ='a-button -red js-list-preference'])[1]"));
 
     //Sign in pop up window
     public static final By USERNAME_SIGN_IN_POPUP_WINDOW =(By.cssSelector("input#username-modal"));
@@ -134,7 +141,7 @@ public class Locators {
     public static final By PRINT_LOADED_COUPONS = ((By.xpath("")));
     public static final By ORDER_ONLINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class='l-coupon-utils__print']//a[@href='https://www.peapod.com']")));
     public static final By BROWSE_COUPONS_LOADED_COUPONS = ((By.xpath("//a[@href='#/available']")));
-    public static final By ADD_COUPONS_BROWSE_COUPONS_TAB = ((By.xpath("//a[@href='#/available']")));
+    public static final By BROWSE_COUPONS_TAB = ((By.xpath("//a[@href='#/available']")));
     public static final By REFINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='c-sort-filter c-sort-filter--min-300 is-open']")));
     public static final By SEARCH_COUPONS_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='c-search c-search--coupons']")));
     public static final By SEARCH_ARROW_AVAILABLE_COUPONS = ((By.xpath("//button[@id='coupon-search-input-button']")));

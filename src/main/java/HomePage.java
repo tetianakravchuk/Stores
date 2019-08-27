@@ -242,13 +242,17 @@ public class HomePage extends BaseActions {
     public void viewAllCouponsHomePage(){
         // driver.findElement(Locators.LINK_HOME).click();
         driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        waitPageToLoad();
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        waitForLoad();
         currentBrowseCouponsURL = driver.getCurrentUrl();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
         System.out.println(currentBrowseCouponsURL);
 
+
+    }
+    public void addCoupons(){
+        driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+        driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
 
     }
 
