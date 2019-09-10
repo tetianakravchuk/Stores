@@ -94,6 +94,14 @@ public class CouponsPage extends BaseActions {
 
     }
 
+   public void addAllCoupons(){
+        List<WebElement> allElements = driver.findElements(Locators.COUPONS_LOAD_TO_CARD_THREE);
+        for (WebElement coupons:allElements){
+            driver.findElement(Locators.COUPONS_LOAD_TO_CARD_THREE).click();
+        }
+
+   }
+
     //public void addCoupons(){
       //  driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
        // driver.findElement(Locators.COUPONS_PLUS_CLICK_TWO).click();
@@ -129,15 +137,16 @@ public class CouponsPage extends BaseActions {
     public void clickIfVisible(){
         //driver.get("https://stopandshop.com/");
         if(driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).isDisplayed()){
+
             System.out.println("Element is Present");
             driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
-            driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
-            driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
-            driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
-            driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
-            driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+            //driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+            //driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
+            //driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
+            //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            //driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
+            //driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
+            //driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
         }
         else{
 
@@ -145,7 +154,8 @@ public class CouponsPage extends BaseActions {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
             driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
-            driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();}
+            driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+            driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();}
 
 
         }

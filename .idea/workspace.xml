@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CouponsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CouponsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CouponsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CouponsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -31,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CouponsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+            <state relative-caret-position="226">
+              <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BaseActions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1716">
@@ -55,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+            <state relative-caret-position="240">
+              <caret line="81" column="179" selection-start-line="81" selection-start-column="179" selection-end-line="81" selection-end-column="179" />
             </state>
           </provider>
         </entry>
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6500">
-              <caret line="218" column="16" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+            <state relative-caret-position="56">
+              <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CouponsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="260">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="58" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -155,8 +161,8 @@
         <option value="$PROJECT_DIR$/src/test/java/HomePageTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CouponsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CouponsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/main/java/CouponsPage.java" />
       </list>
@@ -261,12 +267,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CouponsTest.addCouponsTest">
+  <component name="RunManager" selected="TestNG.CouponsTest.clickAllCoupons">
     <configuration name="CouponsTest.addCouponsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CouponsTest" />
       <option name="METHOD_NAME" value="addCouponsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CouponsTest.clickAllCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CouponsTest" />
+      <option name="METHOD_NAME" value="clickAllCoupons" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -298,18 +316,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTests.termsAndConditionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomePageTests" />
-      <option name="METHOD_NAME" value="termsAndConditionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HomePageTests.viewAllCouponsHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -324,11 +330,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CouponsTest.clickAllCoupons" />
         <item itemvalue="TestNG.CouponsTest.addCouponsTest" />
         <item itemvalue="TestNG.HomePageTests.viewAllCouponsHomePage" />
         <item itemvalue="TestNG.HomePageTests.signInCouponPopUpWindow" />
         <item itemvalue="TestNG.HomePageTests.apStoresTest" />
-        <item itemvalue="TestNG.HomePageTests.termsAndConditionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -346,42 +352,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CouponsTest_addCouponsTest - 2019.08.28 at 21h 08m 02s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 04m 25s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.08.28 at 21h 08m 25s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 05m 11s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 14h 00m 25s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 05m 51s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 14h 57m 20s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 06m 43s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 15h 00m 10s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 07m 44s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 15h 00m 48s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 08m 27s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 15h 07m 39s.xml">
+    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 16h 11m 28s.xml">
       <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 15h 08m 04s.xml">
-      <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
+    <history-entry file="CouponsTest_clickAllCoupons - 2019.09.10 at 17h 01m 35s.xml">
+      <configuration name="CouponsTest.clickAllCoupons" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 15h 54m 03s.xml">
-      <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
+    <history-entry file="CouponsTest_clickAllCoupons - 2019.09.10 at 17h 04m 26s.xml">
+      <configuration name="CouponsTest.clickAllCoupons" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CouponsTest_addCouponsTest - 2019.09.10 at 15h 54m 26s.xml">
-      <configuration name="CouponsTest.addCouponsTest" configurationId="TestNG" />
+    <history-entry file="CouponsTest_clickAllCoupons - 2019.09.10 at 17h 05m 13s.xml">
+      <configuration name="CouponsTest.clickAllCoupons" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1636" y="-145" width="1564" height="866" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49854228" visible="true" weight="0.22667542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49854228" visible="true" weight="0.20959264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -390,7 +396,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50145775" side_tool="true" weight="0.24865282" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22739018" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32041344" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23287672" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -540,51 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1176">
           <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6500">
-          <caret line="218" column="16" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CouponsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CouponsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -598,6 +563,47 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="81" column="179" selection-start-line="81" selection-start-column="179" selection-end-line="81" selection-end-column="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CouponsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CouponsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>

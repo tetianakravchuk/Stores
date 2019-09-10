@@ -78,6 +78,8 @@ public class Locators {
     public static final By COUPONS_LOAD_TO_CARD_ONE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[1]"));
     public static final By COUPONS_LOAD_TO_CARD_TWO = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[2]"));
     public static final By COUPONS_LOAD_TO_CARD_THREE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[3]"));
+    public static final By COUPONS_LOAD_TO_CARD_FOUR = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[4]"));
+    public static final By COUPONS_LOAD_TO_CARD_FIVE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[5]"));
     public static final By COUPONS_PLUS_CLICK_ONE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[1]"));
     public static final By COUPONS_PLUS_CLICK_TWO= (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[2]"));
     public static final By COUPONS_PLUS_CLICK_THREE = (By.xpath("(//button[@class ='c-coupon-small__button js-coremetrics-location js-load-to-card'])[3]"));
