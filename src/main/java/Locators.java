@@ -87,7 +87,7 @@ public class Locators {
     //Please Confirm
     public static final By CONFIRM_WINDOW_CLOSE = ((By.xpath("(//div[@class='reveal-overlay h-z-index-modals']//button[@class='a-close-button'])[2]")));
     public static final By CONFIRM_WINDOW = ((By.xpath("(//div[@class='l-modal__container'])[7]")));
-    public static final By YES_AUTOMATICALLY_ADD = (By.xpath("(//button[@class ='a-button -red js-list-preference'])[2]"));
+    public static final By YES_AUTOMATICALLY_ADD = (By.xpath("//button[@class ='a-button -red js-list-preference']"));
     public static final By NO_THANKS = (By.xpath("(//button[@class ='a-button -red js-list-preference'])[1]"));
 
     //Sign in pop up window
@@ -169,4 +169,7 @@ public class Locators {
     public static final By FILTER_PET_CARE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
     public static final By FILTER_PRODUCE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
     public static final By FILTER_SNACKS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+
+    //Automatically add loaded coupons
+
 }

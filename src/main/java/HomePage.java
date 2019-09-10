@@ -1,4 +1,6 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -242,16 +244,20 @@ public class HomePage extends BaseActions {
     public void viewAllCouponsHomePage(){
         // driver.findElement(Locators.LINK_HOME).click();
         driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        waitForLoad();
-        currentBrowseCouponsURL = driver.getCurrentUrl();
-        Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
-        System.out.println(currentBrowseCouponsURL);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //waitPageToLoad();
+        //currentBrowseCouponsURL = driver.getCurrentUrl();
+        //Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
+        //System.out.println(currentBrowseCouponsURL);
 
 
     }
     public void addCoupons(){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement coupons = wait.until(ExpectedConditions.elementToBeClickable(Locators.COUPONS_LOAD_TO_CARD_ONE));
         driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+        //ajaxClick(Locators.COUPONS_PLUS_CLICK_ONE);
+        //driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
         driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
 
     }
@@ -489,5 +495,11 @@ public class HomePage extends BaseActions {
         System.out.println(currentGooglePlayURL);
         goBackClick();
 }
+
+    public void confirmAutoAddCoupons(){
+        //driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+        driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
+    }
+
 
 }

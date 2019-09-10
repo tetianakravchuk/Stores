@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -12,7 +13,7 @@ public class CouponsPage extends BaseActions {
     }
 
 
-  String currentBrowseCouponsURL;
+    String currentBrowseCouponsURL;
 
 
 
@@ -38,15 +39,6 @@ public class CouponsPage extends BaseActions {
         driver.navigate().refresh();
     }
 
-    public void viewAllCouponsHomePage(){
-        driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        waitForLoad();
-        //currentBrowseCouponsURL = driver.getCurrentUrl();
-        //Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
-        //System.out.println(currentBrowseCouponsURL);
-
-    }
 
 
     public void loadCoupons(){
@@ -100,11 +92,70 @@ public class CouponsPage extends BaseActions {
         //Identify the individual links for each of the options in the simulated select
         List<WebElement> optionLinks = driver.findElements((By.xpath("//div[@class ='c-coupon__action']")));
 
+    }
+
+    //public void addCoupons(){
+      //  driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
+       // driver.findElement(Locators.COUPONS_PLUS_CLICK_TWO).click();
+
+    //}
+
+    public void confirmAutoAddCoupons(){
+        driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+        driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
+    }
+
+    public void addCoupons(){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement coupons = wait.until(ExpectedConditions.elementToBeClickable(Locators.COUPONS_LOAD_TO_CARD_ONE));
+        driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+        //ajaxClick(Locators.COUPONS_PLUS_CLICK_ONE);
+        driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
+        driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
+
+    }
+    public void viewAllCouponsHomePage(){
+        // driver.findElement(Locators.LINK_HOME).click();
+        driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //waitPageToLoad();
+        //currentBrowseCouponsURL = driver.getCurrentUrl();
+        //Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
+        //System.out.println(currentBrowseCouponsURL);
+
+
+    }
+
+    public void clickIfVisible(){
+        //driver.get("https://stopandshop.com/");
+        if(driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).isDisplayed()){
+            System.out.println("Element is Present");
+            driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+            driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+            driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
+            driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
+            driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
+            driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+        }
+        else{
+
+            driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
+            driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
+            driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();}
+
+
         }
 
-        public void addCoupons(){
-        driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
-        driver.findElement(Locators.COUPONS_PLUS_CLICK_TWO).click();
+        public void firstTimeAddCouponsYes(){
 
         }
-}
+        public void firstTimeAddCouponsNo(){
+
+    }
+        }
+
+

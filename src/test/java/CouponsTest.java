@@ -10,8 +10,13 @@ public class CouponsTest extends BaseUI {
     @Test
     public void addCouponsTest(){
         homePage.signInPopUpWindow();
-        homePage.viewAllCouponsHomePage();
-        homePage.addCoupons();
+        couponsPage.clickIfVisible();
+        couponsPage.viewAllCouponsHomePage();
+
+        couponsPage.addCoupons();
+        //homePage.confirmAutoAddCoupons();
+
+
 
     }
 }
