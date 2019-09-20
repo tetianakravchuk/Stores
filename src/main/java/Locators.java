@@ -75,6 +75,9 @@ public class Locators {
     public static final By EXPLORE_OUR_PRIVATE_BRANDS = (By.xpath("//div[@class='c-lower-banner__card']//a[@href='/own-brands']"));
 
     //Coupons
+    public static final By PLEASE_CHECK_BACK_LATER = (By.xpath("(//p[@class='h-bold'])[1]"));
+    public static  final By VIEW_MY_LOADED_COUPONS = (By.xpath("//a[@href='/coupons-weekly-circular/digital-coupons/#/loaded']"));
+    public static final By COUPONS_LOAD_TO_CARD = (By.xpath("//div[@class='c-coupon__action']"));
     public static final By COUPONS_LOAD_TO_CARD_ONE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[1]"));
     public static final By COUPONS_LOAD_TO_CARD_TWO = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[2]"));
     public static final By COUPONS_LOAD_TO_CARD_THREE = (By.xpath("(//button[@class ='c-coupon__button a-button -red -grows -full-width js-load-to-card js-coremetrics-location'])[3]"));

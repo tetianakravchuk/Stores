@@ -1,5 +1,5 @@
 public class Data {
-    public static final String email = "cla@mailinator.com";
+    public static final String email = "mari@mailinator.com";
     public static final String password = "Quincy2019";
     public static final String expectedHomeUrl = "https://stopandshop.com/";
     public static final String expectedPharmacyUrl = "https://stopandshop.com/sns-rx/";
@@ -63,6 +63,7 @@ public class Data {
     public static final String expectedTitleCommunity = "Community";
 
     //Coupons
+    public static final String expectedAllCouponsLoadedURL = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/loaded";
     public static final String expectedBrowseCouponsURL = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
     public static final String expectedViewAllCouponsHomePageURL = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
 

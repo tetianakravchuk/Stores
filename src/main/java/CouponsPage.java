@@ -3,7 +3,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +16,7 @@ public class CouponsPage extends BaseActions {
 
 
     String currentBrowseCouponsURL;
+    String currentAllCouponsLoadedURL;
 
 
 
@@ -94,17 +97,109 @@ public class CouponsPage extends BaseActions {
 
     }
 
-   public void addAllCoupons(){
-        List<WebElement> allElements = driver.findElements(Locators.COUPONS_LOAD_TO_CARD_THREE);
-        for (WebElement coupons:allElements){
-            driver.findElement(Locators.COUPONS_LOAD_TO_CARD_THREE).click();
+    public void titleAllCoupons(){
+        // Here, the code below will select all rows matching the given XPath.
+        List<WebElement> allElements = driver.findElements(Locators.COUPONS_LOAD_TO_CARD);
+
+        // print the total number of elements
+        System.out.println("Number of elements:" +allElements.size());
+
+        // Now using Iterator we will iterate all elements
+        Iterator<WebElement> iter = allElements.iterator();
+
+        // this will check whether list has some element or not
+        while (iter.hasNext()){
+
+            //Iterate one by one
+            WebElement item = iter.next();
+
+            //Get the text
+            String label = item.getText();
+            //Print the text
+            System.out.println("Row label is " + label);
+
         }
 
-   }
+        // for (int i = 1; i<=allElements.size(); i=i+1);{
+        //}
+
+    }
+
+    public void signIgAllCouponsVisible(){
+        driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
+        driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
+        driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
+        driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+        driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+        if(driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).isDisplayed()){
+            driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+
+
+        } else {
+            driver.navigate().refresh();
+            driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
+            driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
+            driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
+            driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+        }
+    }
+    public void viewLoadedCouponsHomepage(){
+        if (driver.findElement(Locators.VIEW_MY_LOADED_COUPONS).isDisplayed()) {
+            System.out.println("All Coupons are loaded");
+            driver.findElement(Locators.VIEW_MY_LOADED_COUPONS).click();
+            currentAllCouponsLoadedURL = driver.getCurrentUrl();
+            System.out.println(currentAllCouponsLoadedURL);
+            Assert.assertEquals(currentAllCouponsLoadedURL, Data.expectedAllCouponsLoadedURL);
+            System.out.println(Data.expectedAllCouponsLoadedURL);
+
+
+        }
+        else {
+            driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+            System.out.println("Not all coupons are loaded");
+        }
+
+
+    }
+    public void addAllCoupons(){
+        List<WebElement> elements = driver.findElements((Locators.COUPONS_LOAD_TO_CARD));
+        for (WebElement tempEle : elements) {
+            tempEle.click();
+        }
+
+
+    }
+    public void addEveryCoupon() {
+        int elementsCount= driver.findElements((Locators.COUPONS_LOAD_TO_CARD)).size();
+        System.out.println("Amount of elements: " + elementsCount);
+
+        List<WebElement> elements = driver.findElements((Locators.COUPONS_LOAD_TO_CARD));
+
+        for (int x = 0; x < elementsCount; x++) {
+            WebElement client = elements.get(x);
+            client.click();
+
+            if (elements.equals(null)) {
+                System.out.println("No Coupons found");
+            }
+
+           else
+            {
+                continue;
+
+            //driver.close();
+            //break;
+           // driver.quit();
+
+    }}
+
+    }
+
+
 
     //public void addCoupons(){
-      //  driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
-       // driver.findElement(Locators.COUPONS_PLUS_CLICK_TWO).click();
+    //  driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
+    // driver.findElement(Locators.COUPONS_PLUS_CLICK_TWO).click();
 
     //}
 
@@ -158,14 +253,14 @@ public class CouponsPage extends BaseActions {
             driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();}
 
 
-        }
+    }
 
-        public void firstTimeAddCouponsYes(){
-
-        }
-        public void firstTimeAddCouponsNo(){
+    public void firstTimeAddCouponsYes(){
 
     }
-        }
+    public void firstTimeAddCouponsNo(){
+
+    }
+}
 
 

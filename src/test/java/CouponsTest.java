@@ -23,6 +23,13 @@ public class CouponsTest extends BaseUI {
         homePage.signInPopUpWindow();
         couponsPage.clickIfVisible();
         couponsPage.addCoupons();
-        couponsPage.addAllCoupons();
+        couponsPage.titleAllCoupons();
+        //couponsPage.addAllCoupons();
+        couponsPage.addEveryCoupon();
+    }
+    @Test
+    public void allCouponsLoaded(){
+        couponsPage.signIgAllCouponsVisible();
+        couponsPage.viewLoadedCouponsHomepage();
     }
 }
