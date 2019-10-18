@@ -1,14 +1,12 @@
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.math.BigInteger;
 
 
 public class BaseActions{ //created class for simple actions what is not connected to the website
@@ -19,10 +17,25 @@ public class BaseActions{ //created class for simple actions what is not connect
         this.wait = wait;
 
     }
+
+    public static String generateRandomString(){
+        return new BigInteger(120, new SecureRandom()).toString(32);
+    }
     public static String generateNewNumbers(String name, int lengh){
         return name + RandomStringUtils.random(lengh, "test133");
     }
 
+    public void selectItemDropDownRandomOption(By locator, String dropDownName) {
+        try {
+            WebElement element = driver.findElement(locator);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            Select select = new Select(driver.findElement(locator));
+            select.selectByIndex((int) (Math.random() * (select.getOptions().size() - 1)) + 1);
+            System.out.println(dropDownName + ";" + select.getFirstSelectedOption().getText());
+        } catch (NoSuchElementException e) {
+
+        }
+    }
 
 
 
@@ -107,5 +120,24 @@ public class BaseActions{ //created class for simple actions what is not connect
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("return document.readyState").toString().equals("complete");
 
+    }
+    public void javaWait(int ms){
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+    public void javaWaitSec(int sec){
+        try {
+            Thread.sleep(sec*1000);
+        }
+        catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void ajaxSendKeys(WebElement element, String text){
+        ((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute('value', '" + text + "')",element);
     }
 }

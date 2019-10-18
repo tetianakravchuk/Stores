@@ -125,15 +125,16 @@ public class CouponsPage extends BaseActions {
 
     }
 
-    public void signIgAllCouponsVisible(){
+    public void signIn(){
         driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();
         driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
         driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
-        driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
-        driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
+        driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();}
+
+        public void viewAllCoupons(){
+        //driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
         if(driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).isDisplayed()){
             driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
-
 
         } else {
             driver.navigate().refresh();

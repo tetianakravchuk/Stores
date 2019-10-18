@@ -29,7 +29,7 @@ public class CouponsTest extends BaseUI {
     }
     @Test
     public void allCouponsLoaded(){
-        couponsPage.signIgAllCouponsVisible();
-        couponsPage.viewLoadedCouponsHomepage();
+        couponsPage.signIn();
+        couponsPage.viewAllCoupons();
     }
 }
