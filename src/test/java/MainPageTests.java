@@ -110,6 +110,9 @@ public class MainPageTests extends BaseUI {
 //        element.click();
 //
 //        }
-
-
+           @Test
+        public void testLinkOnMainPage(){
+        mainPage.checkLinksOnWebPage("//a", "href");
+        //a  href
+}
 }
