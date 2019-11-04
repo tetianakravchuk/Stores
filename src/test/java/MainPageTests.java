@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainPage extends BaseUI {
+public class MainPageTests extends BaseUI {
 
     String currentHomeUrl;
     String currentUrlPharmacy;
@@ -19,7 +19,7 @@ public class MainPage extends BaseUI {
 
     int indexLinkSignIn = 0;
 
-    public MainPage(WebDriver driver, WebDriverWait wait) {
+    public MainPageTests(WebDriver driver, WebDriverWait wait) {
 
     }
 
@@ -50,6 +50,11 @@ public class MainPage extends BaseUI {
         driver.findElement(Locators.TEXT_FIELD_PASSWORD_PRIMARY).sendKeys(Data.password);
         driver.findElement(Locators.BUTTON_SIGN_IN_PRIMARY).click();
         //driver.findElement(BUTTON_REGISTRATION).click();
+
+    }
+    @Test
+    public void testLinksOnMainPage(){
+        mainPage.checkLinksOnWebPage("//a", "href");
 
     }
 

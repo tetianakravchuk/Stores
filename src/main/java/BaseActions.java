@@ -7,6 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.math.BigInteger;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.security.SecureRandom;
+import java.util.List;
 
 
 public class BaseActions{ //created class for simple actions what is not connected to the website
@@ -19,10 +23,11 @@ public class BaseActions{ //created class for simple actions what is not connect
     }
 
     public static String generateRandomString(){
+
         return new BigInteger(120, new SecureRandom()).toString(32);
     }
-    public static String generateNewNumbers(String name, int lengh){
-        return name + RandomStringUtils.random(lengh, "test133");
+    public static String generateNewNumbers(String name, int length){
+        return name + RandomStringUtils.random(length, "test133");
     }
 
     public void selectItemDropDownRandomOption(By locator, String dropDownName) {
@@ -34,6 +39,34 @@ public class BaseActions{ //created class for simple actions what is not connect
             System.out.println(dropDownName + ";" + select.getFirstSelectedOption().getText());
         } catch (NoSuchElementException e) {
 
+        }
+    }
+    public void checkLinksOnWebPage(String typeElement, String attribute){
+        List<WebElement> links = driver.findElements(By.xpath(typeElement));
+        System.out.println("I start taking attributes on page");
+        for (int i = 0; i < links.size(); i++) {
+            WebElement ele = links.get(i);
+            String url = ele.getAttribute(attribute);
+            verifyLinkActive(url);
+
+
+        }
+        System.out.println("Total links are " + links.size());
+    }
+
+    public void verifyLinkActive(String linkUrl){
+        try {
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+            httpURLConnect.setConnectTimeout(3000);
+            httpURLConnect.connect();
+            if (httpURLConnect.getResponseCode() == 200) {
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+            } else if (httpURLConnect.getResponseCode() >= 400 && httpURLConnect.getResponseCode() <= 504) {
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + " - " + httpURLConnect.getResponseMessage());
+            }
+        } catch (Exception e){
+            e.printStackTrace();
         }
     }
 
