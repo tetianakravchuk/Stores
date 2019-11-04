@@ -52,11 +52,7 @@ public class MainPageTests extends BaseUI {
         //driver.findElement(BUTTON_REGISTRATION).click();
 
     }
-    @Test
-    public void testLinksOnMainPage(){
-        mainPage.checkLinksOnWebPage("//a", "href");
 
-    }
 
 
 //    @Test
@@ -110,9 +106,13 @@ public class MainPageTests extends BaseUI {
 //        element.click();
 //
 //        }
-           @Test
+       @Test
         public void testLinkOnMainPage(){
         mainPage.checkLinksOnWebPage("//a", "href");
+        mainPage.checkLinksOnWebPage("//imj", "src");
+        driver.findElement(Locators.LINK_SAVINGS);
+        mainPage.checkLinksOnWebPage("//a", "href");
+        mainPage.checkLinksOnWebPage("//imj", "src");
         //a  href
 }
 }
