@@ -177,4 +177,7 @@ public class Locators {
 
     //Automatically add loaded coupons
 
+    //Catering Page
+    public static final By DROPDOWN_CHOOSE_THE_STATE = (());
+
 }

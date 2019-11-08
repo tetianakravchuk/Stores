@@ -1,4 +1,3 @@
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,11 +16,11 @@ public class MainPageTests extends BaseUI {
 
 
 
-    int indexLinkSignIn = 0;
+   // int indexLinkSignIn = 0;
 
-    public MainPageTests(WebDriver driver, WebDriverWait wait) {
+   // public MainPageTests(WebDriver driver, WebDriverWait wait) {
 
-    }
+    //}
 
 //    String name = "Al";
 //    By BUTTON_SUBMIT = By.xpath("//a");
@@ -115,4 +114,9 @@ public class MainPageTests extends BaseUI {
         mainPage.checkLinksOnWebPage("//imj", "src");
         //a  href
 }
-}
+
+    @Test
+    public void selectRandomDropDownList(){
+        driver.findElement(Locators.LINK_SAVINGS);
+
+}}

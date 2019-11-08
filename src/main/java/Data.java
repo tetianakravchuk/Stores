@@ -2,6 +2,7 @@ public class Data {
     public static final String email = "mari@mailinator.com";
     public static final String password = "Quincy2019";
     public static final String expectedHomeUrl = "https://stopandshop.com/";
+    ;
     public static final String expectedPharmacyUrl = "https://stopandshop.com/sns-rx/";
     public static final String expectedRegistrationUrl = "https://stopandshop.com/sign-up/";
     public static final String expectedDigitalCoupons = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";
