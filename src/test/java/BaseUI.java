@@ -23,6 +23,7 @@ public class BaseUI {
     HomePage homePage;
     CouponsPage couponsPage;
     SoftAssert softAssert = new SoftAssert();
+    CateringPage cateringPage;
 
     @BeforeMethod
     @Parameters("browser")

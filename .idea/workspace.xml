@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CateringPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CateringTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CateringPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CateringPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +77,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTests.selectRandomDropDownList">
-    <configuration name="CouponsTest.allCouponsLoaded" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CateringTests.selectRandomDropDownList">
+    <configuration name="CateringTests.selectRandomDropDownList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CouponsTest" />
-      <option name="METHOD_NAME" value="allCouponsLoaded" />
+      <option name="MAIN_CLASS_NAME" value="CateringTests" />
+      <option name="METHOD_NAME" value="selectRandomDropDownList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -90,11 +90,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CouponsTest.clickAllCoupons" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CouponsTest.allCouponsLoaded" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CouponsTest" />
-      <option name="METHOD_NAME" value="clickAllCoupons" />
+      <option name="METHOD_NAME" value="allCouponsLoaded" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CateringTests.selectRandomDropDownList" />
         <item itemvalue="TestNG.MainPageTests.selectRandomDropDownList" />
         <item itemvalue="TestNG.MainPageTests.testLinkOnMainPage" />
         <item itemvalue="TestNG.MainPageTests.testSavingsMenu" />
         <item itemvalue="TestNG.CouponsTest.allCouponsLoaded" />
-        <item itemvalue="TestNG.CouponsTest.clickAllCoupons" />
       </list>
     </recent_temporary>
   </component>

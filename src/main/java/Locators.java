@@ -178,6 +178,8 @@ public class Locators {
     //Automatically add loaded coupons
 
     //Catering Page
-    public static final By DROPDOWN_CHOOSE_THE_STATE = (());
+    public static final By DROPDOWN_CHOOSE_STATE = ((By.xpath("//select[@name='stateSelect']")));
+    public static final By DROPDOWN_CHOOSE_CITY = ((By.xpath("//select[@name='citySelect']")));
+    public static final By DROP_DOWN_STATE_LIST = ((By.xpath("//select[@name='citySelect']")));
 
 }
