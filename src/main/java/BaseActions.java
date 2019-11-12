@@ -95,6 +95,10 @@ public class BaseActions{ //created class for simple actions what is not connect
         wait.until(ExpectedConditions.elementToBeClickable(by));
         ajaxClick(driver.findElement(by));
     }
+    public void scrollDownPage(){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,1000)", "");
+    }
     public void performClick(By locator){
         WebElement element= driver.findElement(locator);
        // javaWaitSec(3);
