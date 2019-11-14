@@ -1,3 +1,5 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class CateringTests extends BaseUI {
@@ -6,15 +8,23 @@ public class CateringTests extends BaseUI {
     public void selectRandomDropDownList() {
         driver.findElement(Locators.LINK_SHOP).click();
         driver.findElement(Locators.LINK_SHOP_CATERING).click();
-        //cateringPage.verifyCateringURL();
-        //cateringPage.selectStateDropDownMAState();
-        driver.findElement(Locators.DROPDOWN_CHOOSE_STATE).click();
-       // cateringPage.printAllStateOption();
+        WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+        driver.switchTo().frame(element);
+        mainPage.getDropDownListByText(Locators.DROPDOWN_CHOOSE_STATE, "MA");
+        //mainPage.getDropDownListByText(Locators.DROPDOWN_CHOOSE_STATE, "NJ");
 
-       // for (int i = 0; i < 20; i++) {
+        //mainPage.getDropDownListByText(Locators.DROPDOWN_CHOOSE_CITY, "Acton");
 
-        //}
+       }
+       @Test
+       public void getAllStates() {
+        driver.findElement(Locators.LINK_SHOP).click();
+        driver.findElement(Locators.LINK_SHOP_CATERING).click();
+        WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+        driver.switchTo().frame(element);
+        cateringPage.getAllStates();
 
-    }
-}
+
+       }}
+
 

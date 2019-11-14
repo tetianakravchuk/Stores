@@ -20,9 +20,9 @@ public class CateringPage extends BaseActions {
 
     public void selectStateDropDownMAState(){
 
-        driver.findElement(Locators.DROPDOWN_CHOOSE_STATE).click();
-        Select drpState = new Select(driver.findElement(By.name("stateSelect")));
-        drpState.selectByVisibleText("MA");
+       // driver.findElement(Locators.DROPDOWN_CHOOSE_STATE).click();
+        //Select drpState = new Select(driver.findElement(By.name("stateSelect")));
+        //drpState.selectByVisibleText("MA");
 
     }
 
@@ -36,5 +36,26 @@ public class CateringPage extends BaseActions {
             System.out.println(sValue);
         }
     }
-    //public String selectStateDropDownRandomOption(Loactors.DROP_DOWN_STATE_LIST, "Select State")
+
+    public void selectVisibleState(){
+        Select state = new Select(driver.findElement(By.name("stateSelect")));
+        state.selectByVisibleText("MA");
+        state.selectByIndex(3);
+    }
+
+    public void getAllStates(){
+        WebElement state_dropdown = driver.findElement(By.name("stateSelect"));
+        Select state = new Select(state_dropdown);
+
+        List<WebElement>dropdown = state.getOptions();
+
+        for(int i=0;i<dropdown.size();i++){
+
+            String drop_down_values = dropdown.get(i).getText();
+
+            System.out.println("dropdown values are "+drop_down_values);
+
+        }
+    }
+
 }

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CateringPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CateringPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CateringTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CateringTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,12 +76,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CateringTests.selectRandomDropDownList">
-    <configuration name="CateringTests.selectRandomDropDownList" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CateringTests.getAllStates">
+    <configuration name="CateringTests.getAllStates" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CateringTests" />
-      <option name="METHOD_NAME" value="selectRandomDropDownList" />
+      <option name="METHOD_NAME" value="getAllStates" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -89,11 +89,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CouponsTest.allCouponsLoaded" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CateringTests.selectRandomDropDownList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CouponsTest" />
-      <option name="METHOD_NAME" value="allCouponsLoaded" />
+      <option name="MAIN_CLASS_NAME" value="CateringTests" />
+      <option name="METHOD_NAME" value="selectRandomDropDownList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CateringTests.getAllStates" />
         <item itemvalue="TestNG.CateringTests.selectRandomDropDownList" />
         <item itemvalue="TestNG.MainPageTests.selectRandomDropDownList" />
         <item itemvalue="TestNG.MainPageTests.testLinkOnMainPage" />
         <item itemvalue="TestNG.MainPageTests.testSavingsMenu" />
-        <item itemvalue="TestNG.CouponsTest.allCouponsLoaded" />
       </list>
     </recent_temporary>
   </component>
@@ -172,21 +172,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CateringPage.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CateringPage.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
