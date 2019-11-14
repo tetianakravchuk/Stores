@@ -22,7 +22,7 @@ public class CateringTests extends BaseUI {
         driver.findElement(Locators.LINK_SHOP_CATERING).click();
         WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
         driver.switchTo().frame(element);
-        cateringPage.getAllStates();
+        cateringPage.getStateCount();
 
 
        }}

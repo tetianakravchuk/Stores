@@ -57,5 +57,28 @@ public class CateringPage extends BaseActions {
 
         }
     }
+    public void countStateDropDown(){
+        WebElement state_dropdown = driver.findElement(By.name("stateSelect"));
+        Select state = new Select(state_dropdown);
+
+        List<WebElement>dropdown = state.getOptions();
+
+        for(int i=0;i<dropdown.size();i++){
+
+            String drop_down_values = dropdown.get(i).getText();
+
+            System.out.println("dropdown values are "+drop_down_values);
+
+        }
+
+    }
+    public void getStateCount(){
+        //Click on drop down list
+        driver.findElement(By.xpath("//select[@name='stateSelect']")).click();
+        //Get all WebElements inside the dropdown in List
+        List<WebElement>dropdown_list = driver.findElements(By.xpath("//select[@name='stateSelect']"));
+        //Printing the amount of WebElements inside the list
+        System.out.println("States are: " + dropdown_list.size());
+    }
 
 }
