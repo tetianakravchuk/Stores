@@ -75,10 +75,30 @@ public class CateringPage extends BaseActions {
     public void getStateCount(){
         //Click on drop down list
         driver.findElement(By.xpath("//select[@name='stateSelect']")).click();
+
         //Get all WebElements inside the dropdown in List
         List<WebElement>dropdown_list = driver.findElements(By.xpath("//select[@name='stateSelect']"));
+
         //Printing the amount of WebElements inside the list
         System.out.println("States are: " + dropdown_list.size());
+
+        // Conditions to get the WebElement for list and click over "MA" option
+        for(int i=0; i<dropdown_list.size(); i++){
+
+            // Printing all the options from the dropdown
+            System.out.println(dropdown_list.get(i).getText());
+
+            // Checking the condition whether option in text "MA" is coming
+            if(dropdown_list.get(i).getText().contains("MA"))
+            {
+                // Clicking if text "MA" is there
+                dropdown_list.get(i).click();
+
+                // Breaking the condition if the condition get satisfied
+                break;
+            }
+
+        }
     }
 
 }
