@@ -10,87 +10,89 @@ public class CateringPage extends BaseActions {
     public CateringPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
+
     String currentCateringURL;
 
-    public String verifyCateringURL(){
+    public String verifyCateringURL() {
         //driver.findElement(Locators.LINK_SHOP_CATERING).click();
         currentCateringURL = driver.getCurrentUrl();
         return currentCateringURL;
     }
 
-    public void selectStateDropDownMAState(){
+    public void selectStateDropDownMAState() {
 
-       // driver.findElement(Locators.DROPDOWN_CHOOSE_STATE).click();
+        // driver.findElement(Locators.DROPDOWN_CHOOSE_STATE).click();
         //Select drpState = new Select(driver.findElement(By.name("stateSelect")));
         //drpState.selectByVisibleText("MA");
 
     }
 
-    public void printAllStateOption(){
+    public void printAllStateOption() {
         Select stateSelect = new Select((driver.findElement(By.name("stateSelect"))));
         List<WebElement> elementCount = stateSelect.getOptions();
         int iSize = elementCount.size();
 
-        for(int i = 0; i<iSize; i++){
+        for (int i = 0; i < iSize; i++) {
             String sValue = elementCount.get(i).getText();
             System.out.println(sValue);
         }
     }
 
-    public void selectVisibleState(){
+    public void selectVisibleState() {
         Select state = new Select(driver.findElement(By.name("stateSelect")));
         state.selectByVisibleText("MA");
         state.selectByIndex(3);
     }
 
-    public void getAllStates(){
+    public void getAllStates() {
         WebElement state_dropdown = driver.findElement(By.name("stateSelect"));
         Select state = new Select(state_dropdown);
 
-        List<WebElement>dropdown = state.getOptions();
+        List<WebElement> dropdown = state.getOptions();
 
-        for(int i=0;i<dropdown.size();i++){
+        for (int i = 0; i < dropdown.size(); i++) {
 
             String drop_down_values = dropdown.get(i).getText();
 
-            System.out.println("dropdown values are "+drop_down_values);
+            System.out.println("dropdown values are " + drop_down_values);
 
         }
     }
-    public void countStateDropDown(){
+
+    public void countStateDropDown() {
         WebElement state_dropdown = driver.findElement(By.name("stateSelect"));
         Select state = new Select(state_dropdown);
 
-        List<WebElement>dropdown = state.getOptions();
+        List<WebElement> dropdown = state.getOptions();
 
-        for(int i=0;i<dropdown.size();i++){
+        for (int i = 0; i < dropdown.size(); i++) {
 
             String drop_down_values = dropdown.get(i).getText();
 
-            System.out.println("dropdown values are "+drop_down_values);
+            System.out.println("dropdown values are " + drop_down_values);
 
         }
 
     }
-    public void getStateCount(){
+
+    public void getStateCount() {
         //Click on drop down list
         driver.findElement(By.xpath("//select[@name='stateSelect']")).click();
 
         //Get all WebElements inside the dropdown in List
-        List<WebElement>dropdown_list = driver.findElements(By.xpath("//select[@name='stateSelect']"));
+        List<WebElement> dropdown_list = driver.findElements(By.xpath("//select[@name='stateSelect']"));
 
         //Printing the amount of WebElements inside the list
         System.out.println("States are: " + dropdown_list.size());
 
         // Conditions to get the WebElement for list and click over "MA" option
-        for(int i=0; i<dropdown_list.size(); i++){
+        for (int i = 0; i < dropdown_list.size(); i++) {
 
             // Printing all the options from the dropdown
             System.out.println(dropdown_list.get(i).getText());
 
             // Checking the condition whether option in text "MA" is coming
-            if(dropdown_list.get(i).getText().contains("MA"))
-            {
+            if (dropdown_list.get(i).getText().contains("MA")) {
                 // Clicking if text "MA" is there
                 dropdown_list.get(i).click();
 
@@ -101,4 +103,7 @@ public class CateringPage extends BaseActions {
         }
     }
 
+
+    public void sizeDropDonStateList(){
+    }
 }

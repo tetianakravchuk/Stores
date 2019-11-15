@@ -177,4 +177,37 @@ public class BaseActions{ //created class for simple actions what is not connect
     public void ajaxSendKeys(WebElement element, String text){
         ((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute('value', '" + text + "')",element);
     }
+
+    public int getSizeDropDownList(By locator){
+        try{
+            WebElement element = driver.findElement(locator);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            Select select = new Select (driver.findElement(locator));
+            return select.getOptions().size();
+
+        }
+        catch (java.util.NoSuchElementException e){
+            System.out.println("getSizedropDownList error");
+        }
+        return 0;
+    }
+
+    public void getDropdownSelected(String dropDown, String elementID)throws Exception{
+
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        String dropdownScript = "var select = window.document.getElementById('" +
+                dropDown +
+                "'); for(var i = 0; i < select.options.length; i++){if(select.options[i].text == '" +
+                elementID +
+                "'){ select.options[i].selected = true; } }";
+
+        Thread.sleep(2000);
+        executor.executeScript(dropdownScript);
+        Thread.sleep(2000);
+
+        String clickScript = "if ("+"\"createEvent\""+" in document) {var evt = document.createEvent("+"\"HTMLEvents\""+");     evt.initEvent("+"\"change\""+", false, true); " + dropDown + ".dispatchEvent(evt); } else " + dropDown + ".fireEvent("+"\"onchange\""+");";
+
+        executor.executeScript(clickScript);
+
+    }
 }

@@ -25,6 +25,28 @@ public class CateringTests extends BaseUI {
         cateringPage.getStateCount();
 
 
-       }}
+       }
+
+   // public void sizeDropDonList() {
+       // mainPage.getToSearchPeoplePage();
+       // int elements = howWeWorkPage.getSizeDropDownList(Locators.DROPDOWNLIST_AGE_MAX);
+       // for (int i = 0; i < elements; i++) {
+        //    mainPage.selectItemDropDownRandomOption(Locators.DROPDOWNLIST_AGE_MAX, "Max age");
+        //}
+
+   // }
+
+    @Test
+    public void sizeDropDownStateList(){
+        mainPage.getToCateringPage();
+        int elements = careersPage.getSizeDropDownList(Locators.DROP_DOWN_STATE_LIST);
+        for (int i = 0; i < elements; i++){
+            mainPage.getDropdownSelected("MA","");
+
+        }
+    }
+
+
+}
 
 

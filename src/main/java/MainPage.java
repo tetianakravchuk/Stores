@@ -6,4 +6,11 @@ public class MainPage extends BaseActions{
         super(driver, wait);
     }
     String currentMainPageURL;
+
+
+    public void getToCateringPage(){
+        driver.findElement(Locators.LINK_SHOP).click();
+        driver.findElement(Locators.LINK_SHOP_CATERING).click();
+
+    }
 }
