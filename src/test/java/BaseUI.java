@@ -39,7 +39,7 @@ public class BaseUI {
         // Check if parameter passed as 'chrome'
         else if (browser.equalsIgnoreCase("chrome")) {
             // Set path to chromedriver.exe
-            System.setProperty("webdriver.chrome.driver", "/Users/nutxk18/Desktop/GitHub/Stores/Stores/chromedriver ");
+            System.setProperty("webdriver.chrome.driver", "/Users/tetianakravchuk/Desktop/Projects/Stores/chromedriver ");
             // Create chrome instance
             driver = new ChromeDriver();
             driver.get("chrome://settings/clearBrowserData");

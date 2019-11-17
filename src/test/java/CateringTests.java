@@ -35,18 +35,30 @@ public class CateringTests extends BaseUI {
         //}
 
    // }
+   @Test
+   public void statesCount(){
+       mainPage.getToCateringPage();
+       WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+       driver.switchTo().frame(element);
+       cateringPage.getStateCount();
+       cateringPage.sizeDropDonStateList();
+   }
 
     @Test
-    public void sizeDropDownStateList(){
+    public void sizeDropDownStateListState(){
         mainPage.getToCateringPage();
-        int elements = careersPage.getSizeDropDownList(Locators.DROP_DOWN_STATE_LIST);
-        for (int i = 0; i < elements; i++){
-            mainPage.getDropdownSelected("MA","");
+        WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+        driver.switchTo().frame(element);
+        careersPage.getSizeDropDownList(Locators.DROPDOWN_CHOOSE_STATE);
+        //for (int i = 0; i < elements; i++){
+        // mainPage.clickOptions();
+        careersPage.selectStateDropDownOptionByName();
+        cateringPage.selectCityDropDownOptionByName();
+    }
 
-        }
     }
 
 
-}
+
 
 
