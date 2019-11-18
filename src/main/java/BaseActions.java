@@ -187,7 +187,7 @@ public class BaseActions{ //created class for simple actions what is not connect
 
         }
         catch (java.util.NoSuchElementException e){
-            System.out.println("getSizedropDownList error");
+            System.out.println("getSizeDropDownList error");
         }
         return 0;
     }
@@ -210,15 +210,9 @@ public class BaseActions{ //created class for simple actions what is not connect
         executor.executeScript(clickScript);
 
     }
+    public void waitForElement(){
 
-    public void selectStateDropDownOptionByName(){
-        Select state = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='stateSelect']")));
-        state.selectByVisibleText("MA");
-        //state.getFirstSelectedOption();
     }
-    public void selectCityDropDownOptionByName(){
-        Select city = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")));
-        city.selectByVisibleText("Acton");
-        //state.getFirstSelectedOption();
-    }
+
+
 }

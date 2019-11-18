@@ -4,9 +4,9 @@
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CateringPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CateringPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CateringTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CateringTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stopandshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stopandshop.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CateringTests.sizeDropDownStateListState">
+  <component name="RunManager" selected="TestNG.CateringTests.selectStateAndCity">
+    <configuration name="CateringTests.chooseStateAndCity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CateringTests" />
+      <option name="METHOD_NAME" value="chooseStateAndCity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CateringTests.getAllStates" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,6 +114,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CateringTests.selectStateAndCity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CateringTests" />
+      <option name="METHOD_NAME" value="selectStateAndCity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CateringTests.sizeDropDownStateListState" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,37 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTests.selectRandomDropDownList" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainPageTests" />
-      <option name="METHOD_NAME" value="selectRandomDropDownList" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainPageTests.testLinkOnMainPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainPageTests" />
-      <option name="METHOD_NAME" value="testLinkOnMainPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CateringTests.selectStateAndCity" />
+        <item itemvalue="TestNG.CateringTests.chooseStateAndCity" />
         <item itemvalue="TestNG.CateringTests.sizeDropDownStateListState" />
         <item itemvalue="TestNG.CateringTests.getAllStates" />
         <item itemvalue="TestNG.CateringTests.selectRandomDropDownList" />
-        <item itemvalue="TestNG.MainPageTests.selectRandomDropDownList" />
-        <item itemvalue="TestNG.MainPageTests.testLinkOnMainPage" />
       </list>
     </recent_temporary>
   </component>

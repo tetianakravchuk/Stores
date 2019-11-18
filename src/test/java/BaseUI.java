@@ -62,6 +62,7 @@ public class BaseUI {
         homePage = new HomePage(driver,wait);
         couponsPage = new CouponsPage(driver,wait);
         careersPage = new CareersPage(driver,wait);
+        cateringPage = new CateringPage(driver, wait);
         driver.manage().window().maximize();
         driver.get(mainUrl);}
 
