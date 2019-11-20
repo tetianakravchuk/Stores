@@ -1,7 +1,10 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MainPageTests extends BaseUI {
@@ -50,6 +53,27 @@ public class MainPageTests extends BaseUI {
         driver.findElement(Locators.BUTTON_SIGN_IN_PRIMARY).click();
         //driver.findElement(BUTTON_REGISTRATION).click();
 
+    }
+
+    @Test
+    public void checkLinkNames(){
+        // Getting all links together into the list
+        List<WebElement> homePageLinks = driver.findElements(By.xpath("//ul[@class ='c-primary-nav__list']//li"));
+
+        // Printing how many links on the page
+        System.out.println(homePageLinks.size());
+        
+
+        // Checking every link and getting its name
+        for (int i = 0; i < homePageLinks.size(); i++) {
+            String linkName = homePageLinks.get(i).getText();
+            System.out.println(linkName);
+            // Comparing links to what we need(names)
+            if(homePageLinks.get(i).getText().contains("Shop")&& homePageLinks.get(i).getText().contains("Savings")){
+                System.out.println("Test Passes");
+            }
+
+        }
     }
 
 

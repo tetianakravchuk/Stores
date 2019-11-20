@@ -33,7 +33,7 @@ public class BaseUI {
         // Check if parameter passed from TestNG is 'firefox'
         if (browser.equalsIgnoreCase("firefox")) {
             // Create firefox instance
-            System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "/Users/nutxk18/Desktop/GitHub/Stores/Stores/geckodriver");
             driver = new FirefoxDriver();
         }
         // Check if parameter passed as 'chrome'
@@ -62,6 +62,7 @@ public class BaseUI {
         homePage = new HomePage(driver,wait);
         couponsPage = new CouponsPage(driver,wait);
         careersPage = new CareersPage(driver,wait);
+        cateringPage = new CateringPage(driver, wait);
         driver.manage().window().maximize();
         driver.get(mainUrl);}
 

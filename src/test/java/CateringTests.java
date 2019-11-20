@@ -37,16 +37,19 @@ public class CateringTests extends BaseUI {
    // }
 
     @Test
-    public void sizeDropDownStateList(){
+    public void sizeDropDownStateListState() throws InterruptedException {
         mainPage.getToCateringPage();
-        int elements = careersPage.getSizeDropDownList(Locators.DROP_DOWN_STATE_LIST);
-        for (int i = 0; i < elements; i++){
-            mainPage.getDropdownSelected("MA","");
+        WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+        driver.switchTo().frame(element);
+        cateringPage.getSizeDropDownList(Locators.DROPDOWN_CHOOSE_STATE);
+        cateringPage.selectStateDropDownOptionByName();
+        cateringPage.selectCityDropDownOptionByName();
+
 
         }
     }
 
 
-}
+
 
 
