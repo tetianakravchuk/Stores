@@ -4,6 +4,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BaseActions {
@@ -79,6 +81,30 @@ public class HomePage extends BaseActions {
         currentHomeURL = driver.getCurrentUrl();
 
     }
+
+    public  void verifyLinkActive(String linkUrl)
+    {
+        try
+        {
+            URL url = new URL(linkUrl);
+
+            HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection();
+
+            httpURLConnect.setConnectTimeout(3000);
+
+            httpURLConnect.connect();
+
+            if(httpURLConnect.getResponseCode()==200)
+            {
+                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
+            }
+            if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND)
+            {
+                System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
+            }
+        } catch (Exception e) {
+
+        }}
 
     public void goBackClick() {
         driver.navigate().back();

@@ -40,7 +40,6 @@ public class BaseUI {
         else if (browser.equalsIgnoreCase("chrome")) {
             // Set path to chromedriver.exe
             System.setProperty("webdriver.chrome.driver", "/Users/nutxk18/Desktop/GitHub/Stores/Stores/chromedriver ");
-            // Create chrome instance
             driver = new ChromeDriver();
             driver.get("chrome://settings/clearBrowserData");
         } else if (browser.equalsIgnoreCase("IE")) {

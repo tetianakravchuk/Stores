@@ -35,19 +35,44 @@ public class CateringTests extends BaseUI {
         //}
 
    // }
+   @Test
+   public void statesCount(){
+       mainPage.getToCateringPage();
+       WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+       driver.switchTo().frame(element);
+       cateringPage.getStateCount();
+       cateringPage.sizeDropDonStateList();
+   }
 
     @Test
+
     public void sizeDropDownStateListState() throws InterruptedException {
-        mainPage.getToCateringPage();
-        WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
-        driver.switchTo().frame(element);
-        cateringPage.getSizeDropDownList(Locators.DROPDOWN_CHOOSE_STATE);
-        cateringPage.selectStateDropDownOptionByName();
-        cateringPage.selectCityDropDownOptionByName();
+
+
+
+            mainPage.getToCateringPage();
+            WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
+            driver.switchTo().frame(element);
+            cateringPage.getSizeDropDownList(Locators.DROPDOWN_CHOOSE_STATE);
+
+            cateringPage.selectStateDropDownOptionByName();
+            cateringPage.selectCityDropDownOptionByName();
+
+
+            //for (int i = 0; i < elements; i++){
+            // mainPage.clickOptions();
+            //wait.until(ExpectedConditions.stalenessOf(element));
+            cateringPage.selectStateDropDownOptionByName();
+            //wait.until(ExpectedConditions.stalenessOf(c));
+            cateringPage.selectCityDropDownOptionByName();
 
 
         }
+
     }
+
+
+
 
 
 

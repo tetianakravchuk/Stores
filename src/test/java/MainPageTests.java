@@ -62,7 +62,7 @@ public class MainPageTests extends BaseUI {
 
         // Printing how many links on the page
         System.out.println(homePageLinks.size());
-        
+
 
         // Checking every link and getting its name
         for (int i = 0; i < homePageLinks.size(); i++) {
@@ -73,6 +73,27 @@ public class MainPageTests extends BaseUI {
                 System.out.println("Test Passes");
             }
 
+        }
+    }
+
+
+    @Test
+    public void checkAllLinksHomePage() {
+        List<WebElement> homeLinks = driver.findElements(By.tagName("a"));
+        System.out.println(homeLinks.size());
+        for(int i = 1; i<homeLinks.size(); i = i+1){
+            System.out.println(homeLinks.get(i).getText());
+        }
+    }
+
+    @Test
+    public void checkBrokenLinksHomePage(){
+        List<WebElement> homeLinks = driver.findElements(By.tagName("a"));
+        System.out.println("Total links are " + homeLinks.size());
+        for(int i = 0; i<homeLinks.size(); i++){
+            WebElement links = homeLinks.get(i);
+            String url = links.getAttribute("href");
+            mainPage.verifyLinkActive(url);
         }
     }
 
@@ -143,4 +164,7 @@ public class MainPageTests extends BaseUI {
     public void selectRandomDropDownList(){
         driver.findElement(Locators.LINK_SAVINGS);
 
-}}
+}
+
+
+}

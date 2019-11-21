@@ -4,6 +4,7 @@
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CateringPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CateringPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CateringTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CateringTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTests.java" afterDir="false" />
@@ -19,9 +20,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="stopandshop" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,31 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTests.checkLinkNames">
-    <configuration name="CateringTests.getAllStates" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CateringTests" />
-      <option name="METHOD_NAME" value="getAllStates" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CateringTests.selectRandomDropDownList" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CateringTests" />
-      <option name="METHOD_NAME" value="selectRandomDropDownList" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.MainPageTests.checkBrokenLinksHomePage">
     <configuration name="CateringTests.sizeDropDownStateListState" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,7 +88,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTests.checkLinkNames" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTests.checkAllLinksHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainPageTests" />
+      <option name="METHOD_NAME" value="checkAllLinksHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTests.checkBrokenLinksHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainPageTests" />
+      <option name="METHOD_NAME" value="checkBrokenLinksHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTests.checkLinkNames (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainPageTests" />
@@ -126,10 +124,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPageTests.checkLinkNames" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/nutxk18/Desktop/GitHub/Stores/Stores/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -138,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPageTests.checkBrokenLinksHomePage" />
+        <item itemvalue="TestNG.MainPageTests.checkAllLinksHomePage" />
+        <item itemvalue="TestNG.MainPageTests.checkLinkNames (1)" />
         <item itemvalue="TestNG.MainPageTests.checkLinkNames" />
         <item itemvalue="TestNG./Users/nutxk18/Desktop/GitHub/Stores/Stores/TestNG.xml" />
-        <item itemvalue="TestNG.CateringTests.sizeDropDownStateListState" />
-        <item itemvalue="TestNG.CateringTests.getAllStates" />
-        <item itemvalue="TestNG.CateringTests.selectRandomDropDownList" />
       </list>
     </recent_temporary>
   </component>

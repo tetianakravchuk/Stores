@@ -125,4 +125,21 @@ public class CateringPage extends BaseActions {
 
     public void sizeDropDonStateList(){
     }
+
+    public void selectStateDropDownOptionByName1(){
+        Select state = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='stateSelect']")));
+        state.selectByVisibleText("MA");
+        //state.getFirstSelectedOption();
+    }
+    public void selectCityDropDownOptionByName2() throws InterruptedException {
+        driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")).click();
+        Thread.sleep(1000*4);
+        Select city = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")));
+        city.selectByVisibleText("Acton");
+        
+
+
+
+        //state.getFirstSelectedOption();
+    }
 }

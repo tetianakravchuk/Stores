@@ -71,6 +71,9 @@ public class BaseActions{ //created class for simple actions what is not connect
     }
 
 
+    
+
+
 
     public void ajaxClick(By by, int index){
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
@@ -187,7 +190,7 @@ public class BaseActions{ //created class for simple actions what is not connect
 
         }
         catch (java.util.NoSuchElementException e){
-            System.out.println("getSizedropDownList error");
+            System.out.println("getSizeDropDownList error");
         }
         return 0;
     }
@@ -210,4 +213,9 @@ public class BaseActions{ //created class for simple actions what is not connect
         executor.executeScript(clickScript);
 
     }
+    public void waitForElement(){
+
+    }
+
+
 }
