@@ -113,4 +113,8 @@ public class HomePageTests extends BaseUI {
         homePage.appStoresLinks();
 
     }
+    @Test
+    public void checkLinks(){
+        homePage.verifyLinkActive("https://stopandshop.com/");
+    }
 }

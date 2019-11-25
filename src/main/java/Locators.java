@@ -182,4 +182,14 @@ public class Locators {
     public static final By DROPDOWN_CHOOSE_CITY = ((By.xpath("//select[@name='citySelect']")));
     public static final By DROP_DOWN_STATE_LIST = ((By.xpath("//select[@name='citySelect']")));
 
+    //Shopping List
+    public static final By SHOPPING_LIST_HOME_PAGE = ((By.xpath("//a[@id='utility-nav-shopping-list']")));
+    public static final By SHOPPING_LIST_SORT = ((By.xpath("//button[@class = 'c-controls c-controls__button h-margin-right-small js-show-sort qa-list-sort']")));
+    public static final By SHOPPING_LIST_OPTION = ((By.xpath("//button[@class = 'c-controls c-controls__button js-show-gear-list-options qa-list-options']")));
+    public static final By SHOPPING_LIST_FAVORITES = ((By.xpath("//div[@id = 'favorites-toggle']")));
+    public static final By SHOPPING_LIST_FAVORITES_EDIT = ((By.xpath("//div[@id = 'favorites-toggle']")));
+    public static final By SHOPPING_LIST_FAVORITES_ADD_FAVORITE_INPUT = ((By.xpath("//input[@id = 'new-favorite-input']")));
+
+
+
 }

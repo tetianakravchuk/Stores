@@ -1,6 +1,6 @@
 public class Data {
-    public static final String email = "mari@mailinator.com";
-    public static final String password = "Quincy2019";
+    public static final String email = "gomybills@gmail.com";
+    public static final String password = "Love2018";
     public static final String expectedHomeUrl = "https://stopandshop.com/";
     ;
     public static final String expectedPharmacyUrl = "https://stopandshop.com/sns-rx/";
@@ -36,6 +36,9 @@ public class Data {
     public static final String expectedSavoryMagazineURL = "https://recipecenter.stopandshop.com/savory/magazine";
     public static final String expectedSavorySeasonalURL = "https://recipecenter.stopandshop.com/savory/seasonal-inspiration";
     public static final String expectedSavoryFavoritesURL = "https://recipecenter.stopandshop.com/savory/favorites";
+
+    //Shopping List
+    public static final String expectedShoppingListPageURL = "https://stopandshop.com/shopping-list/";
 
     //Registration Data
     public static final String firstName = "Tetia";

@@ -78,28 +78,30 @@ public class BaseActions{ //created class for simple actions what is not connect
             //Use URL Class - Create object of the URL Class and pass the urlLink as parameter
             URL link = new URL(urlLink);
             // Create a connection using URL object (i.e., link)
-            HttpURLConnection httpConn =(HttpURLConnection)link.openConnection();
+            HttpURLConnection httpConn = (HttpURLConnection) link.openConnection();
             //Set the timeout for 2 seconds
             httpConn.setConnectTimeout(2000);
             //connect using connect method
             httpConn.connect();
             //use getResponseCode() to get the response code.
-            if(httpConn.getResponseCode()== 200) {
-                System.out.println(urlLink+" - "+httpConn.getResponseMessage());
+            if (httpConn.getResponseCode() == 200) {
+                System.out.println(urlLink + " - " + httpConn.getResponseMessage());
             }
-            if(httpConn.getResponseCode()== 404) {
-                System.out.println(urlLink+" - "+httpConn.getResponseMessage());
+            if (httpConn.getResponseCode() == 404) {
+                System.out.println(urlLink + " - " + httpConn.getResponseMessage());
             }
-            if(httpConn.getResponseCode()== 400) {
-                System.out.println(urlLink+" - "+httpConn.getResponseMessage()); }
+            if (httpConn.getResponseCode() == 400) {
+                System.out.println(urlLink + " - " + httpConn.getResponseMessage());
+            }
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if(httpConn.getResponseCode()== 500) {
-            System.out.println(urlLink+" - "+ httpConn.getResponseMessage()); }
-
+        //if (httpConn.getResponseCode() == 500) {
+           // System.out.println(urlLink + " - " + httpConn.getResponseMessage());
+        //}
+    //}
 //getResponseCode method returns = IOException - if an error occurred connecting to the server.
         catch (Exception e){
                 //e.printStackTrace();
