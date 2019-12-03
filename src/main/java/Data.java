@@ -2,7 +2,11 @@ public class Data {
     public static final String email = "gomybills@gmail.com";
     public static final String password = "Love2018";
     public static final String expectedHomeUrl = "https://stopandshop.com/";
-    ;
+    //Favorites
+    public static final String favoriteItemOne = "One";
+    public static final String favoriteItemTwo = "Two";
+    public static final String favoriteItemThree = "Three";
+
     public static final String expectedPharmacyUrl = "https://stopandshop.com/sns-rx/";
     public static final String expectedRegistrationUrl = "https://stopandshop.com/sign-up/";
     public static final String expectedDigitalCoupons = "https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available";

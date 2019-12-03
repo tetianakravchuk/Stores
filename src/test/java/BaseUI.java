@@ -24,6 +24,7 @@ public class BaseUI {
     CouponsPage couponsPage;
     SoftAssert softAssert = new SoftAssert();
     CateringPage cateringPage;
+    ShoppingListPage shoppingListPage;
 
     @BeforeMethod
     @Parameters("browser")
@@ -62,6 +63,7 @@ public class BaseUI {
         couponsPage = new CouponsPage(driver,wait);
         careersPage = new CareersPage(driver,wait);
         cateringPage = new CateringPage(driver, wait);
+        shoppingListPage = new ShoppingListPage(driver,wait);
         driver.manage().window().maximize();
         driver.get(mainUrl);}
 
