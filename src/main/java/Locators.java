@@ -193,6 +193,9 @@ public class Locators {
     public static final By SHOPPING_LIST_FAVORITES_BUTTON = ((By.xpath("//div[@class ='c-sort-filter show-for-xlarge']")));
     public static final By SHOPPING_LIST_FAVORITES_FIELD = ((By.xpath("//div[@class ='c-textfield c-textfield--border h-margin-bottom-none h-center-row-vertical-spaced']")));
     public static final By SHOPPING_LIST_FAVORITES_ADD_BUTTON = ((By.xpath("//input[@class ='a-button -small -purple h-flex-grow-1 h-margin-right-medium js-submit-button qa-submit-button']")));
+    public static final By FAVORITES_ADD_TO_SHOPPING_LIST = ((By.xpath("(//button[@class='a-list-icon js-add-to-list'])[1]")));
+    public static final By FAVORITES_EDIT_LINK = ((By.xpath("//a[@class='a-link  h-margin-left-small js-edit']")));
+    public static final By FAVORITES_REMOVE_BUCKET = ((By.xpath("//button[@class='a-list-icon js-remove-favorite']")));
 
 
 

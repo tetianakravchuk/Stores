@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShoppingListTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShoppingListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShoppingListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShoppingListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShoppingListTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,36 +73,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ShoppingListTests.addFavoriteItemType">
+  <component name="RunManager" selected="TestNG.ShoppingListTests.addToShoppingList">
     <configuration name="CateringTests.sizeDropDownStateListState" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CateringTests" />
       <option name="METHOD_NAME" value="sizeDropDownStateListState" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CouponsTest.addCouponsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CouponsTest" />
-      <option name="METHOD_NAME" value="addCouponsTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CouponsTest.allCouponsLoaded" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CouponsTest" />
-      <option name="METHOD_NAME" value="allCouponsLoaded" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,6 +110,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShoppingListTests.addToShoppingList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingListTests" />
+      <option name="METHOD_NAME" value="addToShoppingList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShoppingListTests.getToShoppingListPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <option name="PACKAGE_NAME" value="" />
@@ -148,13 +134,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShoppingListTests.removeAllFavorites" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingListTests" />
+      <option name="METHOD_NAME" value="removeAllFavorites" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ShoppingListTests.addToShoppingList" />
+        <item itemvalue="TestNG.ShoppingListTests.removeAllFavorites" />
         <item itemvalue="TestNG.ShoppingListTests.addFavoriteItemType" />
         <item itemvalue="TestNG.ShoppingListTests.getToShoppingListPage" />
         <item itemvalue="TestNG.CouponsTest.clickAllCoupons" />
-        <item itemvalue="TestNG.CouponsTest.allCouponsLoaded" />
-        <item itemvalue="TestNG.CouponsTest.addCouponsTest" />
       </list>
     </recent_temporary>
   </component>
