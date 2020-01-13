@@ -13,7 +13,7 @@ public class HomePage extends BaseActions {
         super(driver, wait);
     }
 
-    String currentHomeURL;
+    String currentHomeUrl;
     String currentDigitalCouponsURL;
     String currentWeeklyCircularURL;
     String currentRewardsAndProgramURL;
@@ -75,10 +75,14 @@ public class HomePage extends BaseActions {
 
 
 
+    //public String  testHomePage() {
 
+       // currentHomeUrl = driver.getCurrentUrl();
+        //return currentHomeUrl;
+    //}
     public void navigateToHomePage() {
         driver.findElement(Locators.LINK_HOME).click();
-        currentHomeURL = driver.getCurrentUrl();
+        currentHomeUrl = driver.getCurrentUrl();
 
     }
 

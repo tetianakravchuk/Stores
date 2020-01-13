@@ -1,7 +1,7 @@
 import org.openqa.selenium.By;
 
 public class Locators {
-
+    public static final By H1_TITLE = By.xpath("//h1");
     //Home Page
 
     //Primary Navigation List
@@ -10,7 +10,7 @@ public class Locators {
     public static final By LINK_SAVINGS = By.xpath("//a[@id ='primary-nav-savings']");
     public static final By LINK_DIGITAL_COUPONS = By.xpath("//li[@class =\"c-buckets__item\"]//a[@href=\"/coupons-weekly-circular/digital-coupons\"]");
     public static final By LINK_WEEKLY_CIRCULAR = By.xpath("//li[@class = 'c-buckets__item']//a[@href='/coupons-weekly-circular/weekly-circular']");
-    public static final By LINK_REWARDS_AND_PROGRAM = By.xpath("//li[@class =\"c-buckets__item\"]//a[@href=\"/member-benefits\"]");
+    public static final By LINK_REWARDS_AND_PROGRAM = By.xpath("//li[@class ='c-buckets__item']//a[@href='/member-benefits']");
 
     //Shop Menu
     public static final By LINK_SHOP_PEAPOD_DELIVERY = By.xpath("//a[@href='https://peapod.com/?c3ch=OpCo+Websites&c3nid=stopandshop.com']");
@@ -32,9 +32,10 @@ public class Locators {
 
 
     //Registration
-    public static final By BUTTON_REGISTER = By.xpath("//p[@class=\"c-login__content\"]//a[@href=\"/sign-up\"]");
-    public static final By BUTTON_REGISTRATION_NEEDS_CARD = By.xpath("//a[@href=\"/sign-up/registration\"]");
-    public static final By LOYALTY_CARD_REGISTRATION = By.xpath("//a[@class =\"a-button -white l-button-buddies__button js-track-click js-track-register-click\"]");
+    public static final By BUTTON_REGISTER = By.xpath("//p[@class='c-login__content']//a[@href='/sign-up']");
+    public static final By BUTTON_NEEDS_THE_CARD = By.xpath("(//a[@class = 'a-button -blue -full-width'])[2]");
+    public static final By BUTTON_REGISTRATION_NEEDS_CARD = By.xpath("//a[@href='/sign-up/registration']");
+    public static final By LOYALTY_CARD_REGISTRATION = By.xpath("//a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']");
     public static final By REGISTRATION_NEEDS_CARD_BUTTON = By.xpath("//a[@id='regi-needs-card']");
     public static final By TEXT_FIELD_FIRSTNAME = By.cssSelector("input[name ='firstName']");
     public static final By TEXT_FIELD_LASTNAME = By.cssSelector("input[name ='lastName']");
@@ -45,7 +46,19 @@ public class Locators {
     public static final By TEXT_FIELD_CITY = By.cssSelector("input[id ='city']");
     public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name ='phone']");
     public static final By NEXT_BUTTON_REGISTRATION = By.xpath("//a[@class=\"defer-link zeta a-link-blue\"]");
-    //Sign In
+    public static final By CHOOSE_THE_STATE_FIELD = By.xpath("//div[@class ='chosen-container chosen-container-single']//a[@class ='chosen-single chosen-default']");
+    public static final By CHOOSE_MA = By.xpath("//li[@id ='state-Massachusetts']");
+    public static final By CHECKBOX_EMAIL_SUBSCRIPTIONS = By.id("checkbox-email-label");
+    public static final By CHECKBOX_HOUSEHOLD_CARD_SHARING = By.id("checkbox-sharing-label");
+    public static final By CHOOSE_A_STORE_LOCATION_ARROW = By.xpath("//div[@class='chosen-drop']//ul[@id='storeNumber-list']");
+    public static final By CHOOSE_A_STORE_LOCATION_FIELD = By.xpath("//label[@id = 'label-storeNumber_chosen']");
+    public static final By CHOOSE_KINGSTON_MA = By.xpath("//li[@id='storeNumber-160_Summer_Street__Kingston__MA_02364']");
+    public static final By CHECK_BOX_AGREE_TERMS_AND_CONDITIONS_CLICK = By.id("checkbox-agree-label");
+    public static final By CHECK_BOX_AGREE_TERMS_AND_CONDITIONS = By.xpath("//input[@id ='checkbox-agree']");
+    public static final By BUTTON_NEXT= By.xpath("//button[@id ='registration-submit-button']");
+
+
+    //    //Sign In
     public static final By LINK_SIGN_IN_PRIMARY = By.xpath("//a[@href='/sign-in']");
     public static final By TEXT_FIELD_USERNAME_PRIMARY = By.cssSelector("input#username");
     public static final By TEXT_FIELD_PASSWORD_PRIMARY = By.cssSelector("input#password");
@@ -198,5 +211,12 @@ public class Locators {
     public static final By FAVORITES_REMOVE_BUCKET = ((By.xpath("//button[@class='a-list-icon js-remove-favorite']")));
 
 
+   //Rewards and Programs
+    // About Stop & Shop
+    public static final By ABOUT_STOP_AND_SHOP_LINKS = ((By.xpath("(//ul[@class = 'c-list--no-bullets'])[5]//li")));
+    //Customer Support
+    public static final By CUSTOMER_SUPPORT_LINKS = ((By.xpath("(//ul[@class = 'c-list--no-bullets'])[6]//li")));
+    //Company
+    public static final By COMPANY_LINKS = ((By.xpath("(//ul[@class = 'c-list--no-bullets'])[7]//li")));
 
 }

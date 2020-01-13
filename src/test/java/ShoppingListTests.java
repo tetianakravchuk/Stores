@@ -32,6 +32,11 @@ public class ShoppingListTests extends BaseUI {
         shoppingListPage.addHundredToShoppingList(20);
     }
 
+    @Test
+    public void addLoadedCouponsRoShoppingList() throws InterruptedException {
+        shoppingListPage.addLoadedCouponsTOShoppingList();
+    }
+
 
 }
 

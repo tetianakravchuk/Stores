@@ -31,6 +31,13 @@ public class BaseActions{ //created class for simple actions what is not connect
     public static String generateNewNumbers(String name, int length){
         return name + RandomStringUtils.random(length, "test133");
     }
+    public static String generateFirstName(String domain, int length) {
+        return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz");
+    }
+    public static String generateLastName(String domain, int length) {
+        return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz");
+    }
+
 
     public void selectItemDropDownRandomOption(By locator, String dropDownName) {
         try {
@@ -253,6 +260,59 @@ public void ajaxClick(By by, int index){
     }
     public void waitForElement(){
 
+    }
+
+    public String getAnyTitle(){
+       String title =  driver.findElement(Locators.H1_TITLE).getText();
+       return title;
+
+    }
+
+    public void clickValueOfList(By locator, String text){
+        List<WebElement> elements = driver.findElements(locator);
+        for (int i = 0; i < elements.size(); i++) {
+            WebElement elementOfList = elements.get(i);
+            String value = elementOfList.getText();
+            if(value.contains(text)){
+                elementOfList.click();
+            }
+
+        }
+
+    }
+
+    public void clickValueOfStoreList(String text){
+        List<WebElement> elements = driver.findElements(By.xpath("//label[@id ='label-storeNumber_chosen']"));
+        for (int i = 0; i < elements.size(); i++) {
+            WebElement elementOfList = elements.get(i);
+            String value = elementOfList.getText();
+            if(value.contains(text)){
+                elementOfList.click();
+            }
+
+        }
+
+    }
+
+    public void clickElementDropDown(String nameStore){
+        Select dropdown = new Select(driver.findElement(By.xpath("//div[@class ='chosen-container chosen-container-single has-tip right']")));
+
+        dropdown.selectByVisibleText(nameStore);
+
+
+
+
+
+    }
+
+    public String getValueFromDropDown(WebElement element, String compareText) {
+        List<WebElement> options = new Select(element).getAllSelectedOptions();
+        for (WebElement option : options){
+            if (option.getText().equals(compareText)){
+                return option.getText();
+            }
+        }
+        return null;
     }
 
 

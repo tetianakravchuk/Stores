@@ -25,6 +25,7 @@ public class BaseUI {
     SoftAssert softAssert = new SoftAssert();
     CateringPage cateringPage;
     ShoppingListPage shoppingListPage;
+    RewardsAndPrograms rewardsAndPrograms;
 
     @BeforeMethod
     @Parameters("browser")
@@ -64,6 +65,7 @@ public class BaseUI {
         careersPage = new CareersPage(driver,wait);
         cateringPage = new CateringPage(driver, wait);
         shoppingListPage = new ShoppingListPage(driver,wait);
+        rewardsAndPrograms = new RewardsAndPrograms(driver, wait);
         driver.manage().window().maximize();
         driver.get(mainUrl);}
 
@@ -82,6 +84,12 @@ public class BaseUI {
 
     public static String generateEmail(String domain, int length) {
         return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz") + "@" + domain;
+    }
+    public static String generateFirstName(String domain, int length) {
+        return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz");
+    }
+    public static String generateLastName(String domain, int length) {
+        return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz");
     }
 
 

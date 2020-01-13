@@ -54,6 +54,9 @@ public class Data {
     public static final String city = "Quincy";
     public static final String zipCode = "02169";
     public static final String phone = "415-515-8552";
+    public static final String street = "200 Cove way";
+    public static final String state = "Massachusetts";
+    public static final String store = "Kingston, MA 02364";
 
     //Home page
     public static final String HomeURL = "https://stopandshop.com/";

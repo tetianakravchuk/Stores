@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -33,12 +34,7 @@ public class MainPageTests extends BaseUI {
 
 //    @Test
 //
-//    public void testHomePage() {
-//
-//        //drivedriver.findElement(LINK_HOME).click();r.getCurrentUrl();
-//        currentHomeUrl = driver.getCurrentUrl();
-//        System.out.println(currentHomeUrl);
-//        Assert.assertEquals(currentHomeUrl, expectedHomeUrl);
+
 //
 //
 //    }
@@ -87,13 +83,45 @@ public class MainPageTests extends BaseUI {
     }
 
     @Test
-    public void checkBrokenLinksHomePage(){
+    public void checkHomePageLinks(){
+        List<WebElement> homePageLinks = driver.findElements(By.tagName("a"));
+        System.out.println("All links found on web page are: " + homePageLinks.size() + " links");
+
+        for (int i = 0; i < homePageLinks.size(); i++) {
+            String info = homePageLinks.get(i).getText();
+            System.out.println(info);
+           if (homePageLinks.get(i).isDisplayed()){
+                System.out.println("Test passed");
+           }
+            //homePageLinks.get(i).click();
+            //driver.get(currentHomeUrl);
+            //homePageLinks = driver.findElements(By.tagName("a"));
+
+        }
+    }
+
+    @Test
+    public void checkBrokenLinksHomePage() throws InterruptedException {
         List<WebElement> homeLinks = driver.findElements(By.tagName("a"));
         System.out.println("Total links are " + homeLinks.size());
-        for(int i = 0; i<homeLinks.size(); i++){
-            WebElement links = homeLinks.get(i);
-            String url = links.getAttribute("href");
-            mainPage.verifyLinkActive(url);
+
+
+        for(int i = 0; i < homeLinks.size(); i++){
+            String text = driver.findElement(By.tagName("a")).getText();
+            System.out.println(text);
+            WebElement ele = driver.findElement(By.tagName("a"));
+            JavascriptExecutor executor = (JavascriptExecutor)driver;
+            executor.executeScript("arguments[0].click();", ele);
+
+
+            //homeLinks.get(i).click();
+            driver.get(Data.HomeURL);
+            homeLinks = driver.findElements(By.tagName("a"));
+            //System.out.println(homeLinks);
+            //Thread.sleep(1000);
+            //WebElement links = homeLinks.get(i);
+            //String url = links.getAttribute("href");
+            //mainPage.verifyLinkActive(url);
         }
     }
 

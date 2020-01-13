@@ -132,5 +132,43 @@ public class ShoppingListPage extends BaseActions {
 
     }
 
+    public void clearTheShoppingList(){
+        driver.findElement(By.xpath("//button[@id = 'list-menu-option8']")).click();
+        driver.findElement(By.xpath("//button[@class= 'a-button -purple l-button-buddies__button js-confirm-remove qa-confirm-remove']")).click();
+
+
+    }
+
+    public void addLoadedCouponsTOShoppingList() throws InterruptedException {
+        driver.findElement(Locators.BUTTON_SIGN_IN_UNLOCK).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
+        driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
+        driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+        driver.navigate().refresh();
+        driver.findElement(By.xpath("//a[@id ='primary-nav-savings']")).click();
+        driver.findElement(By.xpath("//li[@class ='c-buckets__item']//a[@href='/coupons-weekly-circular/digital-coupons']")).click();
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//div[@class ='c-tabs__item']//div[@class ='c-tabs__text h-bold h-center']")).click();
+        List <WebElement> allLoadedCoupons = driver.findElements(By.xpath("//button[@class= 'js-list-add a-font-size-14 h-bold h-purple']"));
+        int size = allLoadedCoupons.size();
+        System.out.println("Size of the list = " + size);
+        for(WebElement items : allLoadedCoupons){
+            items.click();
+            Thread.sleep(2000);
+        }
+        allLoadedCoupons.size();
+        System.out.println("Size of the list after " + size);
+
+
+
+    }
+
+
+
+
+
+
 
 }
