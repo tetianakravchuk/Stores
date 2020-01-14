@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 public class Data {
     public static final String email = "gomybills@gmail.com";
     public static final String password = "Love2018";
@@ -44,9 +46,9 @@ public class Data {
     //Shopping List
     public static final String expectedShoppingListPageURL = "https://stopandshop.com/shopping-list/";
 
-    //Registration Data
-    public static final String firstName = "Tetia";
-    public static final String lastName = "Tets";
+    //Registration com.stopandshop.ui.Data
+    public static final String firstName = "Sarah";
+    public static final String lastName = "Abramovich";
     public static final String emailRegistration = "t123@mailinator.com";
     public static final String address = "100 Cove way";
     public static final String passwordRegistration = "Quincy2019";

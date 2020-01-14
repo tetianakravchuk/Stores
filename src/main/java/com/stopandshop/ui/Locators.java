@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.openqa.selenium.By;
 
 public class Locators {

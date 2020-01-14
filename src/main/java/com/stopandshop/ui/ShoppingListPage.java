@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,13 +26,13 @@ public class ShoppingListPage extends BaseActions {
 
             System.out.println("Element is Present");
             driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
-            //driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
-            //driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
-            //driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
+            //driver.findElement(com.stopandshop.ui.Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+            //driver.findElement(com.stopandshop.ui.Locators.YES_AUTOMATICALLY_ADD).click();
+            //driver.findElement(com.stopandshop.ui.Locators.COUPONS_LOAD_TO_CARD_TWO).click();
             //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            //driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
-            //driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
-            //driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
+            //driver.findElement(com.stopandshop.ui.Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(com.stopandshop.ui.Data.email);
+            //driver.findElement(com.stopandshop.ui.Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(com.stopandshop.ui.Data.password);
+            //driver.findElement(com.stopandshop.ui.Locators.SIGN_IN_POPUP_WINDOW).click();
         } else {
 
             driver.findElement(Locators.COUPONS_PLUS_CLICK_ONE).click();

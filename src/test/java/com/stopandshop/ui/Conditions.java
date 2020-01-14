@@ -1,3 +1,6 @@
+package com.stopandshop.ui;
+
+import com.stopandshop.ui.BaseUI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -303,7 +306,7 @@ public class Conditions extends BaseUI {
 
     @Test
     public void test22(){
-      //  baseActions.performClick(Locators.SEARCH_HOME_PAGE);
+      //  baseActions.performClick(com.stopandshop.ui.Locators.SEARCH_HOME_PAGE);
 
     }
 
@@ -315,7 +318,7 @@ public class Conditions extends BaseUI {
 
   // @Test
    // public void test12(){
-    // BaseActions.performClick(Locators.LINK_PHARMACY, index);
+    // com.stopandshop.ui.BaseActions.performClick(com.stopandshop.ui.Locators.LINK_PHARMACY, index);
 
    // }
 

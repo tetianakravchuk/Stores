@@ -13,7 +13,7 @@
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="com.stopandshop.ui.RegistrationTests"/>
         </classes>
 
     </test>
@@ -24,7 +24,7 @@
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="com.stopandshop.ui.RegistrationTests"/>
         </classes>
 
     </test>
@@ -33,17 +33,13 @@
 
         <parameter name="browser" value="chrome"/>
 
-        <groups>
-            <run>
-                <exclude name="ie"></exclude>
-                <include name="admin"></include>
-                <include name="user"></include>
-            </run>
-        </groups>
+
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="com.stopandshop.ui.RegistrationTests">
+            </class>
+
         </classes>
 
     </test>

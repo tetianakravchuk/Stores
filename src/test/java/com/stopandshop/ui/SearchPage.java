@@ -1,3 +1,6 @@
+package com.stopandshop.ui;
+
+import com.stopandshop.ui.BaseUI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,7 +22,7 @@ public class SearchPage extends BaseUI {
 
         currentSearchURL = driver.getCurrentUrl();
         System.out.println(currentSearchURL);
-        //Assert.assertEquals(currentSearchURL, Data.expectedSearchURL);
+        //Assert.assertEquals(currentSearchURL, com.stopandshop.ui.Data.expectedSearchURL);
         softAssert.assertEquals(currentSearchURL, Data.expectedSearchURL, "URL is wrong");
 
 

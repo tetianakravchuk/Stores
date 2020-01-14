@@ -1,3 +1,6 @@
+package com.stopandshop.ui;
+
+import com.stopandshop.ui.BaseActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,14 +17,14 @@ public class CateringPage extends BaseActions {
     String currentCateringURL;
 
     public String verifyCateringURL() {
-        //driver.findElement(Locators.LINK_SHOP_CATERING).click();
+        //driver.findElement(com.stopandshop.ui.Locators.LINK_SHOP_CATERING).click();
         currentCateringURL = driver.getCurrentUrl();
         return currentCateringURL;
     }
 
     public void selectStateDropDownMAState() {
 
-        // driver.findElement(Locators.DROPDOWN_CHOOSE_STATE).click();
+        // driver.findElement(com.stopandshop.ui.Locators.DROPDOWN_CHOOSE_STATE).click();
         //Select drpState = new Select(driver.findElement(By.name("stateSelect")));
         //drpState.selectByVisibleText("MA");
 

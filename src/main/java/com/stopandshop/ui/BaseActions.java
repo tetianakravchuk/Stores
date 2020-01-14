@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -207,6 +209,7 @@ public void ajaxClick(By by, int index){
 
     }
     public void javaWait(int ms){
+        System.out.println("Parent!!!!");
         try {
             Thread.sleep(ms);
         } catch (InterruptedException e){

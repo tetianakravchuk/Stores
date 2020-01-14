@@ -1,3 +1,6 @@
+package com.stopandshop.ui;
+
+import com.stopandshop.ui.BaseUI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -11,9 +14,9 @@ public class CateringTests extends BaseUI {
         WebElement element = driver.findElement(By.xpath("//iframe[@src='/onlinestore/storeSelect.htm?md=jb&eoid&vid=20060501001']"));
         driver.switchTo().frame(element);
         mainPage.getDropDownListByText(Locators.DROPDOWN_CHOOSE_STATE, "MA");
-        //mainPage.getDropDownListByText(Locators.DROPDOWN_CHOOSE_STATE, "NJ");
+        //mainPage.getDropDownListByText(com.stopandshop.ui.Locators.DROPDOWN_CHOOSE_STATE, "NJ");
 
-        //mainPage.getDropDownListByText(Locators.DROPDOWN_CHOOSE_CITY, "Acton");
+        //mainPage.getDropDownListByText(com.stopandshop.ui.Locators.DROPDOWN_CHOOSE_CITY, "Acton");
 
        }
        @Test
@@ -29,9 +32,9 @@ public class CateringTests extends BaseUI {
 
    // public void sizeDropDonList() {
        // mainPage.getToSearchPeoplePage();
-       // int elements = howWeWorkPage.getSizeDropDownList(Locators.DROPDOWNLIST_AGE_MAX);
+       // int elements = howWeWorkPage.getSizeDropDownList(com.stopandshop.ui.Locators.DROPDOWNLIST_AGE_MAX);
        // for (int i = 0; i < elements; i++) {
-        //    mainPage.selectItemDropDownRandomOption(Locators.DROPDOWNLIST_AGE_MAX, "Max age");
+        //    mainPage.selectItemDropDownRandomOption(com.stopandshop.ui.Locators.DROPDOWNLIST_AGE_MAX, "Max age");
         //}
 
    // }

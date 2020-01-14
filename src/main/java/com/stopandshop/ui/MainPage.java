@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,14 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.LINK_SHOP).click();
         driver.findElement(Locators.LINK_SHOP_CATERING).click();
 
+    }
+    public void javaWait(int ms){
+        System.out.println("Child!!!");
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
     }
 
     public void getToRewardsAndProgramPage() {
@@ -71,7 +81,7 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.CHOOSE_MA).click();
         driver.findElement(Locators.TEXT_FIELD_ZIP).sendKeys(Data.zipCode);
         driver.findElement(Locators.TEXT_FIELD_PHONE).clear();
-        //driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
+        //driver.findElement(com.stopandshop.ui.Locators.TEXT_FIELD_PHONE).sendKeys(com.stopandshop.ui.Data.phone);
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
         driver.findElement(Locators.CHECKBOX_EMAIL_SUBSCRIPTIONS).click();
         driver.findElement(Locators.CHECKBOX_HOUSEHOLD_CARD_SHARING).click();
@@ -83,12 +93,12 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.CHECK_BOX_AGREE_TERMS_AND_CONDITIONS_CLICK).click();
         driver.findElement(Locators.CHECK_BOX_AGREE_TERMS_AND_CONDITIONS).isSelected();
         driver.findElement(Locators.BUTTON_NEXT).click();
-        //driver.findElement(Locators.NEXT_BUTTON_REGISTRATION).click();
+        //driver.findElement(com.stopandshop.ui.Locators.NEXT_BUTTON_REGISTRATION).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@id ='skipBtn']"))));
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@id ='skipBtn']"))));
-        //Assert.assertEquals(currentFlexApplicationUrl, Data.expectedFlexApplicationUrl);
+        //Assert.assertEquals(currentFlexApplicationUrl, com.stopandshop.ui.Data.expectedFlexApplicationUrl);
     }
 
     public void newUserNoCardRegistrationOne(String firstName, String lastName, String email, String password, String confirmPassword, String street, String city, String state, String zip) {
@@ -107,7 +117,7 @@ public class MainPage extends BaseActions {
         clickValueOfList(Locators.CHOOSE_MA, state);
 
         driver.findElement(Locators.TEXT_FIELD_ZIP).sendKeys(zip);
-        //Assert.assertEquals(currentFlexApplicationUrl, Data.expectedFlexApplicationUrl);
+        //Assert.assertEquals(currentFlexApplicationUrl, com.stopandshop.ui.Data.expectedFlexApplicationUrl);
     }
 
     public void newUserNoCardRegistrationTwo(String mobileNumber, String store) {

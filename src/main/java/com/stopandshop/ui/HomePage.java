@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -258,7 +260,7 @@ public class HomePage extends BaseActions {
         driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
         driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
         driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
-        //driver.findElement(Locators.CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON).click();
+        //driver.findElement(com.stopandshop.ui.Locators.CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON).click();
         driver.navigate().refresh();
     }
 
@@ -272,12 +274,12 @@ public class HomePage extends BaseActions {
     }
 
     public void viewAllCouponsHomePage(){
-        // driver.findElement(Locators.LINK_HOME).click();
+        // driver.findElement(com.stopandshop.ui.Locators.LINK_HOME).click();
         driver.findElement(Locators.VIEW_ALL_COUPONS_HOME_PAGE).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //waitPageToLoad();
         //currentBrowseCouponsURL = driver.getCurrentUrl();
-        //Assert.assertEquals(currentBrowseCouponsURL, Data.expectedBrowseCouponsURL);
+        //Assert.assertEquals(currentBrowseCouponsURL, com.stopandshop.ui.Data.expectedBrowseCouponsURL);
         //System.out.println(currentBrowseCouponsURL);
 
 
@@ -286,8 +288,8 @@ public class HomePage extends BaseActions {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement coupons = wait.until(ExpectedConditions.elementToBeClickable(Locators.COUPONS_LOAD_TO_CARD_ONE));
         driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
-        //ajaxClick(Locators.COUPONS_PLUS_CLICK_ONE);
-        //driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
+        //ajaxClick(com.stopandshop.ui.Locators.COUPONS_PLUS_CLICK_ONE);
+        //driver.findElement(com.stopandshop.ui.Locators.YES_AUTOMATICALLY_ADD).click();
         driver.findElement(Locators.COUPONS_LOAD_TO_CARD_TWO).click();
 
     }
@@ -324,7 +326,7 @@ public class HomePage extends BaseActions {
         driver.findElement(Locators.USERNAME_SIGN_IN_POPUP_WINDOW).sendKeys(Data.email);
         driver.findElement(Locators.PASSWORD_SIGN_IN_POPUP_WINDOW).sendKeys(Data.password);
         driver.findElement(Locators.SIGN_IN_POPUP_WINDOW).click();
-        //driver.findElement(Locators.CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON).click();
+        //driver.findElement(com.stopandshop.ui.Locators.CLOSE_SIGN_IN_POPUP_WINDOW_BUTTON).click();
         driver.navigate().refresh();
     }
 
@@ -527,7 +529,7 @@ public class HomePage extends BaseActions {
 }
 
     public void confirmAutoAddCoupons(){
-        //driver.findElement(Locators.COUPONS_LOAD_TO_CARD_ONE).click();
+        //driver.findElement(com.stopandshop.ui.Locators.COUPONS_LOAD_TO_CARD_ONE).click();
         driver.findElement(Locators.YES_AUTOMATICALLY_ADD).click();
     }
 

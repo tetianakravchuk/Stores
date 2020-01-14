@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -22,7 +24,7 @@ public class MainPageTests extends BaseUI {
 
    // int indexLinkSignIn = 0;
 
-   // public MainPageTests(WebDriver driver, WebDriverWait wait) {
+   // public com.stopandshop.ui.MainPageTests(WebDriver driver, WebDriverWait wait) {
 
     //}
 
@@ -192,6 +194,10 @@ public class MainPageTests extends BaseUI {
     public void selectRandomDropDownList(){
         driver.findElement(Locators.LINK_SAVINGS);
 
+}
+@Test
+    public void print(){
+        mainPage.javaWait(5000);
 }
 
 

@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.testng.annotations.Test;
 
 public class CareerTest extends BaseUI {
@@ -8,7 +10,7 @@ public class CareerTest extends BaseUI {
     public void navigateToCareerPage(){
         homePage.navigateToHomePage();
         String careerLink = careersPage.verifyCareerURL();
-        //Assert.assertEquals(careerLink, Data.expectedCareerURL);
+        //Assert.assertEquals(careerLink, com.stopandshop.ui.Data.expectedCareerURL);
         driver.navigate().to(mainUrl);
 
 

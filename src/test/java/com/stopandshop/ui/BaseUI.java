@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +20,7 @@ public class BaseUI {
     String mainUrl = "https://stopandshop.com/";
     MainPage mainPage;
     SearchPage searchPage;
-    //BaseActions baseActions;
+    //com.stopandshop.ui.BaseActions baseActions;
     CareersPage careersPage;
     HomePage homePage;
     CouponsPage couponsPage;

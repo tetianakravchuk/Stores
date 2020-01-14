@@ -1,3 +1,5 @@
+package com.stopandshop.ui;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,7 +20,7 @@ public class RewardsAndPrograms extends BaseActions {
         //  WebElement link = linksAboutStopAndShop.get(i);
         // String nameOfLink = link.getText();
         //link.click();
-        // String titleOfAboutStopAndShopLinks = driver.findElement(Locators.H1_TITLE).getText();
+        // String titleOfAboutStopAndShopLinks = driver.findElement(com.stopandshop.ui.Locators.H1_TITLE).getText();
 
 
     }

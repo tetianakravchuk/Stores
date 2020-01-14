@@ -1,3 +1,6 @@
+package com.stopandshop.ui;
+
+import com.stopandshop.ui.BaseUI;
 import org.testng.annotations.Test;
 
 public class HomePageTests extends BaseUI {
