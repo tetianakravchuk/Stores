@@ -15,21 +15,22 @@ public class SearchCouponsTests extends BaseUI {
     public void redeemByDate() {
         couponSearchPage.navigateToAvailableCoupons();
         couponSearchPage.refineBarClick();
-        driver.findElement(By.xpath("//div[@class = 'c-sort-filter c-sort-filter--min-300 is-open']")).click();
+        //driver.findElement(By.xpath("//div[@class = 'c-sort-filter c-sort-filter--min-300 is-open']")).click();
         // driver.findElement(By.xpath("//div[@class = 'l-utility-bar-row--bottom__group1']")).click();
         // Checking if a radio button/checkbox is displayed
         driver.findElement(By.name("group1")).isDisplayed();
         // Checking if a radio button/checkbox is enabled so that it can be selected
-        WebElement checkBox = driver.findElement(By.name("group1"));
-        System.out.println("Is checkbox displayed? " + checkBox.isDisplayed());
+        WebElement checkBoxList = driver.findElement(By.name("group1"));
+        System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
         // Check if checkBox is enabled to select
-        if (checkBox.isEnabled()) {
+
+       // if (checkBox.isEnabled()) {
             // Check if enabled
-            checkBox.click();
-        } else {
+            //checkBox.click();
+       // } else {
             // Print message to console if disabled
-            System.out.println("Unable to select the checkbox");
-        }
+           // System.out.println("Unable to select the checkbox");
+       // }
         // Number of radio buttons in the list
         List <WebElement> radioButtonList = driver.findElements(By.tagName("input"));
         //System.out.println(radioButton.size());
@@ -64,7 +65,25 @@ public class SearchCouponsTests extends BaseUI {
                 System.out.println("Next ...");
             }
 
-        }}}
+        }}
+
+@Test
+    public void checkBoxSelect(){
+    couponSearchPage.navigateToAvailableCoupons();
+    couponSearchPage.refineBarClick();
+    driver.findElement(By.name("group1")).isDisplayed();
+    WebElement checkBoxList = driver.findElement(By.name("group1"));
+    System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+
+   WebElement redeemDate = driver.findElement(By.xpath("(//input[@name ='group1'])[1]"));
+
+        redeemDate.click();
+        System.out.println("Selection: " + redeemDate.isSelected());
+        }
+
+
+}
+
 
 
 
