@@ -1,16 +1,15 @@
 package com.stopandshop.ui;
 
-import com.stopandshop.ui.BaseUI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SearchPage extends BaseUI {
+public class SearchTest extends BaseUI {
     String currentSearchURL;
 
-    public SearchPage(WebDriver driver, WebDriverWait wait) {
+    public SearchTest(WebDriver driver, WebDriverWait wait) {
 
     }
 

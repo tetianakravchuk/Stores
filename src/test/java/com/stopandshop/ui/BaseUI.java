@@ -19,7 +19,7 @@ public class BaseUI {
     WebDriverWait wait;
     String mainUrl = "https://stopandshop.com/";
     MainPage mainPage;
-    SearchPage searchPage;
+    SearchTest searchPage;
     //com.stopandshop.ui.BaseActions baseActions;
     CareersPage careersPage;
     HomePage homePage;
@@ -28,11 +28,12 @@ public class BaseUI {
     CateringPage cateringPage;
     ShoppingListPage shoppingListPage;
     RewardsAndPrograms rewardsAndPrograms;
+    CouponSearchPage couponSearchPage;
 
     @BeforeMethod
     @Parameters("browser")
 
-    public void setup(@Optional("chrome") String browser, Method method){
+    public void setup(@Optional("chrome") String browser, Method method) {
 
         // Check if parameter passed from TestNG is 'firefox'
         if (browser.equalsIgnoreCase("firefox")) {
@@ -61,16 +62,17 @@ public class BaseUI {
         }
         wait = new WebDriverWait(driver, 20);
         mainPage = new MainPage(driver, wait);
-        searchPage = new SearchPage(driver, wait);
-        homePage = new HomePage(driver,wait);
-        couponsPage = new CouponsPage(driver,wait);
-        careersPage = new CareersPage(driver,wait);
+        searchPage = new SearchTest(driver, wait);
+        homePage = new HomePage(driver, wait);
+        couponsPage = new CouponsPage(driver, wait);
+        careersPage = new CareersPage(driver, wait);
         cateringPage = new CateringPage(driver, wait);
-        shoppingListPage = new ShoppingListPage(driver,wait);
+        shoppingListPage = new ShoppingListPage(driver, wait);
         rewardsAndPrograms = new RewardsAndPrograms(driver, wait);
+        couponSearchPage = new CouponSearchPage(driver, wait);
         driver.manage().window().maximize();
-        driver.get(mainUrl);}
-
+        driver.get(mainUrl);
+    }
 
 
     @AfterMethod
@@ -79,7 +81,8 @@ public class BaseUI {
         //stops
 
     }
-    public static String generateNewNumber(String name, int length){
+
+    public static String generateNewNumber(String name, int length) {
 
         return name + RandomStringUtils.random(length, "172984757");
     }
@@ -87,9 +90,11 @@ public class BaseUI {
     public static String generateEmail(String domain, int length) {
         return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz") + "@" + domain;
     }
+
     public static String generateFirstName(String domain, int length) {
         return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz");
     }
+
     public static String generateLastName(String domain, int length) {
         return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz");
     }

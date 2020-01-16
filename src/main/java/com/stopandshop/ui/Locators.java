@@ -163,11 +163,14 @@ public class Locators {
     public static final By ORDER_ONLINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class='l-coupon-utils__print']//a[@href='https://www.peapod.com']")));
     public static final By BROWSE_COUPONS_LOADED_COUPONS = ((By.xpath("//a[@href='#/available']")));
     public static final By BROWSE_COUPONS_TAB = ((By.xpath("//a[@href='#/available']")));
-    public static final By REFINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='c-sort-filter c-sort-filter--min-300 is-open']")));
+    public static final By REFINE_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='l-utility-bar-row--bottom__group1']")));
     public static final By SEARCH_COUPONS_AVAILABLE_COUPONS = ((By.xpath("//div[@class ='c-search c-search--coupons']")));
     public static final By SEARCH_ARROW_AVAILABLE_COUPONS = ((By.xpath("//button[@id='coupon-search-input-button']")));
+
+    //Sort & Filter
+    public static final By REDEEM_BY_DATE_LABEL = (By.xpath("//div[@class = 'c-xbubble__body']"));
     public static final By REMOVE_ALL_FILTERS_AVAILABLE_COUPONS = ((By.xpath("//button[@id='coupon-search-input-button']")));
-    public static final By SORT_REDEEM_BY_DATE = ((By.xpath("(//div[@class='c-radio'])[1]")));
+    public static final By SORT_REDEEM_BY_DATE = ((By.name("Redeem by Date")));
     public static final By SORT_VALUE_LOW_TO_HIGH = ((By.xpath("(//div[@class='c-radio'])[2]")));
     public static final By SORT_VALUE_HIGH_TO_LOW = ((By.xpath("(//div[@class='c-radio'])[3]")));
     public static final By SORT_BRAND = ((By.xpath("(//div[@class='c-radio'])[4]")));
@@ -220,5 +223,11 @@ public class Locators {
     public static final By CUSTOMER_SUPPORT_LINKS = ((By.xpath("(//ul[@class = 'c-list--no-bullets'])[6]//li")));
     //Company
     public static final By COMPANY_LINKS = ((By.xpath("(//ul[@class = 'c-list--no-bullets'])[7]//li")));
+
+
+
+
+
+
 
 }

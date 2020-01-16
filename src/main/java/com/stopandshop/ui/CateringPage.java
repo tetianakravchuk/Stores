@@ -1,6 +1,5 @@
 package com.stopandshop.ui;
 
-import com.stopandshop.ui.BaseActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -108,39 +107,37 @@ public class CateringPage extends BaseActions {
 
     }
 
-    public void selectStateDropDownOptionByName(){
+    public void selectStateDropDownOptionByName() {
         Select state = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='stateSelect']")));
         state.selectByVisibleText("MA");
         //state.getFirstSelectedOption();
     }
+
     public void selectCityDropDownOptionByName() throws InterruptedException {
         driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")).click();
-        Thread.sleep(1000*4);
+        Thread.sleep(1000 * 4);
         Select city = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")));
         city.selectByVisibleText("Acton");
-
-
 
 
         //state.getFirstSelectedOption();
     }
 
 
-    public void sizeDropDonStateList(){
+    public void sizeDropDonStateList() {
     }
 
-    public void selectStateDropDownOptionByName1(){
+    public void selectStateDropDownOptionByName1() {
         Select state = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='stateSelect']")));
         state.selectByVisibleText("MA");
         //state.getFirstSelectedOption();
     }
+
     public void selectCityDropDownOptionByName2() throws InterruptedException {
         driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")).click();
-        Thread.sleep(1000*4);
+        Thread.sleep(1000 * 4);
         Select city = new Select(driver.findElement(By.xpath("//form[@id ='chooseStore']//select[@name='citySelect']")));
         city.selectByVisibleText("Acton");
-        
-
 
 
         //state.getFirstSelectedOption();

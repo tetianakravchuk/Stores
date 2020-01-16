@@ -147,7 +147,7 @@ public class MainPageTests extends BaseUI {
         driver.findElement(Locators.LINK_DIGITAL_COUPONS).click();
         currentDigitalCouponsURL = driver.getCurrentUrl();
         System.out.println(currentDigitalCouponsURL);
-        Assert.assertEquals(currentDigitalCouponsURL, Data.expectedDigitalCoupons);
+        Assert.assertEquals(currentDigitalCouponsURL, Data.expectedDigitalCouponsUrl);
         driver.findElement(Locators.LINK_SAVINGS).click();
         driver.findElement(Locators.LINK_WEEKLY_CIRCULAR).click();
         WebDriverWait wait = new WebDriverWait(driver, 10);
