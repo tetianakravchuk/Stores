@@ -53,6 +53,14 @@ public class CouponSearchPage extends BaseActions {
             System.out.println(checkBox.isSelected());
 
         }
+        public void clickRedeemByDate(By locator){
+            ajaxClick(locator);
+        }
+       public void clickRedeemByDate(WebElement element){
+        ajaxClick(element);
+        //div.c-radio:nth-child(2) > label:nth-child(2)
+           ///html/body/div[1]/main/div[1]/div[6]/div[1]/div/div/form/fieldset[1]/div[1]/label
+    }
         //driver.findElement(Locators.SORT_REDEEM_BY_DATE).click();
         //isElementPresent(Locators.REDEEM_BY_DATE_LABEL);
         //assertTrue(isElementPresent(Locators.REDEEM_BY_DATE_LABEL);

@@ -2,6 +2,7 @@ package com.stopandshop.ui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -74,11 +75,32 @@ public class SearchCouponsTests extends BaseUI {
     driver.findElement(By.name("group1")).isDisplayed();
     WebElement checkBoxList = driver.findElement(By.name("group1"));
     System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+    //couponSearchPage.clickRedeemByDate(By.xpath("(//div[@class ='c-radio'])[1]"));
+   // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    WebElement redeemDate = driver.findElement(By.xpath("(//div[@class ='c-radio'])[1]"));
+    //couponSearchPage.clickRedeemByDate(redeemDate);
+    Actions action = new Actions(driver);
+    action.moveToElement(redeemDate).click().perform();
 
-   WebElement redeemDate = driver.findElement(By.xpath("(//input[@name ='group1'])[1]"));
+    WebElement valueLowHigh = driver.findElement(By.xpath("(//div[@class ='c-radio'])[2]"));
+    Actions action2 = new Actions(driver);
+    action2.moveToElement(valueLowHigh).click().perform();
 
-        redeemDate.click();
-        System.out.println("Selection: " + redeemDate.isSelected());
+    WebElement valueHighLow = driver.findElement(By.xpath("(//div[@class ='c-radio'])[3]"));
+    Actions action3 = new Actions(driver);
+    action3.moveToElement(valueHighLow).click().perform();
+
+    WebElement brand = driver.findElement(By.xpath("(//div[@class ='c-radio'])[4]"));
+    Actions action4 = new Actions(driver);
+    action4.moveToElement(brand).click().perform();
+
+    WebElement recommended = driver.findElement(By.xpath("(//div[@class ='c-radio'])[5]"));
+    Actions action5 = new Actions(driver);
+    action5.moveToElement(recommended).click().perform();
+
+
+
+        //System.out.println("Selection: " + redeemDate.isSelected());
         }
 
 
