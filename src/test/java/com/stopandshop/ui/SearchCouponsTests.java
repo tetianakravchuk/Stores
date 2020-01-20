@@ -3,6 +3,9 @@ package com.stopandshop.ui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -25,30 +28,29 @@ public class SearchCouponsTests extends BaseUI {
         System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
         // Check if checkBox is enabled to select
 
-       // if (checkBox.isEnabled()) {
-            // Check if enabled
-            //checkBox.click();
-       // } else {
-            // Print message to console if disabled
-           // System.out.println("Unable to select the checkbox");
-       // }
+        // if (checkBox.isEnabled()) {
+        // Check if enabled
+        //checkBox.click();
+        // } else {
+        // Print message to console if disabled
+        // System.out.println("Unable to select the checkbox");
+        // }
         // Number of radio buttons in the list
-        List <WebElement> radioButtonList = driver.findElements(By.tagName("input"));
+        List<WebElement> radioButtonList = driver.findElements(By.tagName("input"));
         //System.out.println(radioButton.size());
         //int a = driver.findElements(By.xpath("//input[@id ='rb1']")).size();
         //System.out.println(a);
         // Loops through all checkbox elements
-        for (int i = 0; i < radioButtonList.size() ; i++) {
+        for (int i = 0; i < radioButtonList.size(); i++) {
             // Checking if the checkbox is a "Redeem by Date" or "Brand"
             if ((radioButtonList.get(i).getAttribute("value").trim()
-            .equalsIgnoreCase("Brand"))
-                ||((radioButtonList.get(i).getAttribute("value").trim()
-                    .equalsIgnoreCase("Redeem by Date"))))
-            {
+                    .equalsIgnoreCase("Brand"))
+                    || ((radioButtonList.get(i).getAttribute("value").trim()
+                    .equalsIgnoreCase("Redeem by Date")))) {
                 // Print selection status to console
                 System.out.println("BEFORE: Is "
-                + radioButtonList.get(i).getAttribute("value") + " selected? "
-                + radioButtonList.get(i).isSelected());
+                        + radioButtonList.get(i).getAttribute("value") + " selected? "
+                        + radioButtonList.get(i).isSelected());
                 //Check is the checkbox is selected
                 if (!(radioButtonList.get(i).isSelected())) {
                     //Click the checkbox
@@ -66,42 +68,173 @@ public class SearchCouponsTests extends BaseUI {
                 System.out.println("Next ...");
             }
 
-        }}
-
-@Test
-    public void checkBoxSelect(){
-    couponSearchPage.navigateToAvailableCoupons();
-    couponSearchPage.refineBarClick();
-    driver.findElement(By.name("group1")).isDisplayed();
-    WebElement checkBoxList = driver.findElement(By.name("group1"));
-    System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
-    //couponSearchPage.clickRedeemByDate(By.xpath("(//div[@class ='c-radio'])[1]"));
-   // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    WebElement redeemDate = driver.findElement(By.xpath("(//div[@class ='c-radio'])[1]"));
-    //couponSearchPage.clickRedeemByDate(redeemDate);
-    Actions action = new Actions(driver);
-    action.moveToElement(redeemDate).click().perform();
-
-    WebElement valueLowHigh = driver.findElement(By.xpath("(//div[@class ='c-radio'])[2]"));
-    Actions action2 = new Actions(driver);
-    action2.moveToElement(valueLowHigh).click().perform();
-
-    WebElement valueHighLow = driver.findElement(By.xpath("(//div[@class ='c-radio'])[3]"));
-    Actions action3 = new Actions(driver);
-    action3.moveToElement(valueHighLow).click().perform();
-
-    WebElement brand = driver.findElement(By.xpath("(//div[@class ='c-radio'])[4]"));
-    Actions action4 = new Actions(driver);
-    action4.moveToElement(brand).click().perform();
-
-    WebElement recommended = driver.findElement(By.xpath("(//div[@class ='c-radio'])[5]"));
-    Actions action5 = new Actions(driver);
-    action5.moveToElement(recommended).click().perform();
-
-
-
-        //System.out.println("Selection: " + redeemDate.isSelected());
         }
+    }
+
+    @Test
+    public void refineSort() {
+        couponSearchPage.navigateToAvailableCoupons();
+        couponSearchPage.refineBarClick();
+        driver.findElement(By.name("group1")).isDisplayed();
+        WebElement checkBoxList = driver.findElement(By.name("group1"));
+        System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+
+        WebElement redeemDate = driver.findElement(By.xpath("(//div[@class ='c-radio'])[1]"));
+        Actions action = new Actions(driver);
+        action.moveToElement(redeemDate).click().perform();
+
+        WebElement valueLowHigh = driver.findElement(By.xpath("(//div[@class ='c-radio'])[2]"));
+        Actions action2 = new Actions(driver);
+        action2.moveToElement(valueLowHigh).click().perform();
+
+        WebElement valueHighLow = driver.findElement(By.xpath("(//div[@class ='c-radio'])[3]"));
+        Actions action3 = new Actions(driver);
+        action3.moveToElement(valueHighLow).click().perform();
+
+        WebElement brand = driver.findElement(By.xpath("(//div[@class ='c-radio'])[4]"));
+        Actions action4 = new Actions(driver);
+        action4.moveToElement(brand).click().perform();
+
+        WebElement recommended = driver.findElement(By.xpath("(//div[@class ='c-radio'])[5]"));
+        Actions action5 = new Actions(driver);
+        action5.moveToElement(recommended).click().perform();
+
+    }
+
+    @Test
+    public void refineFilterPartOne() {
+        couponSearchPage.navigateToAvailableCoupons();
+        couponSearchPage.refineBarClick();
+        driver.findElement(By.name("group1")).isDisplayed();
+        WebElement checkBoxList = driver.findElement(By.name("group1"));
+        System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+
+        WebElement babyAndChildCare = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[1]"));
+        Actions action = new Actions(driver);
+        action.moveToElement(babyAndChildCare).click().perform();
+        System.out.println(babyAndChildCare);
+
+        WebElement bakery = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[2]"));
+        Actions action2 = new Actions(driver);
+        action2.moveToElement(bakery).click().perform();
+
+        WebElement beverages = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[3]"));
+        Actions action3 = new Actions(driver);
+        action3.moveToElement(beverages).click().perform();
+
+        WebElement breakfast = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[4]"));
+        Actions action4 = new Actions(driver);
+        action4.moveToElement(breakfast).click().perform();
+
+        WebElement condimentsAndSauces = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[5]"));
+        Actions action5 = new Actions(driver);
+        action5.moveToElement(condimentsAndSauces).click().perform();
+
+        WebElement dairy = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[6]"));
+        Actions action6 = new Actions(driver);
+        action6.moveToElement(dairy).click().perform();
+
+        WebElement deli = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[7]"));
+        Actions action7 = new Actions(driver);
+        action7.moveToElement(deli).click().perform();
+
+        WebElement ethnicProducts = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[8]"));
+        Actions action8 = new Actions(driver);
+        action8.moveToElement(ethnicProducts).click().perform();
+    }
+
+    @Test
+    public void refineFilterPartTwo() {
+        couponSearchPage.navigateToAvailableCoupons();
+        couponSearchPage.refineBarClick();
+        driver.findElement(By.name("group1")).isDisplayed();
+        WebElement checkBoxList = driver.findElement(By.name("group1"));
+        System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+
+
+        WebElement frozenFood = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[9]"));
+        System.out.println(frozenFood.getText());
+        Actions action9 = new Actions(driver);
+        action9.moveToElement(frozenFood).click().perform();
+
+        WebElement generalMerchandise = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[10]"));
+        System.out.println(generalMerchandise.getText());
+        Actions action10 = new Actions(driver);
+        action10.moveToElement(generalMerchandise).click().perform();
+
+        WebElement healthAndWellness = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[11]"));
+        System.out.println(healthAndWellness.getText());
+        Actions action11 = new Actions(driver);
+        action11.moveToElement(healthAndWellness).click().perform();
+
+        WebElement household = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[12]"));
+        System.out.println(household.getText());
+        Actions action12 = new Actions(driver);
+        action12.moveToElement(household).click().perform();
+
+        WebElement personalCare = driver.findElement(By.xpath("(//div[@class ='c-checkbox'])[13]"));
+        System.out.println(personalCare.getText());
+        Actions action13 = new Actions(driver);
+        action13.moveToElement(personalCare).click().perform();
+
+        WebElement petCare = driver.findElement(By.xpath("(//input[@class ='c-settings-form__filter-checkbox c-checkbox__input js-update-filter'])[14]"));
+        System.out.println(petCare.getText());
+        Actions action14 = new Actions(driver);
+        action14.moveToElement(petCare).click().perform();
+
+        WebElement snacks = driver.findElement(By.id("Snacks"));
+        System.out.println(snacks.getText());
+        Actions action15 = new Actions(driver);
+        action15.moveToElement(snacks).click().perform();
+
+    }
+
+    @Test
+    public void snackFilter() {
+        couponSearchPage.navigateToAvailableCoupons();
+        couponSearchPage.refineBarClick();
+        driver.findElement(By.name("group1")).isDisplayed();
+        WebElement checkBoxList = driver.findElement(By.name("group1"));
+        System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+
+        WebElement snacks = driver.findElement(By.id("Snacks"));
+        (new WebDriverWait(driver, 30)).until(ExpectedConditions
+                .elementToBeClickable(snacks));
+        // Create a boolean variable to store true/false
+        Boolean isSnacksSelected = snacks.isSelected();
+
+        if (isSnacksSelected == false) {
+            Actions action15 = new Actions(driver);
+            action15.moveToElement(snacks).click().perform();
+            System.out.println("Test has selected Snacks checkbox");
+        } else {
+            System.out.println("Snack checkbox was selected on default");
+        }
+
+    }
+
+    @Test
+    public void checkAllFilters() throws InterruptedException {
+        couponSearchPage.navigateToAvailableCoupons();
+        couponSearchPage.refineBarClick();
+        driver.findElement(By.name("group1")).isDisplayed();
+        WebElement checkBoxList = driver.findElement(By.name("group1"));
+        System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
+
+        List<WebElement> checkBoxFiltersList = driver.findElements(By.xpath("//input[@type = 'checkbox']"));
+        for(WebElement checkBox : checkBoxFiltersList){
+            Thread.sleep(2000);
+            checkBox.click();
+
+
+        }
+        // Assert if any checkbox left checked
+        List<WebElement> allCheckboxList = driver.findElements(By.xpath("//input[@type = 'checkbox']"));
+        if(!allCheckboxList.isEmpty()){
+            Assert.fail();
+        }
+
+    }
 
 
 }
