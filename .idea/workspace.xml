@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stopandshop/ui/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stopandshop/ui/BaseActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/stopandshop/ui/SearchCouponsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/stopandshop/ui/SearchCouponsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SearchCouponsTests.checkAllFilters">
+  <component name="RunManager" selected="TestNG.SearchCouponsTests.testAllCheckBox">
     <configuration name="SearchCouponsTests.checkAllFilters" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="stopandshop" />
       <extension name="coverage">
@@ -102,24 +101,6 @@
       <option name="PACKAGE_NAME" value="com.stopandshop.ui" />
       <option name="MAIN_CLASS_NAME" value="com.stopandshop.ui.SearchCouponsTests" />
       <option name="METHOD_NAME" value="listFilters" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchCouponsTests.refineFilter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="stopandshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stopandshop.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.stopandshop.ui" />
-      <option name="MAIN_CLASS_NAME" value="com.stopandshop.ui.SearchCouponsTests" />
-      <option name="METHOD_NAME" value="refineFilter" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -163,13 +144,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchCouponsTests.testAllCheckBox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="stopandshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stopandshop.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stopandshop.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.stopandshop.ui.SearchCouponsTests" />
+      <option name="METHOD_NAME" value="testAllCheckBox" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SearchCouponsTests.testAllCheckBox" />
         <item itemvalue="TestNG.SearchCouponsTests.checkAllFilters" />
         <item itemvalue="TestNG.SearchCouponsTests.refineFilterPartTwo" />
         <item itemvalue="TestNG.SearchCouponsTests.listFilters" />
         <item itemvalue="TestNG.SearchCouponsTests.refineFilterPartOne" />
-        <item itemvalue="TestNG.SearchCouponsTests.refineFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +235,7 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="641" y="225" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1578968178574" />
-    <state width="1398" height="37" key="GridCell.Tab.0.bottom" timestamp="1579642373628">
+    <state width="1398" height="37" key="GridCell.Tab.0.bottom" timestamp="1579643404424">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1358" height="39" key="GridCell.Tab.0.bottom/0.23.1440.795/1440.-332.1920.1057@0.23.1440.795" timestamp="1576875131741" />
@@ -262,7 +261,8 @@
     <state width="1852" height="289" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-332.1920.973@1440.-332.1920.973" timestamp="1578612313659" />
     <state width="1852" height="289" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-332.1920.975@1440.-332.1920.975" timestamp="1578611117872" />
     <state width="1398" height="37" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-332.1920.980@0.23.1440.877" timestamp="1579642373628" />
-    <state width="1398" height="37" key="GridCell.Tab.0.center" timestamp="1579642373627">
+    <state width="1398" height="37" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-332.1920.982@0.23.1440.877" timestamp="1579643404424" />
+    <state width="1398" height="37" key="GridCell.Tab.0.center" timestamp="1579643404423">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1358" height="39" key="GridCell.Tab.0.center/0.23.1440.795/1440.-332.1920.1057@0.23.1440.795" timestamp="1576875131740" />
@@ -288,7 +288,8 @@
     <state width="1852" height="289" key="GridCell.Tab.0.center/0.23.1440.877/1440.-332.1920.973@1440.-332.1920.973" timestamp="1578612313658" />
     <state width="1852" height="289" key="GridCell.Tab.0.center/0.23.1440.877/1440.-332.1920.975@1440.-332.1920.975" timestamp="1578611117871" />
     <state width="1398" height="37" key="GridCell.Tab.0.center/0.23.1440.877/1440.-332.1920.980@0.23.1440.877" timestamp="1579642373627" />
-    <state width="1398" height="37" key="GridCell.Tab.0.left" timestamp="1579642373626">
+    <state width="1398" height="37" key="GridCell.Tab.0.center/0.23.1440.877/1440.-332.1920.982@0.23.1440.877" timestamp="1579643404423" />
+    <state width="1398" height="37" key="GridCell.Tab.0.left" timestamp="1579643404422">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1358" height="39" key="GridCell.Tab.0.left/0.23.1440.795/1440.-332.1920.1057@0.23.1440.795" timestamp="1576875131739" />
@@ -314,7 +315,8 @@
     <state width="1852" height="289" key="GridCell.Tab.0.left/0.23.1440.877/1440.-332.1920.973@1440.-332.1920.973" timestamp="1578612313658" />
     <state width="1852" height="289" key="GridCell.Tab.0.left/0.23.1440.877/1440.-332.1920.975@1440.-332.1920.975" timestamp="1578611117870" />
     <state width="1398" height="37" key="GridCell.Tab.0.left/0.23.1440.877/1440.-332.1920.980@0.23.1440.877" timestamp="1579642373626" />
-    <state width="1398" height="37" key="GridCell.Tab.0.right" timestamp="1579642373627">
+    <state width="1398" height="37" key="GridCell.Tab.0.left/0.23.1440.877/1440.-332.1920.982@0.23.1440.877" timestamp="1579643404422" />
+    <state width="1398" height="37" key="GridCell.Tab.0.right" timestamp="1579643404424">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1358" height="39" key="GridCell.Tab.0.right/0.23.1440.795/1440.-332.1920.1057@0.23.1440.795" timestamp="1576875131740" />
@@ -340,6 +342,7 @@
     <state width="1852" height="289" key="GridCell.Tab.0.right/0.23.1440.877/1440.-332.1920.973@1440.-332.1920.973" timestamp="1578612313659" />
     <state width="1852" height="289" key="GridCell.Tab.0.right/0.23.1440.877/1440.-332.1920.975@1440.-332.1920.975" timestamp="1578611117872" />
     <state width="1398" height="37" key="GridCell.Tab.0.right/0.23.1440.877/1440.-332.1920.980@0.23.1440.877" timestamp="1579642373627" />
+    <state width="1398" height="37" key="GridCell.Tab.0.right/0.23.1440.877/1440.-332.1920.982@0.23.1440.877" timestamp="1579643404424" />
     <state width="1958" height="104" key="GridCell.Tab.1.bottom" timestamp="1579560322868">
       <screen x="1440" y="-332" width="1920" height="1057" />
     </state>
