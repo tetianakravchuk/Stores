@@ -157,7 +157,29 @@ public class BaseActions { //created class for simple actions what is not connec
         wait.until(ExpectedConditions.elementToBeClickable(by));
         ajaxClick(driver.findElement(by));
     }
+    public void ajaxWait() throws InterruptedException {
+        Boolean state = (Boolean)((JavascriptExecutor) driver).executeScript("return TrPage.getInstance().getRequestQueue().getDTSState() == TrRequestQueue.STATE_READY");
+        new WebDriverWait(driver, 180).until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver driver) {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                System.out.println(js.executeScript("return TrPage.getInstance().getRequestQueue().getDTSState() == TrRequestQueue.STATE_READY"));
+                return (Boolean) js.executeScript("return TrPage.getInstance().getRequestQueue().getDTSState() == TrRequestQueue.STATE_READY"); //     return jQuery.active == 0
+            }
+        });
+        if (!state) {
+            Thread.sleep(500);
+        }
+    }
 
+
+    public void ajaxWaitForJQueryToLoad() {
+        WebDriverWait webDriverWait = new WebDriverWait(driver, 30);
+        webDriverWait.until((ExpectedCondition<Boolean>) wd ->
+                ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
+
+        webDriverWait.until((ExpectedCondition<Boolean>) wd ->
+                ((JavascriptExecutor) wd).executeScript("return jQuery.active==0").equals(true));
+    }
     public void scrollDownPage() {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,1000)", "");

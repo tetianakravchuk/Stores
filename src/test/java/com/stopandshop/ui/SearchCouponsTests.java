@@ -221,18 +221,26 @@ public class SearchCouponsTests extends BaseUI {
         WebElement checkBoxList = driver.findElement(By.name("group1"));
         System.out.println("Is checkbox displayed? " + checkBoxList.isDisplayed());
 
-        List<WebElement> checkBoxFiltersList = driver.findElements(By.xpath("//input[@type = 'checkbox']"));
+        List<WebElement> checkBoxFiltersList = driver.findElements(By.xpath("//div[@class='c-checkbox']//input[@checked='true']"));
         for(WebElement checkBox : checkBoxFiltersList){
-            Thread.sleep(2000);
+
+            //mainPage.ajaxClick(checkBox);
             checkBox.click();
-
-
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='c-checkbox']//input[@checked='true']")));
+            Thread.sleep(1000);
+            //mainPage.javaWait(500);
+            //mainPage.ajaxClick(checkBox);
         }
         // Assert if any checkbox left checked
-        List<WebElement> allCheckboxList = driver.findElements(By.xpath("//input[@type = 'checkbox']"));
-        if(!allCheckboxList.isEmpty()){
-            Assert.fail();
-        }
+        Assert.assertEquals(driver.findElements(By.cssSelector(".c-checkbox input[checked='true']")).size(),
+                checkBoxFiltersList.size());
+
+    }
+
+    @Test
+    public void testAllCheckBox(){
+               // if first radio button is not selected then we select it
+
 
     }
 
