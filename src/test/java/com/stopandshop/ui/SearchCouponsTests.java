@@ -1,6 +1,7 @@
 package com.stopandshop.ui;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -241,22 +242,23 @@ public class SearchCouponsTests extends BaseUI {
     @Test
     public void testAllCheckBox() {
         couponSearchPage.navigateToAvailableCoupons();
+        // waiting
         WebDriverWait wait = new WebDriverWait(driver, 10);
-
+        // click Refine
         driver.findElement(By.cssSelector(".c-sort-filter")).click();
-
-        List<WebElement> checkboxes = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".c-checkbox label")));
-        List<String> labels = checkboxes.stream().map(WebElement::getText).collect(Collectors.toList());
+        // getting all checkboxes
+        List <WebElement> checkboxes = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".c-checkbox label")));
+        // getting names of checkboxes
+        List <String> labels = checkboxes.stream().map(WebElement::getText).collect(Collectors.toList());
 
         for (String label : labels) {
+            // clicking on each checkbox
             driver.findElement(By.cssSelector(String.format("label[for='%s']", label))).click();
             // wait until loading disappear
             wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".c-spinner")));
-
             // check if input is selected
             wait.until(ExpectedConditions.elementToBeSelected(By.cssSelector(String.format("input[id='%s']", label))));
         }
-
         // check if input is selected by compare tags with checkboxes
         List<String> selectedFilters = driver.findElements(By.cssSelector(".divider-view-filters-list .c-xbubble")).stream().map(WebElement::getText).collect(Collectors.toList());
         Assert.assertEquals(selectedFilters, labels);
@@ -265,13 +267,34 @@ public class SearchCouponsTests extends BaseUI {
     }
 
     @Test
-    public void checkAllCheckBoxes(){
+    public void checkAllCheckBoxes() {
+        driver.navigate().to("https://stopandshop.com/coupons-weekly-circular/digital-coupons/#/available");
+        WebElement refineButton = driver.findElement(By.cssSelector(".c-sort-filter.c-sort-filter--min-300"));
+        refineButton.click();
 
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, 900)");
+        mainPage.javaWaitSec(1);
 
+        List<WebElement> checkBoxFiltersList = driver.findElements(By.cssSelector(".c-settings-form__filter-checkbox.c-checkbox__input.js-update-filter"));
+        System.out.println("Number of unchecked check boxes: " + checkBoxFiltersList.size());
+        for (int i = 0; i < checkBoxFiltersList.size(); i++) {
+            Actions action = new Actions(driver);
+            action.moveToElement(checkBoxFiltersList.get(i)).click().perform();
+            mainPage.javaWaitSec(1);
+            js.executeScript("window.scrollBy(0, 500)");
+            mainPage.javaWaitSec(1);
+            checkBoxFiltersList = driver.findElements(By.cssSelector(".c-settings-form__filter-checkbox.c-checkbox__input.js-update-filter"));
+        }
+        // Assert if all checkboxes are checked       
+        List<WebElement> checkBoxFiltersListChecked = driver.findElements(By.xpath("//div[@class='c-checkbox']//input[@checked='true']"));
+        System.out.println("Number of checked check boxes: " + checkBoxFiltersList.size());
+        Assert.assertEquals(checkBoxFiltersListChecked.size(), checkBoxFiltersList.size());
     }
-
-
 }
+
+
+
 
 
 
