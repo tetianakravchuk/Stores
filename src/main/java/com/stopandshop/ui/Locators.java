@@ -170,29 +170,30 @@ public class Locators {
     //Sort & Filter
     public static final By REDEEM_BY_DATE_LABEL = (By.xpath("//div[@class = 'c-xbubble__body']"));
     public static final By REMOVE_ALL_FILTERS_AVAILABLE_COUPONS = ((By.xpath("//button[@id='coupon-search-input-button']")));
-    public static final By SORT_REDEEM_BY_DATE = ((By.name("Redeem by Date")));
+    public static final By SORT_REDEEM_BY_DATE = ((By.xpath("(//div[@class ='c-radio'])[1]")));
     public static final By SORT_VALUE_LOW_TO_HIGH = ((By.xpath("(//div[@class='c-radio'])[2]")));
     public static final By SORT_VALUE_HIGH_TO_LOW = ((By.xpath("(//div[@class='c-radio'])[3]")));
-    public static final By SORT_BRAND = ((By.xpath("(//div[@class='c-radio'])[4]")));
-    public static final By SORT_RECOMMENDED = ((By.xpath("(//div[@class='c-radio'])[4]")));
-    public static final By FILTER_BABY_AND_CHILDCARE = ((By.xpath("(//div[@class='c-checkbox'])[1]")));
-    public static final By FILTER_BAKERY = ((By.xpath("(//div[@class='c-checkbox'])[2]")));
-    public static final By FILTER_BEVERAGES = ((By.xpath("(//div[@class='c-checkbox'])[3]")));
-    public static final By FILTER_BREAKFAST = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_CONDIMENTS_AND_SAUCES = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_DAIRY = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_DELI = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_ETHNIC_PRODUCTS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_FROZEN_FOOD = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_GENERAL_MERCHANDISE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_GRAINS_PASTA_BEANS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_HEALTH_WELLNESS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_HOUSEHOLD = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By SORT_BRAND = ((By.cssSelector("input#rb4")));
+    public static final By SORT_RECOMMENDED = ((By.cssSelector("input#rb5.c-radio__input")));
+    public static final By FILTER_BABY_AND_CHILDCARE = ((By.xpath("//div[@class='c-checkbox']//input[@id='Baby & ChildCare']")));
+    public static final By FILTER_BAKERY = ((By.xpath("//div[@class='c-checkbox']//input[@id='Bakery']")));
+    public static final By FILTER_BEVERAGES = ((By.xpath("//div[@class='c-checkbox']//input[@id='Beverages']")));
+    public static final By FILTER_BREAKFAST = ((By.xpath("//div[@class='c-checkbox']//input[@id='Breakfast']")));
+    public static final By FILTER_CONDIMENTS_AND_SAUCES = ((By.xpath("//div[@class='c-checkbox']//input[@id='Condiments & Sauces']")));
+    public static final By FILTER_DAIRY = ((By.xpath("//div[@class='c-checkbox']//input[@id='Dairy']")));
+    public static final By FILTER_DELI = ((By.xpath("//div[@class='c-checkbox']//input[@id='Deli']")));
+    public static final By FILTER_ETHNIC_PRODUCTS = ((By.xpath("//div[@class='c-checkbox']//input[@id='Ethnic Products']")));
+    public static final By FILTER_FROZEN_FOOD = ((By.xpath("//div[@class='c-checkbox']//input[@id='Frozen Food']")));
+    public static final By FILTER_GENERAL_MERCHANDISE = ((By.xpath("//div[@class='c-checkbox']//input[@id='Ethnic Products']")));
+    public static final By FILTER_GRAINS_PASTA_BEANS = ((By.xpath("")));
+    public static final By FILTER_HEALTH_WELLNESS = ((By.xpath("//div[@class='c-checkbox']//input[@id='Health & Wellness']")));
+    public static final By FILTER_HOUSEHOLD = ((By.xpath("//div[@class='c-checkbox']//input[@id='Household']")));
     public static final By FILTER_MEAT_SEAFOOD = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_PERSONAL_CARE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_PET_CARE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_PERSONAL_CARE = ((By.xpath("//div[@class='c-checkbox']//input[@id='Personal Care']")));
+    public static final By FILTER_PET_CARE = ((By.xpath("//div[@class='c-checkbox']//input[@id='Pet Care']")));
     public static final By FILTER_PRODUCE = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
-    public static final By FILTER_SNACKS = ((By.xpath("(//div[@class='c-checkbox'])[4]")));
+    public static final By FILTER_SNACKS = ((By.xpath("//div[@class='c-checkbox']//input[@id='Snacks']")));
+    public static final By SECTION_FILTER_RESULTS = By.xpath("//div[@class='c-xbubble']");
 
     //Automatically add loaded coupons
 

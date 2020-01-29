@@ -2,7 +2,9 @@ package com.stopandshop.ui;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -29,6 +31,25 @@ public class MainPage extends BaseActions {
             e.printStackTrace();
         }
     }
+    public void ajaxScroll(WebElement element){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    public void ajaxClick(WebElement element){
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+    }
+    public void ajaxClick(By by){
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
+        wait.until(ExpectedConditions.elementToBeClickable(by));
+        ajaxClick(driver.findElement(by));
+    }
+
+public void ajaxScrollElement(WebElement element){
+    JavascriptExecutor js = ((JavascriptExecutor) driver);
+    js.executeScript("arguments[0].scrollIntoView(true);", element);
+}
 
     public void getToRewardsAndProgramPage() {
         driver.findElement(Locators.LINK_SAVINGS).click();
