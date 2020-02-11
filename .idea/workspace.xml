@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -434,10 +435,11 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="441" y="133" key="Maven.ArtifactSearchDialog/0.23.1440.821/1440.23.1920.1057@0.23.1440.821" timestamp="1578970519793" />
-    <state x="342" y="23" width="953" height="704" key="SettingsEditor" timestamp="1580918906996">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="342" y="23" width="953" height="704" key="SettingsEditor" timestamp="1581451435883">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="342" y="23" width="953" height="704" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1580918906996" />
+    <state x="342" y="23" key="SettingsEditor/0.23.1440.814/1440.-332.1920.1057@0.23.1440.814" timestamp="1581451435883" />
     <state x="229" y="23" width="1024" height="821" key="SettingsEditor/0.23.1440.821/1440.-332.1920.1057@0.23.1440.821" timestamp="1579036993425" />
     <state x="293" y="23" width="1110" height="822" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1579043775236" />
     <state x="1414" y="-323" width="1784" height="815" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581449619161">
