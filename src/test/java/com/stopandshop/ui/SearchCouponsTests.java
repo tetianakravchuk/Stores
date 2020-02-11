@@ -174,13 +174,10 @@ public class SearchCouponsTests extends BaseUI {
    public void testFilterAndRemove(){
        couponSearchPage.navigateToAvailableCoupons();
        couponSearchPage.filterBakery();
-       couponSearchPage.filterBreakfast();
-
-       WebElement removeBakery = driver.findElement(By.xpath("//div[@class='divider-view-filters-list']//div[@class = 'c-xbubble__control']"));
+       mainPage.javaWait(3);
+       WebElement removeBakery = driver.findElement(Locators.FILTER_BAKERY_REMOVE);
        mainPage.ajaxClick(removeBakery);
 
-       WebElement removeBreakfast = driver.findElement(By.xpath("(//div[@class='divider-view-filters-list']//div[@class = 'c-xbubble__control'])[2]"));
-       mainPage.ajaxClick(removeBreakfast);
 
    }
 

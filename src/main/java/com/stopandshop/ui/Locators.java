@@ -177,6 +177,7 @@ public class Locators {
     public static final By SORT_RECOMMENDED = ((By.cssSelector("input#rb5.c-radio__input")));
     public static final By FILTER_BABY_AND_CHILDCARE = ((By.xpath("//div[@class='c-checkbox']//input[@id='Baby & ChildCare']")));
     public static final By FILTER_BAKERY = ((By.xpath("//div[@class='c-checkbox']//input[@id='Bakery']")));
+    public static final By FILTER_BAKERY_REMOVE = By.xpath("//div[@class='divider-view-filters-list']//div[@class = 'c-xbubble__control']");
     public static final By FILTER_BEVERAGES = ((By.xpath("//div[@class='c-checkbox']//input[@id='Beverages']")));
     public static final By FILTER_BREAKFAST = ((By.xpath("//div[@class='c-checkbox']//input[@id='Breakfast']")));
     public static final By FILTER_CONDIMENTS_AND_SAUCES = ((By.xpath("//div[@class='c-checkbox']//input[@id='Condiments & Sauces']")));
