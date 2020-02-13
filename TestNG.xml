@@ -2,7 +2,7 @@
 
 
 
-<suite name="TestSuite" parallel="tests"  thread-count="3">
+<suite name="TestSuite" parallel="none" >
 
 
 

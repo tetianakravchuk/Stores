@@ -1,0 +1,93 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 11, Errors: 0, Skipped: 5, Time elapsed: 47.637 s <<< FAILURE! - in TestSuite
+loyaltyCardRegistration(com.stopandshop.ui.RegistrationTests)  Time elapsed: 0.221 s  <<< FAILURE!
+org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]
+
+setup(com.stopandshop.ui.RegistrationTests)  Time elapsed: 0.31 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: /Users/nutxk18/Desktop/GitHub/Stores/Stores/IEDriverServer.exe
+
+registerNewUSer2(com.stopandshop.ui.RegistrationTests)  Time elapsed: 0.316 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+
+loyaltyCardRegistration(com.stopandshop.ui.RegistrationTests)  Time elapsed: 0.353 s  <<< FAILURE!
+org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]
+
+registerNewUSer(com.stopandshop.ui.RegistrationTests)  Time elapsed: 0.059 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59864, moz:profile: /var/folders/_9/ln3qnsn10wl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd123e17-9f83-8245-b822-33fb333e563d
+*** Element info: {Using=xpath, value=//a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']}
+	at com.stopandshop.ui.RegistrationTests.registerNewUSer(RegistrationTests.java:60)
+
+registerNewUSer2(com.stopandshop.ui.RegistrationTests)  Time elapsed: 2.056 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+
+registerUser(com.stopandshop.ui.RegistrationTests)  Time elapsed: 0.033 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59894, moz:profile: /var/folders/_9/ln3qnsn10wl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 37de5a2c-81cf-214b-b4fc-3d4147918c6b
+*** Element info: {Using=xpath, value=//a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']}
+	at com.stopandshop.ui.RegistrationTests.registerUser(RegistrationTests.java:54)
+
+loyaltyCardRegistration(com.stopandshop.ui.RegistrationTests)  Time elapsed: 2.909 s  <<< FAILURE!
+org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]
+
+registerNewUSer(com.stopandshop.ui.RegistrationTests)  Time elapsed: 8.977 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id ='skipBtn']"}
+  (Session info: chrome=80.0.3987.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_9/ln3qnsn10wl...}, goog:chromeOptions: {debuggerAddress: localhost:59156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e9aab70ab63a60a1d1609331a2c8c489
+*** Element info: {Using=xpath, value=//a[@id ='skipBtn']}
+	at com.stopandshop.ui.RegistrationTests.registerNewUSer(RegistrationTests.java:61)
+
+registerNewUSer2(com.stopandshop.ui.RegistrationTests)  Time elapsed: 9.102 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+
+registerUser(com.stopandshop.ui.RegistrationTests)  Time elapsed: 9.449 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id ='skipBtn']"}
+  (Session info: chrome=80.0.3987.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_9/ln3qnsn10wl...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a513ae828fcfa09319a37381913cd840
+*** Element info: {Using=xpath, value=//a[@id ='skipBtn']}
+	at com.stopandshop.ui.RegistrationTests.registerUser(RegistrationTests.java:54)
+

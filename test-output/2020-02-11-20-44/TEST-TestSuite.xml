@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="47.637" tests="16" errors="0" skipped="5" failures="11">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/nutxk18/Desktop/GitHub/Stores/Stores/target/test-classes:/Users/nutxk18/Desktop/GitHub/Stores/Stores/target/classes:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/nutxk18/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/nutxk18/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nutxk18/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/nutxk18/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/nutxk18/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/nutxk18/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/nutxk18/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/nutxk18/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/nutxk18/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/nutxk18/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/nutxk18/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/nutxk18/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/nutxk18/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/nutxk18/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/nutxk18/Desktop/GitHub/Stores/Stores/target/surefire/surefirebooter2824557107409706528.jar /Users/nutxk18/Desktop/GitHub/Stores/Stores/target/surefire 2020-02-11T15-44-28_432-jvmRun1 surefire3526149508675990793tmp surefire_03139991211392655978tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/nutxk18/Desktop/GitHub/Stores/Stores/target/test-classes:/Users/nutxk18/Desktop/GitHub/Stores/Stores/target/classes:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/nutxk18/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/nutxk18/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/nutxk18/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/nutxk18/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/nutxk18/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/nutxk18/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/nutxk18/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/nutxk18/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/nutxk18/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/nutxk18/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/nutxk18/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/nutxk18/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/nutxk18/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/nutxk18/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/nutxk18/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/nutxk18"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/nutxk18/Desktop/GitHub/Stores/Stores"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/nutxk18/Desktop/GitHub/Stores/Stores/target/surefire/surefirebooter2824557107409706528.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="user.name" value="nutxk18"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/nutxk18/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/_9/ln3qnsn10wl2rz6zynmd5qbd96fmfy/T/"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="user.dir" value="/Users/nutxk18/Desktop/GitHub/Stores/Stores"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/nutxk18/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.ext.dirs" value="/Users/nutxk18/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="loyaltyCardRegistration" classname="com.stopandshop.ui.RegistrationTests" time="0.221">
+    <failure message="&#10;Data provider mismatch&#10;Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])&#10;Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]" type="org.testng.internal.reflect.MethodMatcherException">org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]
+</failure>
+  </testcase>
+  <testcase name="loyaltyCardRegistration" classname="com.stopandshop.ui.RegistrationTests" time="0.353">
+    <failure message="&#10;Data provider mismatch&#10;Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])&#10;Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]" type="org.testng.internal.reflect.MethodMatcherException">org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]
+</failure>
+  </testcase>
+  <testcase name="loyaltyCardRegistration" classname="com.stopandshop.ui.RegistrationTests" time="2.909">
+    <failure message="&#10;Data provider mismatch&#10;Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])&#10;Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]" type="org.testng.internal.reflect.MethodMatcherException">org.testng.internal.reflect.MethodMatcherException: 
+
+Data provider mismatch
+Method: loyaltyCardRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Sarah,(java.lang.String) Abramovich,(java.lang.String) Quincy2019,(java.lang.String) Quincy2019,(java.lang.String) 200 Cove way,(java.lang.String) Quincy,(java.lang.String) Massachusetts,(java.lang.String) 02169,(java.lang.String) Kingston]
+</failure>
+    <system-err><![CDATA[1581453885464	Marionette	INFO	Stopped listening on port 59068
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="com.stopandshop.ui.RegistrationTests" time="0.31">
+    <failure message="The driver executable does not exist: /Users/nutxk18/Desktop/GitHub/Stores/Stores/IEDriverServer.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: /Users/nutxk18/Desktop/GitHub/Stores/Stores/IEDriverServer.exe
+</failure>
+  </testcase>
+  <testcase name="setup" classname="com.stopandshop.ui.RegistrationTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="registerNewUSer" classname="com.stopandshop.ui.RegistrationTests" time="0">
+    <skipped message="The driver executable does not exist: /Users/nutxk18/Desktop/GitHub/Stores/Stores/IEDriverServer.exe"/>
+  </testcase>
+  <testcase name="registerNewUSer" classname="com.stopandshop.ui.RegistrationTests" time="0.059">
+    <failure message="Unable to locate element: //a[@class =&apos;a-button -white l-button-buddies__button js-track-click js-track-register-click&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SSQYL2TX0EZG8WN&apos;, ip: &apos;fe80:0:0:0:10d9:cc6f:371d:1cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59864, moz:profile: /var/folders/_9/ln3qnsn10wl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: fd123e17-9f83-8245-b822-33fb333e563d&#10;*** Element info: {Using=xpath, value=//a[@class =&apos;a-button -white l-button-buddies__button js-track-click js-track-register-click&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59864, moz:profile: /var/folders/_9/ln3qnsn10wl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd123e17-9f83-8245-b822-33fb333e563d
+*** Element info: {Using=xpath, value=//a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']}
+	at com.stopandshop.ui.RegistrationTests.registerNewUSer(RegistrationTests.java:60)
+</failure>
+    <system-err><![CDATA[1581453870177	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_9/ln3qnsn10wl2rz6zynmd5qbd96fmfy/T/rust_mozprofile.zKVSgzJJLNd5"
+1581453870845	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581453870989	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581453870989	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581453870990	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581453870990	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581453873098	Marionette	INFO	Listening on port 58884
+1581453873120	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 11, 2020 3:44:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="registerNewUSer" classname="com.stopandshop.ui.RegistrationTests" time="8.977">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id =&apos;skipBtn&apos;]&quot;}&#10;  (Session info: chrome=80.0.3987.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SSQYL2TX0EZG8WN&apos;, ip: &apos;fe80:0:0:0:10d9:cc6f:371d:1cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_9/ln3qnsn10wl...}, goog:chromeOptions: {debuggerAddress: localhost:59156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e9aab70ab63a60a1d1609331a2c8c489&#10;*** Element info: {Using=xpath, value=//a[@id =&apos;skipBtn&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id ='skipBtn']"}
+  (Session info: chrome=80.0.3987.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_9/ln3qnsn10wl...}, goog:chromeOptions: {debuggerAddress: localhost:59156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e9aab70ab63a60a1d1609331a2c8c489
+*** Element info: {Using=xpath, value=//a[@id ='skipBtn']}
+	at com.stopandshop.ui.RegistrationTests.registerNewUSer(RegistrationTests.java:61)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 1273
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1581453888.385][WARNING]: FromSockAddr failed on netmask
+[1581453889.513][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+Feb 11, 2020 3:44:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="afterAction" classname="com.stopandshop.ui.RegistrationTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterAction" classname="com.stopandshop.ui.RegistrationTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="registerNewUSer2" classname="com.stopandshop.ui.RegistrationTests" time="0.316">
+    <failure message="&#10;Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2" type="org.testng.TestNGException">org.testng.TestNGException: 
+
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+</failure>
+    <system-err><![CDATA[[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+]]></system-err>
+  </testcase>
+  <testcase name="registerNewUSer2" classname="com.stopandshop.ui.RegistrationTests" time="2.056">
+    <failure message="&#10;Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2" type="org.testng.TestNGException">org.testng.TestNGException: 
+
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+</failure>
+    <system-err><![CDATA[1581453877300	Marionette	INFO	Stopped listening on port 58884
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-N4ZR4L2, line 4316: NS_ERROR_NOT_INITIALIZED: 
+[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+]]></system-err>
+  </testcase>
+  <testcase name="registerNewUSer2" classname="com.stopandshop.ui.RegistrationTests" time="9.102">
+    <failure message="&#10;Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2" type="org.testng.TestNGException">org.testng.TestNGException: 
+
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+</failure>
+    <system-err><![CDATA[[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Method public void com.stopandshop.ui.RegistrationTests.registerNewUSer2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : Registration2
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+]]></system-err>
+  </testcase>
+  <testcase name="registerUser" classname="com.stopandshop.ui.RegistrationTests" time="0">
+    <skipped message="The driver executable does not exist: /Users/nutxk18/Desktop/GitHub/Stores/Stores/IEDriverServer.exe"/>
+  </testcase>
+  <testcase name="registerUser" classname="com.stopandshop.ui.RegistrationTests" time="0.033">
+    <failure message="Unable to locate element: //a[@class =&apos;a-button -white l-button-buddies__button js-track-click js-track-register-click&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SSQYL2TX0EZG8WN&apos;, ip: &apos;fe80:0:0:0:10d9:cc6f:371d:1cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59894, moz:profile: /var/folders/_9/ln3qnsn10wl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 37de5a2c-81cf-214b-b4fc-3d4147918c6b&#10;*** Element info: {Using=xpath, value=//a[@class =&apos;a-button -white l-button-buddies__button js-track-click js-track-register-click&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59894, moz:profile: /var/folders/_9/ln3qnsn10wl..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 37de5a2c-81cf-214b-b4fc-3d4147918c6b
+*** Element info: {Using=xpath, value=//a[@class ='a-button -white l-button-buddies__button js-track-click js-track-register-click']}
+	at com.stopandshop.ui.RegistrationTests.registerUser(RegistrationTests.java:54)
+</failure>
+    <system-err><![CDATA[1581453879333	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_9/ln3qnsn10wl2rz6zynmd5qbd96fmfy/T/rust_mozprofile.6SZFoKihZtYG"
+1581453879823	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581453879934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581453879934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581453879934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581453879934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581453881761	Marionette	INFO	Listening on port 59068
+1581453881837	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 11, 2020 3:44:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="registerUser" classname="com.stopandshop.ui.RegistrationTests" time="9.449">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id =&apos;skipBtn&apos;]&quot;}&#10;  (Session info: chrome=80.0.3987.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SSQYL2TX0EZG8WN&apos;, ip: &apos;fe80:0:0:0:10d9:cc6f:371d:1cb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_151&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_9/ln3qnsn10wl...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: a513ae828fcfa09319a37381913cd840&#10;*** Element info: {Using=xpath, value=//a[@id =&apos;skipBtn&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id ='skipBtn']"}
+  (Session info: chrome=80.0.3987.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SSQYL2TX0EZG8WN', ip: 'fe80:0:0:0:10d9:cc6f:371d:1cb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_9/ln3qnsn10wl...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a513ae828fcfa09319a37381913cd840
+*** Element info: {Using=xpath, value=//a[@id ='skipBtn']}
+	at com.stopandshop.ui.RegistrationTests.registerUser(RegistrationTests.java:54)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 6719
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1581453901.978][WARNING]: FromSockAddr failed on netmask
+[1581453902.821][WARNING]: This version of ChromeDriver has not been tested with Chrome version 80.
+Feb 11, 2020 3:45:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
