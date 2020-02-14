@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestSuite]">
+  <test thread-count="5" verbose="0" name="IETestCases(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.stopandshop.ui.RegistrationTests">
+        <methods>
+          <include name="registerUser"/>
+          <include name="registerNewUSer"/>
+          <include name="registerNewUSer2"/>
+          <include name="loyaltyCardRegistration"/>
+          <include name="setup"/>
+          <include name="afterAction"/>
+        </methods>
+      </class> <!-- com.stopandshop.ui.RegistrationTests -->
+    </classes>
+  </test> <!-- IETestCases(failed) -->
+  <test thread-count="5" verbose="0" name="FirefoxTestCases(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.stopandshop.ui.RegistrationTests">
+        <methods>
+          <include name="registerUser"/>
+          <include name="registerNewUSer2"/>
+          <include name="loyaltyCardRegistration"/>
+          <include name="setup"/>
+          <include name="afterAction"/>
+        </methods>
+      </class> <!-- com.stopandshop.ui.RegistrationTests -->
+    </classes>
+  </test> <!-- FirefoxTestCases(failed) -->
+  <test thread-count="5" verbose="0" name="ChromeTestCases(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.stopandshop.ui.RegistrationTests">
+        <methods>
+          <include name="registerUser"/>
+          <include name="registerNewUSer2"/>
+          <include name="loyaltyCardRegistration"/>
+          <include name="setup"/>
+          <include name="afterAction"/>
+        </methods>
+      </class> <!-- com.stopandshop.ui.RegistrationTests -->
+    </classes>
+  </test> <!-- ChromeTestCases(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

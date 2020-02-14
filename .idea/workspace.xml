@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="" />
+    <list default="true" id="c702b8f5-1ca2-496a-94bf-e3430dd9f46f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TEST-TestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/ChromeTestCases.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/ChromeTestCases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/FirefoxTestCases.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/FirefoxTestCases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/IETestCases.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/IETestCases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/TestSuite/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/bullet_point.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/collapseall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/emailable-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/failed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/jquery-1.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/junitreports/TEST-com.stopandshop.ui.RegistrationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/navigator-bullet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/ChromeTestCases.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/FirefoxTestCases.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/IETestCases.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/methods-alphabetical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/methods-not-run.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/methods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/reporter-output.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/testng.xml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/TestSuite/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/passed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/skipped.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/testng-reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/testng-reports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/testng-results.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/2020-02-13-21-40/testng.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
